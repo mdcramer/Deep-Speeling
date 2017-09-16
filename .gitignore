@@ -97,3 +97,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Ignore all the big data files
+news.2013.*
