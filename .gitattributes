@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Help Github identify the project as Python
+*.html linguist-language=Python
