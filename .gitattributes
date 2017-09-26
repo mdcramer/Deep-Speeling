@@ -3,4 +3,4 @@
 
 # Help Github identify the project as Python
 *.html linguist-language=Python
-*.ipynd linguist-language=Python
+*.ipynb linguist-language=Python

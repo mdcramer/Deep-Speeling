@@ -20,12 +20,16 @@
 # 
 # Continue to work with big data. Jump down to work with small data.
 
-# In[1]:
+# In[211]:
 
 
 import os
 import sys
 import errno
+
+# Global variable around input length
+MIN_INPUT_LEN = 5 # minimum number of characters in a sentence
+MAX_INPUT_LEN = 60 # maximum number of characters in a sentence
 
 # Filenames
 NEWS_FILE_NAME_TRAIN = os.path.join(os.path.expanduser("data"), "news.2013.en.train")
@@ -33,9 +37,11 @@ NEWS_FILE_NAME_VALIDATE = os.path.join(os.path.expanduser("data"), "news.2013.en
 
 # Check for command line argument to use small data
 print ("Command line args are: {}".format(str(sys.argv)))
-if ('small' in str(sys.argv)):
+small = 'small' in str(sys.argv)
+# small = True # Use this to force small data. Comment out when running script.
+
+if (small):
     print("Using the small data.")
-    small = True
     directory = "small_graph"
     # This is where the small graph is going to be saved and reloaded
     GRAPH_PARAMETERS = "small_graph/graph_params" # Filename for storing parameters associated with the graph    
@@ -46,7 +52,6 @@ if ('small' in str(sys.argv)):
     checkpoint = "./small_graph/best_model.ckpt"
 else:
     print("Using the large data.")
-    small = False
     # This is where the large graph is going to be saved and reloaded
     directory = "large_graph"
     GRAPH_PARAMETERS = "large_graph/graph_params" # Filename for storing parameters associated with the graph    
@@ -55,7 +60,7 @@ else:
     SOURCE_LETTER_TO_INT = "large_graph/sourcelettertoint.json" # Filename for letter to INT List for source sentences
     TARGET_LETTER_TO_INT = "large_graph/targetlettertoint.json" # Filename for letter to INT List for source sentences
     checkpoint = "./large_graph/best_model.ckpt"
-    
+
 # create directory for data, large or small, if it does not already exist
 try:
     os.makedirs(directory)
@@ -72,7 +77,7 @@ except OSError as exception:
 # 
 # **Skip to below to work with the small dataset**
 
-# In[2]:
+# In[212]:
 
 
 def download_raw_datafile():
@@ -133,7 +138,7 @@ def download_raw_datafile():
 # ## Clean the data
 # Takes the `news.2013.en.clean` and input and produces `news.2013.en.shuffled`.
 
-# In[3]:
+# In[213]:
 
 
 def clean_data():
@@ -196,7 +201,7 @@ def clean_data():
 # 
 # Takes `news.2013.en.shuffled` as input and produces `news.2013.en.filtered` and `news.2013.en.char_frequency.json`.
 
-# In[4]:
+# In[214]:
 
 
 def analyze_characters():
@@ -207,8 +212,6 @@ def analyze_characters():
     NUMBER_OF_CHARS = 100 # quantity of most popular characters to keep
     CHAR_FREQUENCY_FILE_NAME = os.path.join(os.path.expanduser("data"), "news.2013.en.char_frequency.json")
     NEWS_FILE_NAME_FILTERED = os.path.join(os.path.expanduser("data"), "news.2013.en.filtered")
-    MIN_INPUT_LEN = 5 # minimum number of characters in a sentence
-    MAX_INPUT_LEN = 60 # maximum number of characters in a sentence
 
     # create character frequency file
     if (os.path.isfile(CHAR_FREQUENCY_FILE_NAME)):
@@ -245,13 +248,11 @@ def analyze_characters():
                         print("{0:10,d}".format(num_lines), ": ", line, end="")
         print("Done. Filtered file contains {:,} lines.".format(num_lines))
 
-    return int(MAX_INPUT_LEN)
-
 
 # ## Split the data into training and validation sets
 # Takes `news.2013.en.filtered` as input and produces `news.2013.en.train` and `news.2013.en.validate`.
 
-# In[5]:
+# In[215]:
 
 
 def split_data():
@@ -277,10 +278,10 @@ def split_data():
 
 # ## Load the target data and generate source data by injecting mistakes
 
-# In[6]:
+# In[216]:
 
 
-def add_noise_to_string(a_string, amount_of_noise, max_input_len): # Add artificial spelling mistakes to string    
+def add_noise_to_string(a_string, amount_of_noise): # Add artificial spelling mistakes to string    
     
     from numpy.random import choice as random_choice, randint as random_randint, seed as random_seed, rand
 
@@ -294,7 +295,7 @@ def add_noise_to_string(a_string, amount_of_noise, max_input_len): # Add artific
         # Delete a character
         random_char_position = random_randint(len(a_string))
         a_string = a_string[:random_char_position] + a_string[random_char_position + 1:]
-    if len(a_string) < max_input_len and rand() < amount_of_noise * len(a_string):
+    if len(a_string) < MAX_INPUT_LEN and rand() < amount_of_noise * len(a_string):
         # Add a random character
         random_char_position = random_randint(len(a_string))
         a_string = a_string[:random_char_position] + random_choice(CHARS[:-1]) + a_string[random_char_position:]
@@ -305,15 +306,19 @@ def add_noise_to_string(a_string, amount_of_noise, max_input_len): # Add artific
                     a_string[random_char_position] + a_string[random_char_position + 2:])
     return a_string
 
-def load_big_data(max_input_len):
 
-    AMOUNT_OF_NOISE = 0.2 / max_input_len
+# In[217]:
+
+
+def load_big_data():
+
+    AMOUNT_OF_NOISE = 0.2 / MAX_INPUT_LEN
 
     #TODO save file with source_sentences so no need to recompute
     target_sentences = open(NEWS_FILE_NAME_TRAIN, encoding="utf8").read().split("\n")    
     source_sentences = open(NEWS_FILE_NAME_TRAIN, encoding="utf8").read().split("\n")
     for i in range(len(source_sentences)):
-        source_sentences[i] = add_noise_to_string(source_sentences[i], AMOUNT_OF_NOISE, max_input_len)
+        source_sentences[i] = add_noise_to_string(source_sentences[i], AMOUNT_OF_NOISE)
 
     print('\nFirst 10 sentence:')
     for i in range (0, 10):
@@ -334,7 +339,7 @@ def load_big_data(max_input_len):
 # ## Run this cell to get the tiny data set
 # **Start here if you are going to run with the small dataset** If you are using the big dataset, make sure to skip this.
 
-# In[7]:
+# In[218]:
 
 
 # Run this cell to grab the small data sets that came with this model. Otherwise skip it.
@@ -367,7 +372,7 @@ def load_small_data():
 # # Load the Data - Big of Small
 # If the command line switch "small" is set then load the small data. Otherwise load the big data.
 
-# In[9]:
+# In[219]:
 
 
 if (small):
@@ -377,18 +382,24 @@ else:
     print("Load up the big data.")
     download_raw_datafile()
     clean_data()
-    max_input_length = analyze_characters()
+    analyze_characters()
     split_data()
-    source_sentences, target_sentences = load_big_data(max_input_length)
+    source_sentences, target_sentences = load_big_data()
 
 
 # ## Preprocess
 # To do anything useful with it, turn the each string into a list of characters. Then convert the characters to their int values as declared in the vocabulary.
 
-# In[74]:
+# In[220]:
 
 
 import json
+
+# Define global variables
+source_int_to_letter = []
+target_int_to_letter = []
+source_letter_to_int = []
+target_letter_to_int = []
 
 def extract_character_vocab(data):
     special_words = ['<PAD>', '<UNK>', '<GO>',  '<EOS>']
@@ -400,67 +411,86 @@ def extract_character_vocab(data):
 
     return int_to_vocab, vocab_to_int
 
-if (os.path.isfile(SOURCE_INT_TO_LETTER)):
+def produce_letter_ids(source, target):
     
-    # Load up all of the conversion files
-    with open(SOURCE_INT_TO_LETTER, 'r') as file:
-        try:
-            source_int_to_letter = json.load(file)
-        except ValueError: # if the file is empty the ValueError will be thrown
-            data = {}
-    source_int_to_letter = {int(k):v for k,v in source_int_to_letter.items()}
-    with open(TARGET_INT_TO_LETTER, 'r') as file:
-        try:
-            target_int_to_letter = json.load(file)
-        except ValueError: # if the file is empty the ValueError will be thrown
-            data = {}
-    target_int_to_letter = {int(k):v for k,v in target_int_to_letter.items()}
-    with open(SOURCE_LETTER_TO_INT, 'r') as file:
-        try:
-            source_letter_to_int = json.load(file)
-        except ValueError: # if the file is empty the ValueError will be thrown
-            data = {}
-    source_letter_to_int = {k:int(v) for k,v in source_letter_to_int.items()}
-    with open(TARGET_LETTER_TO_INT, 'r') as file:
-        try:
-            target_letter_to_int = json.load(file)
-        except ValueError: # if the file is empty the ValueError will be thrown
-            data = {}
-    target_letter_to_int = {k:int(v) for k,v in target_letter_to_int.items()}
+    global source_int_to_letter, target_int_to_letter,source_letter_to_int, target_letter_to_int
     
-else:
+    # Check to see if conversion files have already been created
+    if (os.path.isfile(SOURCE_INT_TO_LETTER)):
+
+        print()
+        # Load up all of the conversion files
+        with open(SOURCE_INT_TO_LETTER, 'r') as file:
+            try:
+                source_int_to_letter = json.load(file)
+                print("Read {} data to file.".format(SOURCE_INT_TO_LETTER))
+            except ValueError: # if the file is empty the ValueError will be thrown
+                data = {}
+        source_int_to_letter = {int(k):v for k,v in source_int_to_letter.items()}
+        with open(TARGET_INT_TO_LETTER, 'r') as file:
+            try:
+                target_int_to_letter = json.load(file)
+                print("Read {} data to file.".format(TARGET_INT_TO_LETTER))
+            except ValueError: # if the file is empty the ValueError will be thrown
+                data = {}
+        target_int_to_letter = {int(k):v for k,v in target_int_to_letter.items()}
+        with open(SOURCE_LETTER_TO_INT, 'r') as file:
+            try:
+                source_letter_to_int = json.load(file)
+                print("Read {} data to file.".format(SOURCE_LETTER_TO_INT))
+            except ValueError: # if the file is empty the ValueError will be thrown
+                data = {}
+        source_letter_to_int = {k:int(v) for k,v in source_letter_to_int.items()}
+        with open(TARGET_LETTER_TO_INT, 'r') as file:
+            try:
+                target_letter_to_int = json.load(file)
+                print("Read {} data to file.".format(TARGET_LETTER_TO_INT))
+            except ValueError: # if the file is empty the ValueError will be thrown
+                data = {}
+        target_letter_to_int = {k:int(v) for k,v in target_letter_to_int.items()}
+
+    else:
+
+        # Build int2letter and letter2int dicts
+        source_int_to_letter, source_letter_to_int = extract_character_vocab(source)
+        target_int_to_letter, target_letter_to_int = extract_character_vocab(target)
+        print("Source INT to letter: {}".format(source_int_to_letter))
+        print("Target INT to letter: {}\n".format(target_int_to_letter))
+
+        # Save source_int_to_letter, target_int_to_letter & source_letter_to_int for loading later after graph is saved
+        with open(SOURCE_INT_TO_LETTER, 'w') as output_file:
+            json.dump(source_int_to_letter, output_file)
+        print("Wrote {} data to file.".format(SOURCE_INT_TO_LETTER))
+        with open(TARGET_INT_TO_LETTER, 'w') as output_file:
+            json.dump(target_int_to_letter, output_file)
+        print("Wrote {} data to file.".format(TARGET_INT_TO_LETTER))
+        with open(SOURCE_LETTER_TO_INT, 'w') as output_file:
+            json.dump(source_letter_to_int, output_file)
+        print("Wrote {} data to file.".format(SOURCE_LETTER_TO_INT))
+        with open(TARGET_LETTER_TO_INT, 'w') as output_file:
+            json.dump(target_letter_to_int, output_file)
+        print("Wrote {} data to file.".format(TARGET_LETTER_TO_INT))
+
+    # Convert characters to ids
+    source_ids = [[source_letter_to_int.get(letter, source_letter_to_int['<UNK>']) for letter in line]                          for line in source]
+    target_ids = [[target_letter_to_int.get(letter, target_letter_to_int['<UNK>']) for letter in line]                          + [target_letter_to_int['<EOS>']] for line in target]
+
+    print("\nExample source sequences")
+    print(source_ids[:3])
+    print("\nExample target sequences")
+    print(target_ids[:3])
     
-    # Build int2letter and letter2int dicts
-    source_int_to_letter, source_letter_to_int = extract_character_vocab(source_sentences)
-    target_int_to_letter, target_letter_to_int = extract_character_vocab(target_sentences)
-    print("Source INT to letter: {}".format(source_int_to_letter))
-    print("Target INT to letter: {}\n".format(target_int_to_letter))
-
-    # Save source_int_to_letter, target_int_to_letter & source_letter_to_int for loading later after graph is saved
-    with open(SOURCE_INT_TO_LETTER, 'w') as output_file:
-        json.dump(source_int_to_letter, output_file)
-    print("Wrote {} data to file.".format(SOURCE_INT_TO_LETTER))
-    with open(TARGET_INT_TO_LETTER, 'w') as output_file:
-        json.dump(target_int_to_letter, output_file)
-    print("Wrote {} data to file.".format(TARGET_INT_TO_LETTER))
-    with open(SOURCE_LETTER_TO_INT, 'w') as output_file:
-        json.dump(source_letter_to_int, output_file)
-    print("Wrote {} data to file.".format(SOURCE_LETTER_TO_INT))
-    with open(TARGET_LETTER_TO_INT, 'w') as output_file:
-        json.dump(target_letter_to_int, output_file)
-    print("Wrote {} data to file.".format(TARGET_LETTER_TO_INT))
-
-# Convert characters to ids
-source_letter_ids = [[source_letter_to_int.get(letter, source_letter_to_int['<UNK>']) for letter in line] for line in source_sentences]
-target_letter_ids = [[target_letter_to_int.get(letter, target_letter_to_int['<UNK>']) for letter in line] + [target_letter_to_int['<EOS>']] for line in target_sentences]
-
-print("\nExample source sequences")
-print(source_letter_ids[:3])
-print("\nExample target sequences")
-print(target_letter_ids[:3])
+    return source_ids, target_ids
 
 
-# In[75]:
+# In[221]:
+
+
+# Convert source and target sentences into IDs
+source_letter_ids, target_letter_ids = produce_letter_ids(source_sentences, target_sentences)
+
+
+# In[222]:
 
 
 print('\nFirst 10 sentence:')
@@ -474,7 +504,7 @@ for i in range (0, 10):
 # <img src="images/sequence-to-sequence.jpg"/>
 # #### Check the Version of TensorFlow and wether or not there's a GPU
 
-# In[76]:
+# In[223]:
 
 
 import tensorflow as tf
@@ -491,14 +521,14 @@ else:
 
 # ### Hyperparameters
 
-# In[77]:
+# In[224]:
 
 
 if (len(source_sentences) > 10000):
     
     # We are using the big data
     print("Using hyperparameters for the big data with {:,} source sentences.".format(len(source_sentences)))
-    epochs = 2       # Number of Epochs
+    epochs = 1       # Number of Epochs
     batch_size = 128 # Batch Size
 
     rnn_size = 512   # RNN Size
@@ -529,7 +559,7 @@ with open(GRAPH_PARAMETERS, 'w') as file:
 
 # ### Input
 
-# In[78]:
+# In[225]:
 
 
 def get_model_inputs():
@@ -576,7 +606,7 @@ def get_model_inputs():
 # - Pass the embedded input into a stack of RNNs.  Save the RNN state and ignore the output.
 # <img src="images/encoder.png" />
 
-# In[79]:
+# In[226]:
 
 
 def encoding_layer(input_data, rnn_size, num_layers, keep_prob, source_sequence_length, source_vocab_size, 
@@ -643,7 +673,7 @@ def encoding_layer(input_data, rnn_size, num_layers, keep_prob, source_sequence_
 # 
 # <img src="images/targets_after_processing_1.png"/>
 
-# In[80]:
+# In[227]:
 
 
 # Process the input we'll feed to the decoder
@@ -696,7 +726,7 @@ def process_decoder_input(target_data, vocab_to_int, batch_size):
 # We'll hand our encoder hidden state to both the training and inference decoders and have it process its output. TensorFlow handles most of the logic for us. We just have to use the appropriate methods from tf.contrib.seq2seq and supply them with the appropriate inputs.
 # 
 
-# In[81]:
+# In[228]:
 
 
 def decoding_layer(target_letter_to_int, decoding_embedding_size, num_layers, rnn_size, keep_prob,
@@ -768,7 +798,7 @@ def decoding_layer(target_letter_to_int, decoding_embedding_size, num_layers, rn
 # ## 2.3 Seq2seq model 
 # Let's now go a step above, and hook up the encoder and decoder using the methods we just declared
 
-# In[82]:
+# In[229]:
 
 
 def seq2seq_model(input_data, targets, lr, target_sequence_length, max_target_sequence_length, source_sequence_length,
@@ -810,7 +840,7 @@ def seq2seq_model(input_data, targets, lr, target_sequence_length, max_target_se
 # 
 # 
 
-# In[83]:
+# In[230]:
 
 
 from tensorflow.python.layers.core import Dense
@@ -867,27 +897,23 @@ with train_graph.as_default():
 # 
 # There's little processing involved when we retreive the batches. This is a simple example assuming batch_size = 2
 # 
-# Source sequences (it's actually in int form, we're showing the characters for clarity):
+# Target sequences (it's actually in int form, we're showing the characters for clarity):
 # 
 # <img src="images/source_batch.png" />
 # 
-# Target sequences (also in int, but showing letters for clarity):
+# Source sequences (also in int, but showing letters for clarity):
 # 
 # <img src="images/target_batch.png" />
 
-# In[84]:
+# In[231]:
 
+
+import numpy as np
 
 def pad_sentence_batch(sentence_batch, pad_int):
     """Pad sentences with <PAD> so that each sentence of a batch has the same length"""
     max_sentence = max([len(sentence) for sentence in sentence_batch])
     return [sentence + [pad_int] * (max_sentence - len(sentence)) for sentence in sentence_batch]
-
-
-# In[85]:
-
-
-import numpy as np
 
 def get_batches(targets, sources, batch_size, source_pad_int, target_pad_int):
     """Batch targets, sources, and the lengths of their sentences together"""
@@ -913,7 +939,7 @@ def get_batches(targets, sources, batch_size, source_pad_int, target_pad_int):
 # ## Train
 # We're now ready to train our model. If you run into OOM (out of memory) issues during training, try to decrease the batch_size.
 
-# In[86]:
+# In[232]:
 
 
 import time
@@ -1011,47 +1037,8 @@ with tf.Session(graph=train_graph) as sess:
 # ## Prediction
 # **Start here to use a saved and pre-trained graph.** Load the saved graph and compute some preditions.
 
-# In[107]:
+# In[233]:
 
-
-import json
-
-# Load source_letter_to_int from file:
-with open(SOURCE_LETTER_TO_INT, 'r') as file:
-    try:
-        source_letter_to_int = json.load(file)
-    except ValueError: # if the file is empty the ValueError will be thrown
-        data = {}
-source_letter_to_int = {k:int(v) for k,v in source_letter_to_int.items()}
-
-def source_to_seq(text):
-    '''Prepare the text for the model'''
-    sequence_length = 7
-    return [source_letter_to_int.get(word, source_letter_to_int['<UNK>']) for word in text]+ [source_letter_to_int['<PAD>']]*(sequence_length-len(text))
-
-
-# In[108]:
-
-
-import tensorflow as tf
-
-# input_sentence = 'he had dated forI much of the past'
-input_sentence = 'hello'
-text = source_to_seq(input_sentence)
-
-# Load source_int_to_letter and target_int_to_letter from files:
-with open(SOURCE_INT_TO_LETTER, 'r') as file:
-    try:
-        source_int_to_letter = json.load(file)
-    except ValueError: # if the file is empty the ValueError will be thrown
-        data = {}
-source_int_to_letter = {int(k):v for k,v in source_int_to_letter.items()}
-with open(TARGET_INT_TO_LETTER, 'r') as file:
-    try:
-        target_int_to_letter = json.load(file)
-    except ValueError: # if the file is empty the ValueError will be thrown
-        data = {}
-target_int_to_letter = {int(k):v for k,v in target_int_to_letter.items()}
 
 # Read batch_size from file
 with open(GRAPH_PARAMETERS, 'r') as file:
@@ -1061,40 +1048,109 @@ with open(GRAPH_PARAMETERS, 'r') as file:
     except ValueError:
         batch_size = 128
         print("Unable to load batch_size from file so using default 128.")
+            
+if (small):
+    # There is no validation data for the small set, so just load up the data
+    print("Load up the small data.")
+    source_sentences, target_sentences = load_small_data()
+else:
+    
+    # Load the validation set and construct the source sentences
+    AMOUNT_OF_NOISE = 0.2 / MAX_INPUT_LEN
+
+    target_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
+    source_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
+    # Reduce workload by grabbing first batches only
+    # target_sentences = target_sentences[:5*batch_size]
+    # source_sentences = source_sentences[:5*batch_size]
+    
+    # Add the random noise to the source
+    for i in range(len(source_sentences)):
+        source_sentences[i] = add_noise_to_string(source_sentences[i], AMOUNT_OF_NOISE)
+    
+print("There are {:,d} validation sentences and {:,.0f} batches.".format(len(source_sentences), 
+                                                                         len(source_sentences) // batch_size))
+    
+print('\nFirst 10 sentence:')
+for i in range (0, 10):
+    print("\nSource --> " + source_sentences[i])
+    print("Target --> " + target_sentences[i])
+    
+# Convert sentences to IDs
+source_letter_ids, target_letter_ids = produce_letter_ids(source_sentences, target_sentences)
+
+
+# In[234]:
+
+
+def source_to_seq(text, length):
+    '''Prepare the text for the model'''
+#     sequence_length = 7 # don't understand why set to 7
+#     sequence_length = 60
+    return [source_letter_to_int.get(word, source_letter_to_int['<UNK>']) for word in text] + [source_letter_to_int['<PAD>']]*(length-len(text))
+
+
+# In[235]:
+
+
+import tensorflow as tf
+
+# input_sentence = 'hello'
+# text = source_to_seq(input_sentence)
+
+pad = source_letter_to_int["<PAD>"]
+eos = source_letter_to_int["<EOS>"]
+matches = 0
+total = 0
+display_step = 10
 
 loaded_graph = tf.Graph()
 with tf.Session(graph=loaded_graph) as sess:
+    
     # Load saved model
     loader = tf.train.import_meta_graph(checkpoint + '.meta')
     loader.restore(sess, checkpoint)
 
+    # Load variables
     input_data = loaded_graph.get_tensor_by_name('input:0')
     logits = loaded_graph.get_tensor_by_name('predictions:0')
     source_sequence_length = loaded_graph.get_tensor_by_name('source_sequence_length:0')
     target_sequence_length = loaded_graph.get_tensor_by_name('target_sequence_length:0')
     keep_prob = loaded_graph.get_tensor_by_name('keep_prob:0')
-    
-    #Multiply by batch_size to match the model's input parameters
-    answer_logits = sess.run(logits, {input_data: [text]*batch_size, 
-                                      target_sequence_length: [len(text)]*batch_size, 
-                                      source_sequence_length: [len(text)]*batch_size,
-                                      keep_prob: 1.0})[0] 
 
-pad = source_letter_to_int["<PAD>"] 
+    for batch_i,(targets_batch, sources_batch, targets_lengths, sources_lengths)     in enumerate(get_batches(target_letter_ids, source_letter_ids, batch_size, 
+                             source_letter_to_int['<PAD>'], target_letter_to_int['<PAD>'])):
+        
+        # Multiply by batch_size to match the model's input parameters
+        answer_logits = sess.run(logits, {input_data: sources_batch, 
+                                          target_sequence_length: targets_lengths, 
+                                          source_sequence_length: sources_lengths,
+                                          keep_prob: 1.0})
 
-print('Original Text:', input_sentence)
+        for n in range(batch_size):
+            answer = "".join([target_int_to_letter[i] for i in answer_logits[n] if (i != pad and i != eos)])
+            target = target_sentences[batch_i * batch_size + n]
+#             print("\nSource: {}".format(source_sentences[batch_i * batch_size + n]))
+#             print("Target: {}".format(answer))
+#             print("Answer: {}".format(target))
+            total += 1
+            if (answer == target):
+                matches += 1
 
-print('\nSource')
-print('  Word Ids:    {}'.format([i for i in text]))
-print('  Input Words: {}'.format(" ".join([source_int_to_letter[i] for i in text])))
+        if batch_i % display_step == 0 and batch_i > 0:
+            print('Batch {:>6}/{} - Accuracy: {:.1%}'.format(batch_i, 
+                                                             len(source_sentences) // batch_size, 
+                                                             matches / total))
+            
+    print("\nFinal accuracy = {:.1%}".format(matches/total))
 
-print('\nTarget')
-print('  Word Ids:       {}'.format([i for i in answer_logits if i != pad]))
-print('  Response Words: {}'.format(" ".join([target_int_to_letter[i] for i in answer_logits if i != pad])))
+# print('Original Text:', input_sentence)
 
+# print('\nSource')
+# print('  Word Ids:    {}'.format([i for i in text]))
+# print('  Input Words: {}'.format("".join([source_int_to_letter[i] for i in text])))
 
-# In[ ]:
-
-
-
+# print('\nTarget')
+# print('  Word Ids:       {}'.format([i for i in answer_logits if i != pad]))
+# print('  Response Words: {}'.format("".join([target_int_to_letter[i] for i in answer_logits if i != pad])))
 
