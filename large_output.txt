@@ -7,797 +7,897 @@ Data file is already clean.
 Character frequency file already created.
 The top %s chars are: 100
 
- !"#$%&'()*,-./0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz£àáâçèéêíîïôùûü€
+ !"#$%&'()*,-./0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyzÂ£Ã Ã¡Ã¢Ã§Ã¨Ã©ÃªÃ­Ã®Ã¯Ã´Ã¹Ã»Ã¼â‚¬
 
 Filtered file already created.
 Training and Validation files already created.
 
 First 10 sentence:
 
-Source --> The leading ladies that impacted on Sir Bavid's life
-Target --> The leading ladies that impacted on Sir David's life
+Source --> And majority government takes the heat off too.
+Target --> And majority government takes the heat off too.
 
-Source --> They resigned from the Party.
-Target --> They resigned from the Party.
+Source --> The goals were going in elsewhere.
+Target --> The goals were going in elsewhere.
 
-Source --> Everything he went for today went for six or four.
-Target --> Everything he went for today went for six or four.
+Source --> Illustration: Jim Pavildis.
+Target --> Illustration: Jim Pavlidis.
 
-Source --> Hannon St., 1600 block, 4:33 p.m.
-Target --> Hannon St., 1600 block, 4:33 p.m.
+Source --> "She saw it coming," Joe Hockey tells Agenda.
+Target --> "She saw it coming," Joe Hockey tells Agenda.
 
-Source --> Because they're holy places.
-Target --> Because they're holy places.
+Source --> Quick buck
+Target --> Quick buck
 
-Source --> The next person would have the lighLter," he Ways.
-Target --> The next person would have the lighter," he says.
+Source --> 1496: Act for compulsory education in Scotland wZas passed.
+Target --> 1496: Act for compulsory education in Scotland was passed.
 
-Source --> The acquittal of Rabei Osman is also upheld.
-Target --> The acquittal of Rabei Osman is also upheld.
+Source --> Crashing into the groudn in the woods.
+Target --> Crashing into the ground in the woods.
 
-Source --> "But I'll tell you what," he added.
-Target --> "But I'll tell you what," he added.
+Source --> Audit.
+Target --> Audit.
 
-Source --> It can't make a profit from what it's got already.
-Target --> It can't make a profit from what it's got already.
+Source --> Few birds or trees can survive the brutal climate.
+Target --> Few birds or trees can survive the brutal climate.
 
-Source --> The reults were largely the same.
-Target --> The results were largely the same.
+Source --> Cressida is famous for her impossibly cool look.
+Target --> Cressida is famous for her impossibly cool look.
 
 The source is comprised of 4,319,687 sentences. Here are the first 10.
-The leading ladies that impacted on Sir Bavid's life
-They resigned from the Party.
-Everything he went for today went for six or four.
-Hannon St., 1600 block, 4:33 p.m.
-Because they're holy places.
-The next person would have the lighLter," he Ways.
-The acquittal of Rabei Osman is also upheld.
-"But I'll tell you what," he added.
-It can't make a profit from what it's got already.
-The reults were largely the same.
+And majority government takes the heat off too.
+The goals were going in elsewhere.
+Illustration: Jim Pavildis.
+"She saw it coming," Joe Hockey tells Agenda.
+Quick buck
+1496: Act for compulsory education in Scotland wZas passed.
+Crashing into the groudn in the woods.
+Audit.
+Few birds or trees can survive the brutal climate.
+Cressida is famous for her impossibly cool look.
 
 The target is comprised of 4,319,687 sentences. Here are the first 10.
-The leading ladies that impacted on Sir David's life
-They resigned from the Party.
-Everything he went for today went for six or four.
-Hannon St., 1600 block, 4:33 p.m.
-Because they're holy places.
-The next person would have the lighter," he says.
-The acquittal of Rabei Osman is also upheld.
-"But I'll tell you what," he added.
-It can't make a profit from what it's got already.
-The results were largely the same.
-Source INT to letter: {0: '<PAD>', 1: '<UNK>', 2: '<GO>', 3: '<EOS>', 4: 'p', 5: '%', 6: 'K', 7: '?', 8: 'D', 9: 'O', 10: 'n', 11: 'ù', 12: 'L', 13: '"', 14: 'd', 15: 'U', 16: 'X', 17: 'y', 18: 'S', 19: 't', 20: 'e', 21: '$', 22: 'Y', 23: 'è', 24: "'", 25: '1', 26: 'a', 27: '!', 28: 'r', 29: 'i', 30: 'E', 31: '£', 32: 'M', 33: 'J', 34: 'm', 35: '2', 36: 'Z', 37: '7', 38: 'w', 39: 'v', 40: '6', 41: 'x', 42: ':', 43: '(', 44: 'z', 45: 'R', 46: 'g', 47: 'j', 48: '*', 49: 'F', 50: '@', 51: 'G', 52: 'N', 53: 'à', 54: 'k', 55: 'W', 56: 'T', 57: 'ê', 58: 'é', 59: 'f', 60: '=', 61: '&', 62: ';', 63: 'í', 64: 'q', 65: ',', 66: 'â', 67: 'b', 68: 'B', 69: 'Q', 70: 's', 71: 'A', 72: 'P', 73: '.', 74: 'ï', 75: 'u', 76: 'c', 77: '8', 78: '9', 79: '0', 80: 'ü', 81: '_', 82: '5', 83: ' ', 84: 'o', 85: 'ç', 86: '€', 87: ')', 88: '#', 89: 'î', 90: 'ô', 91: 'I', 92: 'H', 93: 'û', 94: '4', 95: '-', 96: 'V', 97: 'h', 98: 'C', 99: 'á', 100: '/', 101: 'l', 102: '3'}
-Target INT to letter: {0: '<PAD>', 1: '<UNK>', 2: '<GO>', 3: '<EOS>', 4: 'p', 5: '%', 6: 'K', 7: '?', 8: 'D', 9: 'O', 10: 'n', 11: 'ù', 12: 'L', 13: '"', 14: 'd', 15: 'U', 16: 'X', 17: 'y', 18: 'S', 19: 't', 20: 'e', 21: '$', 22: 'Y', 23: 'è', 24: "'", 25: '1', 26: 'a', 27: '!', 28: 'r', 29: 'i', 30: 'E', 31: '£', 32: 'M', 33: 'J', 34: 'm', 35: '2', 36: 'Z', 37: '7', 38: 'w', 39: 'v', 40: '6', 41: 'x', 42: ':', 43: '(', 44: 'z', 45: 'R', 46: 'g', 47: 'j', 48: '*', 49: 'F', 50: '@', 51: 'G', 52: 'N', 53: 'à', 54: 'k', 55: 'W', 56: 'T', 57: 'ê', 58: 'é', 59: 'f', 60: '=', 61: '&', 62: ';', 63: 'í', 64: 'q', 65: ',', 66: 'â', 67: 'b', 68: 'B', 69: 'Q', 70: 's', 71: 'A', 72: 'P', 73: '.', 74: 'ï', 75: 'u', 76: 'c', 77: '8', 78: '9', 79: '0', 80: 'ü', 81: '_', 82: '5', 83: ' ', 84: 'o', 85: 'ç', 86: '€', 87: ')', 88: '#', 89: 'î', 90: 'ô', 91: 'I', 92: 'H', 93: 'û', 94: '4', 95: '-', 96: 'V', 97: 'h', 98: 'C', 99: 'á', 100: '/', 101: 'l', 102: '3'}
+And majority government takes the heat off too.
+The goals were going in elsewhere.
+Illustration: Jim Pavlidis.
+"She saw it coming," Joe Hockey tells Agenda.
+Quick buck
+1496: Act for compulsory education in Scotland was passed.
+Crashing into the ground in the woods.
+Audit.
+Few birds or trees can survive the brutal climate.
+Cressida is famous for her impossibly cool look.
 
-Wrote large_graph/sourceinttoletter.json data to file.
-Wrote large_graph/targetinttoletter.json data to file.
-Wrote large_graph/sourcelettertoint.json data to file.
-Wrote large_graph/targetlettertoint.json data to file.
+Read large_graph/sourceinttoletter.json data to file.
+Read large_graph/targetinttoletter.json data to file.
+Read large_graph/sourcelettertoint.json data to file.
+Read large_graph/targetlettertoint.json data to file.
 
 Example source sequences
-[[56, 97, 20, 83, 101, 20, 26, 14, 29, 10, 46, 83, 101, 26, 14, 29, 20, 70, 83, 19, 97, 26, 19, 83, 29, 34, 4, 26, 76, 19, 20, 14, 83, 84, 10, 83, 18, 29, 28, 83, 68, 26, 39, 29, 14, 24, 70, 83, 101, 29, 59, 20], [56, 97, 20, 17, 83, 28, 20, 70, 29, 46, 10, 20, 14, 83, 59, 28, 84, 34, 83, 19, 97, 20, 83, 72, 26, 28, 19, 17, 73], [30, 39, 20, 28, 17, 19, 97, 29, 10, 46, 83, 97, 20, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 19, 84, 14, 26, 17, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 70, 29, 41, 83, 84, 28, 83, 59, 84, 75, 28, 73]]
+[[71, 10, 14, 83, 34, 26, 47, 84, 28, 29, 19, 17, 83, 46, 84, 39, 20, 28, 10, 34, 20, 10, 19, 83, 19, 26, 54, 20, 70, 83, 19, 97, 20, 83, 97, 20, 26, 19, 83, 84, 59, 59, 83, 19, 84, 84, 73], [56, 97, 20, 83, 46, 84, 26, 101, 70, 83, 38, 20, 28, 20, 83, 46, 84, 29, 10, 46, 83, 29, 10, 83, 20, 101, 70, 20, 38, 97, 20, 28, 20, 73], [91, 101, 101, 75, 70, 19, 28, 26, 19, 29, 84, 10, 42, 83, 33, 29, 34, 83, 72, 26, 39, 29, 101, 14, 29, 70, 73]]
 
 Example target sequences
-[[56, 97, 20, 83, 101, 20, 26, 14, 29, 10, 46, 83, 101, 26, 14, 29, 20, 70, 83, 19, 97, 26, 19, 83, 29, 34, 4, 26, 76, 19, 20, 14, 83, 84, 10, 83, 18, 29, 28, 83, 8, 26, 39, 29, 14, 24, 70, 83, 101, 29, 59, 20, 3], [56, 97, 20, 17, 83, 28, 20, 70, 29, 46, 10, 20, 14, 83, 59, 28, 84, 34, 83, 19, 97, 20, 83, 72, 26, 28, 19, 17, 73, 3], [30, 39, 20, 28, 17, 19, 97, 29, 10, 46, 83, 97, 20, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 19, 84, 14, 26, 17, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 70, 29, 41, 83, 84, 28, 83, 59, 84, 75, 28, 73, 3]]
+[[71, 10, 14, 83, 34, 26, 47, 84, 28, 29, 19, 17, 83, 46, 84, 39, 20, 28, 10, 34, 20, 10, 19, 83, 19, 26, 54, 20, 70, 83, 19, 97, 20, 83, 97, 20, 26, 19, 83, 84, 59, 59, 83, 19, 84, 84, 73, 3], [56, 97, 20, 83, 46, 84, 26, 101, 70, 83, 38, 20, 28, 20, 83, 46, 84, 29, 10, 46, 83, 29, 10, 83, 20, 101, 70, 20, 38, 97, 20, 28, 20, 73, 3], [91, 101, 101, 75, 70, 19, 28, 26, 19, 29, 84, 10, 42, 83, 33, 29, 34, 83, 72, 26, 39, 101, 29, 14, 29, 70, 73, 3]]
 
 First 10 sentence:
 
-Source --> [56, 97, 20, 83, 101, 20, 26, 14, 29, 10, 46, 83, 101, 26, 14, 29, 20, 70, 83, 19, 97, 26, 19, 83, 29, 34, 4, 26, 76, 19, 20, 14, 83, 84, 10, 83, 18, 29, 28, 83, 68, 26, 39, 29, 14, 24, 70, 83, 101, 29, 59, 20]
-Target --> [56, 97, 20, 83, 101, 20, 26, 14, 29, 10, 46, 83, 101, 26, 14, 29, 20, 70, 83, 19, 97, 26, 19, 83, 29, 34, 4, 26, 76, 19, 20, 14, 83, 84, 10, 83, 18, 29, 28, 83, 8, 26, 39, 29, 14, 24, 70, 83, 101, 29, 59, 20, 3]
+Source --> [71, 10, 14, 83, 34, 26, 47, 84, 28, 29, 19, 17, 83, 46, 84, 39, 20, 28, 10, 34, 20, 10, 19, 83, 19, 26, 54, 20, 70, 83, 19, 97, 20, 83, 97, 20, 26, 19, 83, 84, 59, 59, 83, 19, 84, 84, 73]
+Target --> [71, 10, 14, 83, 34, 26, 47, 84, 28, 29, 19, 17, 83, 46, 84, 39, 20, 28, 10, 34, 20, 10, 19, 83, 19, 26, 54, 20, 70, 83, 19, 97, 20, 83, 97, 20, 26, 19, 83, 84, 59, 59, 83, 19, 84, 84, 73, 3]
 
-Source --> [56, 97, 20, 17, 83, 28, 20, 70, 29, 46, 10, 20, 14, 83, 59, 28, 84, 34, 83, 19, 97, 20, 83, 72, 26, 28, 19, 17, 73]
-Target --> [56, 97, 20, 17, 83, 28, 20, 70, 29, 46, 10, 20, 14, 83, 59, 28, 84, 34, 83, 19, 97, 20, 83, 72, 26, 28, 19, 17, 73, 3]
+Source --> [56, 97, 20, 83, 46, 84, 26, 101, 70, 83, 38, 20, 28, 20, 83, 46, 84, 29, 10, 46, 83, 29, 10, 83, 20, 101, 70, 20, 38, 97, 20, 28, 20, 73]
+Target --> [56, 97, 20, 83, 46, 84, 26, 101, 70, 83, 38, 20, 28, 20, 83, 46, 84, 29, 10, 46, 83, 29, 10, 83, 20, 101, 70, 20, 38, 97, 20, 28, 20, 73, 3]
 
-Source --> [30, 39, 20, 28, 17, 19, 97, 29, 10, 46, 83, 97, 20, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 19, 84, 14, 26, 17, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 70, 29, 41, 83, 84, 28, 83, 59, 84, 75, 28, 73]
-Target --> [30, 39, 20, 28, 17, 19, 97, 29, 10, 46, 83, 97, 20, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 19, 84, 14, 26, 17, 83, 38, 20, 10, 19, 83, 59, 84, 28, 83, 70, 29, 41, 83, 84, 28, 83, 59, 84, 75, 28, 73, 3]
+Source --> [91, 101, 101, 75, 70, 19, 28, 26, 19, 29, 84, 10, 42, 83, 33, 29, 34, 83, 72, 26, 39, 29, 101, 14, 29, 70, 73]
+Target --> [91, 101, 101, 75, 70, 19, 28, 26, 19, 29, 84, 10, 42, 83, 33, 29, 34, 83, 72, 26, 39, 101, 29, 14, 29, 70, 73, 3]
 
-Source --> [92, 26, 10, 10, 84, 10, 83, 18, 19, 73, 65, 83, 25, 40, 79, 79, 83, 67, 101, 84, 76, 54, 65, 83, 94, 42, 102, 102, 83, 4, 73, 34, 73]
-Target --> [92, 26, 10, 10, 84, 10, 83, 18, 19, 73, 65, 83, 25, 40, 79, 79, 83, 67, 101, 84, 76, 54, 65, 83, 94, 42, 102, 102, 83, 4, 73, 34, 73, 3]
+Source --> [13, 18, 97, 20, 83, 70, 26, 38, 83, 29, 19, 83, 76, 84, 34, 29, 10, 46, 65, 13, 83, 33, 84, 20, 83, 92, 84, 76, 54, 20, 17, 83, 19, 20, 101, 101, 70, 83, 71, 46, 20, 10, 14, 26, 73]
+Target --> [13, 18, 97, 20, 83, 70, 26, 38, 83, 29, 19, 83, 76, 84, 34, 29, 10, 46, 65, 13, 83, 33, 84, 20, 83, 92, 84, 76, 54, 20, 17, 83, 19, 20, 101, 101, 70, 83, 71, 46, 20, 10, 14, 26, 73, 3]
 
-Source --> [68, 20, 76, 26, 75, 70, 20, 83, 19, 97, 20, 17, 24, 28, 20, 83, 97, 84, 101, 17, 83, 4, 101, 26, 76, 20, 70, 73]
-Target --> [68, 20, 76, 26, 75, 70, 20, 83, 19, 97, 20, 17, 24, 28, 20, 83, 97, 84, 101, 17, 83, 4, 101, 26, 76, 20, 70, 73, 3]
+Source --> [69, 75, 29, 76, 54, 83, 67, 75, 76, 54]
+Target --> [69, 75, 29, 76, 54, 83, 67, 75, 76, 54, 3]
 
-Source --> [56, 97, 20, 83, 10, 20, 41, 19, 83, 4, 20, 28, 70, 84, 10, 83, 38, 84, 75, 101, 14, 83, 97, 26, 39, 20, 83, 19, 97, 20, 83, 101, 29, 46, 97, 12, 19, 20, 28, 65, 13, 83, 97, 20, 83, 55, 26, 17, 70, 73]
-Target --> [56, 97, 20, 83, 10, 20, 41, 19, 83, 4, 20, 28, 70, 84, 10, 83, 38, 84, 75, 101, 14, 83, 97, 26, 39, 20, 83, 19, 97, 20, 83, 101, 29, 46, 97, 19, 20, 28, 65, 13, 83, 97, 20, 83, 70, 26, 17, 70, 73, 3]
+Source --> [25, 94, 78, 40, 42, 83, 71, 76, 19, 83, 59, 84, 28, 83, 76, 84, 34, 4, 75, 101, 70, 84, 28, 17, 83, 20, 14, 75, 76, 26, 19, 29, 84, 10, 83, 29, 10, 83, 18, 76, 84, 19, 101, 26, 10, 14, 83, 38, 36, 26, 70, 83, 4, 26, 70, 70, 20, 14, 73]
+Target --> [25, 94, 78, 40, 42, 83, 71, 76, 19, 83, 59, 84, 28, 83, 76, 84, 34, 4, 75, 101, 70, 84, 28, 17, 83, 20, 14, 75, 76, 26, 19, 29, 84, 10, 83, 29, 10, 83, 18, 76, 84, 19, 101, 26, 10, 14, 83, 38, 26, 70, 83, 4, 26, 70, 70, 20, 14, 73, 3]
 
-Source --> [56, 97, 20, 83, 26, 76, 64, 75, 29, 19, 19, 26, 101, 83, 84, 59, 83, 45, 26, 67, 20, 29, 83, 9, 70, 34, 26, 10, 83, 29, 70, 83, 26, 101, 70, 84, 83, 75, 4, 97, 20, 101, 14, 73]
-Target --> [56, 97, 20, 83, 26, 76, 64, 75, 29, 19, 19, 26, 101, 83, 84, 59, 83, 45, 26, 67, 20, 29, 83, 9, 70, 34, 26, 10, 83, 29, 70, 83, 26, 101, 70, 84, 83, 75, 4, 97, 20, 101, 14, 73, 3]
+Source --> [98, 28, 26, 70, 97, 29, 10, 46, 83, 29, 10, 19, 84, 83, 19, 97, 20, 83, 46, 28, 84, 75, 14, 10, 83, 29, 10, 83, 19, 97, 20, 83, 38, 84, 84, 14, 70, 73]
+Target --> [98, 28, 26, 70, 97, 29, 10, 46, 83, 29, 10, 19, 84, 83, 19, 97, 20, 83, 46, 28, 84, 75, 10, 14, 83, 29, 10, 83, 19, 97, 20, 83, 38, 84, 84, 14, 70, 73, 3]
 
-Source --> [13, 68, 75, 19, 83, 91, 24, 101, 101, 83, 19, 20, 101, 101, 83, 17, 84, 75, 83, 38, 97, 26, 19, 65, 13, 83, 97, 20, 83, 26, 14, 14, 20, 14, 73]
-Target --> [13, 68, 75, 19, 83, 91, 24, 101, 101, 83, 19, 20, 101, 101, 83, 17, 84, 75, 83, 38, 97, 26, 19, 65, 13, 83, 97, 20, 83, 26, 14, 14, 20, 14, 73, 3]
+Source --> [71, 75, 14, 29, 19, 73]
+Target --> [71, 75, 14, 29, 19, 73, 3]
 
-Source --> [91, 19, 83, 76, 26, 10, 24, 19, 83, 34, 26, 54, 20, 83, 26, 83, 4, 28, 84, 59, 29, 19, 83, 59, 28, 84, 34, 83, 38, 97, 26, 19, 83, 29, 19, 24, 70, 83, 46, 84, 19, 83, 26, 101, 28, 20, 26, 14, 17, 73]
-Target --> [91, 19, 83, 76, 26, 10, 24, 19, 83, 34, 26, 54, 20, 83, 26, 83, 4, 28, 84, 59, 29, 19, 83, 59, 28, 84, 34, 83, 38, 97, 26, 19, 83, 29, 19, 24, 70, 83, 46, 84, 19, 83, 26, 101, 28, 20, 26, 14, 17, 73, 3]
+Source --> [49, 20, 38, 83, 67, 29, 28, 14, 70, 83, 84, 28, 83, 19, 28, 20, 20, 70, 83, 76, 26, 10, 83, 70, 75, 28, 39, 29, 39, 20, 83, 19, 97, 20, 83, 67, 28, 75, 19, 26, 101, 83, 76, 101, 29, 34, 26, 19, 20, 73]
+Target --> [49, 20, 38, 83, 67, 29, 28, 14, 70, 83, 84, 28, 83, 19, 28, 20, 20, 70, 83, 76, 26, 10, 83, 70, 75, 28, 39, 29, 39, 20, 83, 19, 97, 20, 83, 67, 28, 75, 19, 26, 101, 83, 76, 101, 29, 34, 26, 19, 20, 73, 3]
 
-Source --> [56, 97, 20, 83, 28, 20, 75, 101, 19, 70, 83, 38, 20, 28, 20, 83, 101, 26, 28, 46, 20, 101, 17, 83, 19, 97, 20, 83, 70, 26, 34, 20, 73]
-Target --> [56, 97, 20, 83, 28, 20, 70, 75, 101, 19, 70, 83, 38, 20, 28, 20, 83, 101, 26, 28, 46, 20, 101, 17, 83, 19, 97, 20, 83, 70, 26, 34, 20, 73, 3]
-TensorFlow Version: 1.3.0
+Source --> [98, 28, 20, 70, 70, 29, 14, 26, 83, 29, 70, 83, 59, 26, 34, 84, 75, 70, 83, 59, 84, 28, 83, 97, 20, 28, 83, 29, 34, 4, 84, 70, 70, 29, 67, 101, 17, 83, 76, 84, 84, 101, 83, 101, 84, 84, 54, 73]
+Target --> [98, 28, 20, 70, 70, 29, 14, 26, 83, 29, 70, 83, 59, 26, 34, 84, 75, 70, 83, 59, 84, 28, 83, 97, 20, 28, 83, 29, 34, 4, 84, 70, 70, 29, 67, 101, 17, 83, 76, 84, 84, 101, 83, 101, 84, 84, 54, 73, 3]
+TensorFlow Version: 1.1.0
+2017-09-26 18:56:57.243799: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:56:57.243829: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:56:57.243838: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:56:57.523333: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-09-26 18:56:57.523594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: GRID K520
+major: 3 minor: 0 memoryClockRate (GHz) 0.797
+pciBusID 0000:00:03.0
+Total memory: 3.94GiB
+Free memory: 3.91GiB
+2017-09-26 18:56:57.523619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-09-26 18:56:57.523630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-09-26 18:56:57.523649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+2017-09-26 18:56:57.547318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
 Default GPU Device: /gpu:0
 Using hyperparameters for the big data with 4,319,687 source sentences.
-Starting with new graph.
-Epoch   1/2 Batch    100/33746 Inputs (000)      12 - Loss:  1.967  - Validation loss:  1.910
-Epoch   1/2 Batch    200/33746 Inputs (000)      25 - Loss:  1.622  - Validation loss:  1.664
-Epoch   1/2 Batch    300/33746 Inputs (000)      38 - Loss:  1.507  - Validation loss:  1.557
-Epoch   1/2 Batch    400/33746 Inputs (000)      51 - Loss:  1.512  - Validation loss:  1.476
-Epoch   1/2 Batch    500/33746 Inputs (000)      64 - Loss:  1.436  - Validation loss:  1.411
-Epoch   1/2 Batch    600/33746 Inputs (000)      76 - Loss:  1.370  - Validation loss:  1.346
-Epoch   1/2 Batch    700/33746 Inputs (000)      89 - Loss:  1.301  - Validation loss:  1.295
-Epoch   1/2 Batch    800/33746 Inputs (000)     102 - Loss:  1.221  - Validation loss:  1.244
-Epoch   1/2 Batch    900/33746 Inputs (000)     115 - Loss:  1.216  - Validation loss:  1.199
-Epoch   1/2 Batch   1000/33746 Inputs (000)     128 - Loss:  1.154  - Validation loss:  1.153
-Epoch   1/2 Batch   1100/33746 Inputs (000)     140 - Loss:  1.154  - Validation loss:  1.115
-Epoch   1/2 Batch   1200/33746 Inputs (000)     153 - Loss:  1.001  - Validation loss:  1.072
-Epoch   1/2 Batch   1300/33746 Inputs (000)     166 - Loss:  1.066  - Validation loss:  1.039
-Epoch   1/2 Batch   1400/33746 Inputs (000)     179 - Loss:  1.065  - Validation loss:  1.003
-Epoch   1/2 Batch   1500/33746 Inputs (000)     192 - Loss:  0.983  - Validation loss:  0.963
-Epoch   1/2 Batch   1600/33746 Inputs (000)     204 - Loss:  0.913  - Validation loss:  0.913
-Epoch   1/2 Batch   1700/33746 Inputs (000)     217 - Loss:  0.845  - Validation loss:  0.869
-Epoch   1/2 Batch   1800/33746 Inputs (000)     230 - Loss:  0.869  - Validation loss:  0.827
-Epoch   1/2 Batch   1900/33746 Inputs (000)     243 - Loss:  0.838  - Validation loss:  0.791
-Epoch   1/2 Batch   2000/33746 Inputs (000)     256 - Loss:  0.822  - Validation loss:  0.727
-Epoch   1/2 Batch   2100/33746 Inputs (000)     268 - Loss:  0.629  - Validation loss:  0.694
-Epoch   1/2 Batch   2200/33746 Inputs (000)     281 - Loss:  0.720  - Validation loss:  0.641
-Epoch   1/2 Batch   2300/33746 Inputs (000)     294 - Loss:  0.667  - Validation loss:  0.612
-Epoch   1/2 Batch   2400/33746 Inputs (000)     307 - Loss:  0.667  - Validation loss:  0.594
-Epoch   1/2 Batch   2500/33746 Inputs (000)     320 - Loss:  0.624  - Validation loss:  0.548
-Epoch   1/2 Batch   2600/33746 Inputs (000)     332 - Loss:  0.549  - Validation loss:  0.515
-Epoch   1/2 Batch   2700/33746 Inputs (000)     345 - Loss:  0.511  - Validation loss:  0.485
-Epoch   1/2 Batch   2800/33746 Inputs (000)     358 - Loss:  0.507  - Validation loss:  0.463
-Epoch   1/2 Batch   2900/33746 Inputs (000)     371 - Loss:  0.474  - Validation loss:  0.442
-Epoch   1/2 Batch   3000/33746 Inputs (000)     384 - Loss:  0.549  - Validation loss:  0.436
-Epoch   1/2 Batch   3100/33746 Inputs (000)     396 - Loss:  0.472  - Validation loss:  0.407
-Epoch   1/2 Batch   3200/33746 Inputs (000)     409 - Loss:  0.414  - Validation loss:  0.396
-Epoch   1/2 Batch   3300/33746 Inputs (000)     422 - Loss:  0.445  - Validation loss:  0.369
-Epoch   1/2 Batch   3400/33746 Inputs (000)     435 - Loss:  0.418  - Validation loss:  0.366
-Epoch   1/2 Batch   3500/33746 Inputs (000)     448 - Loss:  0.401  - Validation loss:  0.352
-Epoch   1/2 Batch   3600/33746 Inputs (000)     460 - Loss:  0.377  - Validation loss:  0.344
-Epoch   1/2 Batch   3700/33746 Inputs (000)     473 - Loss:  0.385  - Validation loss:  0.327
-Epoch   1/2 Batch   3800/33746 Inputs (000)     486 - Loss:  0.390  - Validation loss:  0.311
-Epoch   1/2 Batch   3900/33746 Inputs (000)     499 - Loss:  0.358  - Validation loss:  0.315
-Epoch   1/2 Batch   4000/33746 Inputs (000)     512 - Loss:  0.382  - Validation loss:  0.311
-Epoch   1/2 Batch   4100/33746 Inputs (000)     524 - Loss:  0.330  - Validation loss:  0.310
-Epoch   1/2 Batch   4200/33746 Inputs (000)     537 - Loss:  0.327  - Validation loss:  0.302
-Epoch   1/2 Batch   4300/33746 Inputs (000)     550 - Loss:  0.336  - Validation loss:  0.275
-Epoch   1/2 Batch   4400/33746 Inputs (000)     563 - Loss:  0.353  - Validation loss:  0.279
-Epoch   1/2 Batch   4500/33746 Inputs (000)     576 - Loss:  0.303  - Validation loss:  0.268
-Epoch   1/2 Batch   4600/33746 Inputs (000)     588 - Loss:  0.315  - Validation loss:  0.248
-Epoch   1/2 Batch   4700/33746 Inputs (000)     601 - Loss:  0.284  - Validation loss:  0.258
-Epoch   1/2 Batch   4800/33746 Inputs (000)     614 - Loss:  0.330  - Validation loss:  0.253
-Epoch   1/2 Batch   4900/33746 Inputs (000)     627 - Loss:  0.289  - Validation loss:  0.244
-Epoch   1/2 Batch   5000/33746 Inputs (000)     640 - Loss:  0.312  - Validation loss:  0.233
-Epoch   1/2 Batch   5100/33746 Inputs (000)     652 - Loss:  0.259  - Validation loss:  0.234
-Epoch   1/2 Batch   5200/33746 Inputs (000)     665 - Loss:  0.244  - Validation loss:  0.236
-Epoch   1/2 Batch   5300/33746 Inputs (000)     678 - Loss:  0.299  - Validation loss:  0.230
-Epoch   1/2 Batch   5400/33746 Inputs (000)     691 - Loss:  0.276  - Validation loss:  0.220
-Epoch   1/2 Batch   5500/33746 Inputs (000)     704 - Loss:  0.273  - Validation loss:  0.223
-Epoch   1/2 Batch   5600/33746 Inputs (000)     716 - Loss:  0.243  - Validation loss:  0.206
-Epoch   1/2 Batch   5700/33746 Inputs (000)     729 - Loss:  0.269  - Validation loss:  0.201
-Epoch   1/2 Batch   5800/33746 Inputs (000)     742 - Loss:  0.247  - Validation loss:  0.204
-Epoch   1/2 Batch   5900/33746 Inputs (000)     755 - Loss:  0.243  - Validation loss:  0.204
-Epoch   1/2 Batch   6000/33746 Inputs (000)     768 - Loss:  0.267  - Validation loss:  0.192
-Epoch   1/2 Batch   6100/33746 Inputs (000)     780 - Loss:  0.279  - Validation loss:  0.198
-Epoch   1/2 Batch   6200/33746 Inputs (000)     793 - Loss:  0.254  - Validation loss:  0.190
-Epoch   1/2 Batch   6300/33746 Inputs (000)     806 - Loss:  0.230  - Validation loss:  0.183
-Epoch   1/2 Batch   6400/33746 Inputs (000)     819 - Loss:  0.218  - Validation loss:  0.186
-Epoch   1/2 Batch   6500/33746 Inputs (000)     832 - Loss:  0.224  - Validation loss:  0.184
-Epoch   1/2 Batch   6600/33746 Inputs (000)     844 - Loss:  0.206  - Validation loss:  0.180
-Epoch   1/2 Batch   6700/33746 Inputs (000)     857 - Loss:  0.226  - Validation loss:  0.183
-Epoch   1/2 Batch   6800/33746 Inputs (000)     870 - Loss:  0.218  - Validation loss:  0.178
-Epoch   1/2 Batch   6900/33746 Inputs (000)     883 - Loss:  0.213  - Validation loss:  0.172
-Epoch   1/2 Batch   7000/33746 Inputs (000)     896 - Loss:  0.221  - Validation loss:  0.170
-Epoch   1/2 Batch   7100/33746 Inputs (000)     908 - Loss:  0.227  - Validation loss:  0.169
-Epoch   1/2 Batch   7200/33746 Inputs (000)     921 - Loss:  0.210  - Validation loss:  0.163
-Epoch   1/2 Batch   7300/33746 Inputs (000)     934 - Loss:  0.217  - Validation loss:  0.163
-Epoch   1/2 Batch   7400/33746 Inputs (000)     947 - Loss:  0.188  - Validation loss:  0.163
-Epoch   1/2 Batch   7500/33746 Inputs (000)     960 - Loss:  0.225  - Validation loss:  0.160
-Epoch   1/2 Batch   7600/33746 Inputs (000)     972 - Loss:  0.198  - Validation loss:  0.154
-Epoch   1/2 Batch   7700/33746 Inputs (000)     985 - Loss:  0.187  - Validation loss:  0.159
-Epoch   1/2 Batch   7800/33746 Inputs (000)     998 - Loss:  0.194  - Validation loss:  0.160
-Epoch   1/2 Batch   7900/33746 Inputs (000)    1011 - Loss:  0.181  - Validation loss:  0.152
-Epoch   1/2 Batch   8000/33746 Inputs (000)    1024 - Loss:  0.210  - Validation loss:  0.149
-Epoch   1/2 Batch   8100/33746 Inputs (000)    1036 - Loss:  0.191  - Validation loss:  0.154
-Epoch   1/2 Batch   8200/33746 Inputs (000)    1049 - Loss:  0.209  - Validation loss:  0.147
-Epoch   1/2 Batch   8300/33746 Inputs (000)    1062 - Loss:  0.199  - Validation loss:  0.143
-Epoch   1/2 Batch   8400/33746 Inputs (000)    1075 - Loss:  0.188  - Validation loss:  0.146
-Epoch   1/2 Batch   8500/33746 Inputs (000)    1088 - Loss:  0.185  - Validation loss:  0.147
-Epoch   1/2 Batch   8600/33746 Inputs (000)    1100 - Loss:  0.197  - Validation loss:  0.140
-Epoch   1/2 Batch   8700/33746 Inputs (000)    1113 - Loss:  0.157  - Validation loss:  0.138
-Epoch   1/2 Batch   8800/33746 Inputs (000)    1126 - Loss:  0.165  - Validation loss:  0.148
-Epoch   1/2 Batch   8900/33746 Inputs (000)    1139 - Loss:  0.162  - Validation loss:  0.143
-Epoch   1/2 Batch   9000/33746 Inputs (000)    1152 - Loss:  0.176  - Validation loss:  0.137
-Epoch   1/2 Batch   9100/33746 Inputs (000)    1164 - Loss:  0.160  - Validation loss:  0.133
-Epoch   1/2 Batch   9200/33746 Inputs (000)    1177 - Loss:  0.168  - Validation loss:  0.137
-Epoch   1/2 Batch   9300/33746 Inputs (000)    1190 - Loss:  0.170  - Validation loss:  0.133
-Epoch   1/2 Batch   9400/33746 Inputs (000)    1203 - Loss:  0.145  - Validation loss:  0.132
-Epoch   1/2 Batch   9500/33746 Inputs (000)    1216 - Loss:  0.177  - Validation loss:  0.131
-Epoch   1/2 Batch   9600/33746 Inputs (000)    1228 - Loss:  0.171  - Validation loss:  0.124
-Epoch   1/2 Batch   9700/33746 Inputs (000)    1241 - Loss:  0.167  - Validation loss:  0.125
-Epoch   1/2 Batch   9800/33746 Inputs (000)    1254 - Loss:  0.167  - Validation loss:  0.130
-Epoch   1/2 Batch   9900/33746 Inputs (000)    1267 - Loss:  0.158  - Validation loss:  0.127
-Epoch   1/2 Batch  10000/33746 Inputs (000)    1280 - Loss:  0.158  - Validation loss:  0.122
-Epoch   1/2 Batch  10100/33746 Inputs (000)    1292 - Loss:  0.156  - Validation loss:  0.122
-Epoch   1/2 Batch  10200/33746 Inputs (000)    1305 - Loss:  0.141  - Validation loss:  0.126
-Epoch   1/2 Batch  10300/33746 Inputs (000)    1318 - Loss:  0.145  - Validation loss:  0.123
-Epoch   1/2 Batch  10400/33746 Inputs (000)    1331 - Loss:  0.160  - Validation loss:  0.130
-Epoch   1/2 Batch  10500/33746 Inputs (000)    1344 - Loss:  0.181  - Validation loss:  0.118
-Epoch   1/2 Batch  10600/33746 Inputs (000)    1356 - Loss:  0.142  - Validation loss:  0.118
-Epoch   1/2 Batch  10700/33746 Inputs (000)    1369 - Loss:  0.165  - Validation loss:  0.119
-Epoch   1/2 Batch  10800/33746 Inputs (000)    1382 - Loss:  0.160  - Validation loss:  0.122
-Epoch   1/2 Batch  10900/33746 Inputs (000)    1395 - Loss:  0.146  - Validation loss:  0.119
-Epoch   1/2 Batch  11000/33746 Inputs (000)    1408 - Loss:  0.145  - Validation loss:  0.115
-Epoch   1/2 Batch  11100/33746 Inputs (000)    1420 - Loss:  0.138  - Validation loss:  0.112
-Epoch   1/2 Batch  11200/33746 Inputs (000)    1433 - Loss:  0.153  - Validation loss:  0.111
-Epoch   1/2 Batch  11300/33746 Inputs (000)    1446 - Loss:  0.156  - Validation loss:  0.114
-Epoch   1/2 Batch  11400/33746 Inputs (000)    1459 - Loss:  0.145  - Validation loss:  0.110
-Epoch   1/2 Batch  11500/33746 Inputs (000)    1472 - Loss:  0.165  - Validation loss:  0.115
-Epoch   1/2 Batch  11600/33746 Inputs (000)    1484 - Loss:  0.147  - Validation loss:  0.115
-Epoch   1/2 Batch  11700/33746 Inputs (000)    1497 - Loss:  0.133  - Validation loss:  0.111
-Epoch   1/2 Batch  11800/33746 Inputs (000)    1510 - Loss:  0.172  - Validation loss:  0.114
-Epoch   1/2 Batch  11900/33746 Inputs (000)    1523 - Loss:  0.150  - Validation loss:  0.111
-Epoch   1/2 Batch  12000/33746 Inputs (000)    1536 - Loss:  0.170  - Validation loss:  0.102
-Epoch   1/2 Batch  12100/33746 Inputs (000)    1548 - Loss:  0.157  - Validation loss:  0.106
-Epoch   1/2 Batch  12200/33746 Inputs (000)    1561 - Loss:  0.131  - Validation loss:  0.109
-Epoch   1/2 Batch  12300/33746 Inputs (000)    1574 - Loss:  0.160  - Validation loss:  0.108
-Epoch   1/2 Batch  12400/33746 Inputs (000)    1587 - Loss:  0.148  - Validation loss:  0.102
-Epoch   1/2 Batch  12500/33746 Inputs (000)    1600 - Loss:  0.128  - Validation loss:  0.099
-Epoch   1/2 Batch  12600/33746 Inputs (000)    1612 - Loss:  0.124  - Validation loss:  0.102
-Epoch   1/2 Batch  12700/33746 Inputs (000)    1625 - Loss:  0.113  - Validation loss:  0.110
-Epoch   1/2 Batch  12800/33746 Inputs (000)    1638 - Loss:  0.147  - Validation loss:  0.100
-Epoch   1/2 Batch  12900/33746 Inputs (000)    1651 - Loss:  0.153  - Validation loss:  0.102
-Epoch   1/2 Batch  13000/33746 Inputs (000)    1664 - Loss:  0.147  - Validation loss:  0.105
-Epoch   1/2 Batch  13100/33746 Inputs (000)    1676 - Loss:  0.135  - Validation loss:  0.097
-Epoch   1/2 Batch  13200/33746 Inputs (000)    1689 - Loss:  0.142  - Validation loss:  0.100
-Epoch   1/2 Batch  13300/33746 Inputs (000)    1702 - Loss:  0.098  - Validation loss:  0.100
-Epoch   1/2 Batch  13400/33746 Inputs (000)    1715 - Loss:  0.100  - Validation loss:  0.099
-Epoch   1/2 Batch  13500/33746 Inputs (000)    1728 - Loss:  0.102  - Validation loss:  0.092
-Epoch   1/2 Batch  13600/33746 Inputs (000)    1740 - Loss:  0.122  - Validation loss:  0.098
-Epoch   1/2 Batch  13700/33746 Inputs (000)    1753 - Loss:  0.127  - Validation loss:  0.094
-Epoch   1/2 Batch  13800/33746 Inputs (000)    1766 - Loss:  0.114  - Validation loss:  0.095
-Epoch   1/2 Batch  13900/33746 Inputs (000)    1779 - Loss:  0.117  - Validation loss:  0.095
-Epoch   1/2 Batch  14000/33746 Inputs (000)    1792 - Loss:  0.130  - Validation loss:  0.098
-Epoch   1/2 Batch  14100/33746 Inputs (000)    1804 - Loss:  0.133  - Validation loss:  0.098
-Epoch   1/2 Batch  14200/33746 Inputs (000)    1817 - Loss:  0.130  - Validation loss:  0.091
-Epoch   1/2 Batch  14300/33746 Inputs (000)    1830 - Loss:  0.120  - Validation loss:  0.089
-Epoch   1/2 Batch  14400/33746 Inputs (000)    1843 - Loss:  0.128  - Validation loss:  0.091
-Epoch   1/2 Batch  14500/33746 Inputs (000)    1856 - Loss:  0.138  - Validation loss:  0.095
-Epoch   1/2 Batch  14600/33746 Inputs (000)    1868 - Loss:  0.139  - Validation loss:  0.089
-Epoch   1/2 Batch  14700/33746 Inputs (000)    1881 - Loss:  0.121  - Validation loss:  0.091
-Epoch   1/2 Batch  14800/33746 Inputs (000)    1894 - Loss:  0.118  - Validation loss:  0.093
-Epoch   1/2 Batch  14900/33746 Inputs (000)    1907 - Loss:  0.093  - Validation loss:  0.091
-Epoch   1/2 Batch  15000/33746 Inputs (000)    1920 - Loss:  0.101  - Validation loss:  0.090
-Epoch   1/2 Batch  15100/33746 Inputs (000)    1932 - Loss:  0.122  - Validation loss:  0.087
-Epoch   1/2 Batch  15200/33746 Inputs (000)    1945 - Loss:  0.160  - Validation loss:  0.091
-Epoch   1/2 Batch  15300/33746 Inputs (000)    1958 - Loss:  0.109  - Validation loss:  0.088
-Epoch   1/2 Batch  15400/33746 Inputs (000)    1971 - Loss:  0.120  - Validation loss:  0.086
-Epoch   1/2 Batch  15500/33746 Inputs (000)    1984 - Loss:  0.112  - Validation loss:  0.087
-Epoch   1/2 Batch  15600/33746 Inputs (000)    1996 - Loss:  0.126  - Validation loss:  0.089
-Epoch   1/2 Batch  15700/33746 Inputs (000)    2009 - Loss:  0.108  - Validation loss:  0.090
-Epoch   1/2 Batch  15800/33746 Inputs (000)    2022 - Loss:  0.140  - Validation loss:  0.089
-Epoch   1/2 Batch  15900/33746 Inputs (000)    2035 - Loss:  0.137  - Validation loss:  0.086
-Epoch   1/2 Batch  16000/33746 Inputs (000)    2048 - Loss:  0.116  - Validation loss:  0.085
-Epoch   1/2 Batch  16100/33746 Inputs (000)    2060 - Loss:  0.112  - Validation loss:  0.082
-Epoch   1/2 Batch  16200/33746 Inputs (000)    2073 - Loss:  0.117  - Validation loss:  0.088
-Epoch   1/2 Batch  16300/33746 Inputs (000)    2086 - Loss:  0.129  - Validation loss:  0.081
-Epoch   1/2 Batch  16400/33746 Inputs (000)    2099 - Loss:  0.098  - Validation loss:  0.087
-Epoch   1/2 Batch  16500/33746 Inputs (000)    2112 - Loss:  0.119  - Validation loss:  0.086
-Epoch   1/2 Batch  16600/33746 Inputs (000)    2124 - Loss:  0.116  - Validation loss:  0.079
-Epoch   1/2 Batch  16700/33746 Inputs (000)    2137 - Loss:  0.105  - Validation loss:  0.087
-Epoch   1/2 Batch  16800/33746 Inputs (000)    2150 - Loss:  0.123  - Validation loss:  0.080
-Epoch   1/2 Batch  16900/33746 Inputs (000)    2163 - Loss:  0.102  - Validation loss:  0.081
-Epoch   1/2 Batch  17000/33746 Inputs (000)    2176 - Loss:  0.130  - Validation loss:  0.078
-Epoch   1/2 Batch  17100/33746 Inputs (000)    2188 - Loss:  0.085  - Validation loss:  0.075
-Epoch   1/2 Batch  17200/33746 Inputs (000)    2201 - Loss:  0.086  - Validation loss:  0.082
-Epoch   1/2 Batch  17300/33746 Inputs (000)    2214 - Loss:  0.100  - Validation loss:  0.081
-Epoch   1/2 Batch  17400/33746 Inputs (000)    2227 - Loss:  0.116  - Validation loss:  0.080
-Epoch   1/2 Batch  17500/33746 Inputs (000)    2240 - Loss:  0.122  - Validation loss:  0.080
-Epoch   1/2 Batch  17600/33746 Inputs (000)    2252 - Loss:  0.115  - Validation loss:  0.079
-Epoch   1/2 Batch  17700/33746 Inputs (000)    2265 - Loss:  0.094  - Validation loss:  0.084
-Epoch   1/2 Batch  17800/33746 Inputs (000)    2278 - Loss:  0.092  - Validation loss:  0.079
-Epoch   1/2 Batch  17900/33746 Inputs (000)    2291 - Loss:  0.101  - Validation loss:  0.077
-Epoch   1/2 Batch  18000/33746 Inputs (000)    2304 - Loss:  0.106  - Validation loss:  0.075
-Epoch   1/2 Batch  18100/33746 Inputs (000)    2316 - Loss:  0.107  - Validation loss:  0.076
-Epoch   1/2 Batch  18200/33746 Inputs (000)    2329 - Loss:  0.109  - Validation loss:  0.078
-Epoch   1/2 Batch  18300/33746 Inputs (000)    2342 - Loss:  0.093  - Validation loss:  0.077
-Epoch   1/2 Batch  18400/33746 Inputs (000)    2355 - Loss:  0.112  - Validation loss:  0.077
-Epoch   1/2 Batch  18500/33746 Inputs (000)    2368 - Loss:  0.109  - Validation loss:  0.071
-Epoch   1/2 Batch  18600/33746 Inputs (000)    2380 - Loss:  0.088  - Validation loss:  0.077
-Epoch   1/2 Batch  18700/33746 Inputs (000)    2393 - Loss:  0.078  - Validation loss:  0.074
-Epoch   1/2 Batch  18800/33746 Inputs (000)    2406 - Loss:  0.111  - Validation loss:  0.075
-Epoch   1/2 Batch  18900/33746 Inputs (000)    2419 - Loss:  0.117  - Validation loss:  0.073
-Epoch   1/2 Batch  19000/33746 Inputs (000)    2432 - Loss:  0.104  - Validation loss:  0.074
-Epoch   1/2 Batch  19100/33746 Inputs (000)    2444 - Loss:  0.090  - Validation loss:  0.073
-Epoch   1/2 Batch  19200/33746 Inputs (000)    2457 - Loss:  0.117  - Validation loss:  0.079
-Epoch   1/2 Batch  19300/33746 Inputs (000)    2470 - Loss:  0.103  - Validation loss:  0.072
-Epoch   1/2 Batch  19400/33746 Inputs (000)    2483 - Loss:  0.088  - Validation loss:  0.075
-Epoch   1/2 Batch  19500/33746 Inputs (000)    2496 - Loss:  0.105  - Validation loss:  0.073
-Epoch   1/2 Batch  19600/33746 Inputs (000)    2508 - Loss:  0.083  - Validation loss:  0.073
-Epoch   1/2 Batch  19700/33746 Inputs (000)    2521 - Loss:  0.103  - Validation loss:  0.074
-Epoch   1/2 Batch  19800/33746 Inputs (000)    2534 - Loss:  0.079  - Validation loss:  0.076
-Epoch   1/2 Batch  19900/33746 Inputs (000)    2547 - Loss:  0.092  - Validation loss:  0.071
-Epoch   1/2 Batch  20000/33746 Inputs (000)    2560 - Loss:  0.073  - Validation loss:  0.074
-Epoch   1/2 Batch  20100/33746 Inputs (000)    2572 - Loss:  0.080  - Validation loss:  0.071
-Epoch   1/2 Batch  20200/33746 Inputs (000)    2585 - Loss:  0.082  - Validation loss:  0.071
-Epoch   1/2 Batch  20300/33746 Inputs (000)    2598 - Loss:  0.081  - Validation loss:  0.073
-Epoch   1/2 Batch  20400/33746 Inputs (000)    2611 - Loss:  0.103  - Validation loss:  0.071
-Epoch   1/2 Batch  20500/33746 Inputs (000)    2624 - Loss:  0.117  - Validation loss:  0.069
-Epoch   1/2 Batch  20600/33746 Inputs (000)    2636 - Loss:  0.089  - Validation loss:  0.071
-Epoch   1/2 Batch  20700/33746 Inputs (000)    2649 - Loss:  0.095  - Validation loss:  0.071
-Epoch   1/2 Batch  20800/33746 Inputs (000)    2662 - Loss:  0.102  - Validation loss:  0.075
-Epoch   1/2 Batch  20900/33746 Inputs (000)    2675 - Loss:  0.104  - Validation loss:  0.072
-Epoch   1/2 Batch  21000/33746 Inputs (000)    2688 - Loss:  0.091  - Validation loss:  0.065
-Epoch   1/2 Batch  21100/33746 Inputs (000)    2700 - Loss:  0.086  - Validation loss:  0.069
-Epoch   1/2 Batch  21200/33746 Inputs (000)    2713 - Loss:  0.112  - Validation loss:  0.073
-Epoch   1/2 Batch  21300/33746 Inputs (000)    2726 - Loss:  0.095  - Validation loss:  0.067
-Epoch   1/2 Batch  21400/33746 Inputs (000)    2739 - Loss:  0.092  - Validation loss:  0.069
-Epoch   1/2 Batch  21500/33746 Inputs (000)    2752 - Loss:  0.108  - Validation loss:  0.069
-Epoch   1/2 Batch  21600/33746 Inputs (000)    2764 - Loss:  0.089  - Validation loss:  0.066
-Epoch   1/2 Batch  21700/33746 Inputs (000)    2777 - Loss:  0.092  - Validation loss:  0.067
-Epoch   1/2 Batch  21800/33746 Inputs (000)    2790 - Loss:  0.084  - Validation loss:  0.069
-Epoch   1/2 Batch  21900/33746 Inputs (000)    2803 - Loss:  0.094  - Validation loss:  0.070
-Epoch   1/2 Batch  22000/33746 Inputs (000)    2816 - Loss:  0.077  - Validation loss:  0.067
-Epoch   1/2 Batch  22100/33746 Inputs (000)    2828 - Loss:  0.090  - Validation loss:  0.066
-Epoch   1/2 Batch  22200/33746 Inputs (000)    2841 - Loss:  0.090  - Validation loss:  0.066
-Epoch   1/2 Batch  22300/33746 Inputs (000)    2854 - Loss:  0.098  - Validation loss:  0.065
-Epoch   1/2 Batch  22400/33746 Inputs (000)    2867 - Loss:  0.083  - Validation loss:  0.068
-Epoch   1/2 Batch  22500/33746 Inputs (000)    2880 - Loss:  0.084  - Validation loss:  0.070
-Epoch   1/2 Batch  22600/33746 Inputs (000)    2892 - Loss:  0.097  - Validation loss:  0.069
-Epoch   1/2 Batch  22700/33746 Inputs (000)    2905 - Loss:  0.077  - Validation loss:  0.065
-Epoch   1/2 Batch  22800/33746 Inputs (000)    2918 - Loss:  0.099  - Validation loss:  0.063
-Epoch   1/2 Batch  22900/33746 Inputs (000)    2931 - Loss:  0.086  - Validation loss:  0.066
-Epoch   1/2 Batch  23000/33746 Inputs (000)    2944 - Loss:  0.077  - Validation loss:  0.064
-Epoch   1/2 Batch  23100/33746 Inputs (000)    2956 - Loss:  0.063  - Validation loss:  0.069
-Epoch   1/2 Batch  23200/33746 Inputs (000)    2969 - Loss:  0.101  - Validation loss:  0.065
-Epoch   1/2 Batch  23300/33746 Inputs (000)    2982 - Loss:  0.120  - Validation loss:  0.062
-Epoch   1/2 Batch  23400/33746 Inputs (000)    2995 - Loss:  0.076  - Validation loss:  0.064
-Epoch   1/2 Batch  23500/33746 Inputs (000)    3008 - Loss:  0.101  - Validation loss:  0.062
-Epoch   1/2 Batch  23600/33746 Inputs (000)    3020 - Loss:  0.096  - Validation loss:  0.066
-Epoch   1/2 Batch  23700/33746 Inputs (000)    3033 - Loss:  0.071  - Validation loss:  0.068
-Epoch   1/2 Batch  23800/33746 Inputs (000)    3046 - Loss:  0.091  - Validation loss:  0.068
-Epoch   1/2 Batch  23900/33746 Inputs (000)    3059 - Loss:  0.087  - Validation loss:  0.065
-Epoch   1/2 Batch  24000/33746 Inputs (000)    3072 - Loss:  0.088  - Validation loss:  0.063
-Epoch   1/2 Batch  24100/33746 Inputs (000)    3084 - Loss:  0.080  - Validation loss:  0.059
-Epoch   1/2 Batch  24200/33746 Inputs (000)    3097 - Loss:  0.092  - Validation loss:  0.061
-Epoch   1/2 Batch  24300/33746 Inputs (000)    3110 - Loss:  0.083  - Validation loss:  0.063
-Epoch   1/2 Batch  24400/33746 Inputs (000)    3123 - Loss:  0.082  - Validation loss:  0.062
-Epoch   1/2 Batch  24500/33746 Inputs (000)    3136 - Loss:  0.087  - Validation loss:  0.064
-Epoch   1/2 Batch  24600/33746 Inputs (000)    3148 - Loss:  0.077  - Validation loss:  0.064
-Epoch   1/2 Batch  24700/33746 Inputs (000)    3161 - Loss:  0.091  - Validation loss:  0.070
-Epoch   1/2 Batch  24800/33746 Inputs (000)    3174 - Loss:  0.078  - Validation loss:  0.062
-Epoch   1/2 Batch  24900/33746 Inputs (000)    3187 - Loss:  0.069  - Validation loss:  0.063
-Epoch   1/2 Batch  25000/33746 Inputs (000)    3200 - Loss:  0.081  - Validation loss:  0.063
-Epoch   1/2 Batch  25100/33746 Inputs (000)    3212 - Loss:  0.070  - Validation loss:  0.061
-Epoch   1/2 Batch  25200/33746 Inputs (000)    3225 - Loss:  0.079  - Validation loss:  0.060
-Epoch   1/2 Batch  25300/33746 Inputs (000)    3238 - Loss:  0.085  - Validation loss:  0.063
-Epoch   1/2 Batch  25400/33746 Inputs (000)    3251 - Loss:  0.072  - Validation loss:  0.062
-Epoch   1/2 Batch  25500/33746 Inputs (000)    3264 - Loss:  0.090  - Validation loss:  0.059
-Epoch   1/2 Batch  25600/33746 Inputs (000)    3276 - Loss:  0.083  - Validation loss:  0.060
-Epoch   1/2 Batch  25700/33746 Inputs (000)    3289 - Loss:  0.093  - Validation loss:  0.061
-Epoch   1/2 Batch  25800/33746 Inputs (000)    3302 - Loss:  0.084  - Validation loss:  0.060
-Epoch   1/2 Batch  25900/33746 Inputs (000)    3315 - Loss:  0.075  - Validation loss:  0.059
-Epoch   1/2 Batch  26000/33746 Inputs (000)    3328 - Loss:  0.088  - Validation loss:  0.061
-Epoch   1/2 Batch  26100/33746 Inputs (000)    3340 - Loss:  0.077  - Validation loss:  0.058
-Epoch   1/2 Batch  26200/33746 Inputs (000)    3353 - Loss:  0.069  - Validation loss:  0.058
-Epoch   1/2 Batch  26300/33746 Inputs (000)    3366 - Loss:  0.069  - Validation loss:  0.059
-Epoch   1/2 Batch  26400/33746 Inputs (000)    3379 - Loss:  0.105  - Validation loss:  0.058
-Epoch   1/2 Batch  26500/33746 Inputs (000)    3392 - Loss:  0.080  - Validation loss:  0.057
-Epoch   1/2 Batch  26600/33746 Inputs (000)    3404 - Loss:  0.064  - Validation loss:  0.059
-Epoch   1/2 Batch  26700/33746 Inputs (000)    3417 - Loss:  0.079  - Validation loss:  0.060
-Epoch   1/2 Batch  26800/33746 Inputs (000)    3430 - Loss:  0.111  - Validation loss:  0.058
-Epoch   1/2 Batch  26900/33746 Inputs (000)    3443 - Loss:  0.084  - Validation loss:  0.060
-Epoch   1/2 Batch  27000/33746 Inputs (000)    3456 - Loss:  0.090  - Validation loss:  0.058
-Epoch   1/2 Batch  27100/33746 Inputs (000)    3468 - Loss:  0.073  - Validation loss:  0.057
-Epoch   1/2 Batch  27200/33746 Inputs (000)    3481 - Loss:  0.106  - Validation loss:  0.060
-Epoch   1/2 Batch  27300/33746 Inputs (000)    3494 - Loss:  0.084  - Validation loss:  0.060
-Epoch   1/2 Batch  27400/33746 Inputs (000)    3507 - Loss:  0.076  - Validation loss:  0.056
-Epoch   1/2 Batch  27500/33746 Inputs (000)    3520 - Loss:  0.088  - Validation loss:  0.056
-Epoch   1/2 Batch  27600/33746 Inputs (000)    3532 - Loss:  0.078  - Validation loss:  0.058
-Epoch   1/2 Batch  27700/33746 Inputs (000)    3545 - Loss:  0.079  - Validation loss:  0.061
-Epoch   1/2 Batch  27800/33746 Inputs (000)    3558 - Loss:  0.075  - Validation loss:  0.058
-Epoch   1/2 Batch  27900/33746 Inputs (000)    3571 - Loss:  0.087  - Validation loss:  0.058
-Epoch   1/2 Batch  28000/33746 Inputs (000)    3584 - Loss:  0.080  - Validation loss:  0.058
-Epoch   1/2 Batch  28100/33746 Inputs (000)    3596 - Loss:  0.080  - Validation loss:  0.057
-Epoch   1/2 Batch  28200/33746 Inputs (000)    3609 - Loss:  0.088  - Validation loss:  0.057
-Epoch   1/2 Batch  28300/33746 Inputs (000)    3622 - Loss:  0.083  - Validation loss:  0.061
-Epoch   1/2 Batch  28400/33746 Inputs (000)    3635 - Loss:  0.081  - Validation loss:  0.061
-Epoch   1/2 Batch  28500/33746 Inputs (000)    3648 - Loss:  0.075  - Validation loss:  0.056
-Epoch   1/2 Batch  28600/33746 Inputs (000)    3660 - Loss:  0.073  - Validation loss:  0.058
-Epoch   1/2 Batch  28700/33746 Inputs (000)    3673 - Loss:  0.075  - Validation loss:  0.062
-Epoch   1/2 Batch  28800/33746 Inputs (000)    3686 - Loss:  0.079  - Validation loss:  0.057
-Epoch   1/2 Batch  28900/33746 Inputs (000)    3699 - Loss:  0.095  - Validation loss:  0.053
-Epoch   1/2 Batch  29000/33746 Inputs (000)    3712 - Loss:  0.074  - Validation loss:  0.057
-Epoch   1/2 Batch  29100/33746 Inputs (000)    3724 - Loss:  0.070  - Validation loss:  0.058
-Epoch   1/2 Batch  29200/33746 Inputs (000)    3737 - Loss:  0.087  - Validation loss:  0.058
-Epoch   1/2 Batch  29300/33746 Inputs (000)    3750 - Loss:  0.077  - Validation loss:  0.058
-Epoch   1/2 Batch  29400/33746 Inputs (000)    3763 - Loss:  0.089  - Validation loss:  0.057
-Epoch   1/2 Batch  29500/33746 Inputs (000)    3776 - Loss:  0.071  - Validation loss:  0.058
-Epoch   1/2 Batch  29600/33746 Inputs (000)    3788 - Loss:  0.074  - Validation loss:  0.062
-Epoch   1/2 Batch  29700/33746 Inputs (000)    3801 - Loss:  0.068  - Validation loss:  0.055
-Epoch   1/2 Batch  29800/33746 Inputs (000)    3814 - Loss:  0.071  - Validation loss:  0.058
-Epoch   1/2 Batch  29900/33746 Inputs (000)    3827 - Loss:  0.084  - Validation loss:  0.056
-Epoch   1/2 Batch  30000/33746 Inputs (000)    3840 - Loss:  0.085  - Validation loss:  0.055
-Epoch   1/2 Batch  30100/33746 Inputs (000)    3852 - Loss:  0.073  - Validation loss:  0.057
-Epoch   1/2 Batch  30200/33746 Inputs (000)    3865 - Loss:  0.064  - Validation loss:  0.054
-Epoch   1/2 Batch  30300/33746 Inputs (000)    3878 - Loss:  0.070  - Validation loss:  0.057
-Epoch   1/2 Batch  30400/33746 Inputs (000)    3891 - Loss:  0.074  - Validation loss:  0.057
-Epoch   1/2 Batch  30500/33746 Inputs (000)    3904 - Loss:  0.063  - Validation loss:  0.055
-Epoch   1/2 Batch  30600/33746 Inputs (000)    3916 - Loss:  0.078  - Validation loss:  0.056
-Epoch   1/2 Batch  30700/33746 Inputs (000)    3929 - Loss:  0.072  - Validation loss:  0.054
-Epoch   1/2 Batch  30800/33746 Inputs (000)    3942 - Loss:  0.071  - Validation loss:  0.054
-Epoch   1/2 Batch  30900/33746 Inputs (000)    3955 - Loss:  0.061  - Validation loss:  0.055
-Epoch   1/2 Batch  31000/33746 Inputs (000)    3968 - Loss:  0.070  - Validation loss:  0.056
-Epoch   1/2 Batch  31100/33746 Inputs (000)    3980 - Loss:  0.089  - Validation loss:  0.060
-Epoch   1/2 Batch  31200/33746 Inputs (000)    3993 - Loss:  0.072  - Validation loss:  0.054
-Epoch   1/2 Batch  31300/33746 Inputs (000)    4006 - Loss:  0.085  - Validation loss:  0.059
-Epoch   1/2 Batch  31400/33746 Inputs (000)    4019 - Loss:  0.086  - Validation loss:  0.052
-Epoch   1/2 Batch  31500/33746 Inputs (000)    4032 - Loss:  0.074  - Validation loss:  0.055
-Epoch   1/2 Batch  31600/33746 Inputs (000)    4044 - Loss:  0.073  - Validation loss:  0.055
-Epoch   1/2 Batch  31700/33746 Inputs (000)    4057 - Loss:  0.092  - Validation loss:  0.054
-Epoch   1/2 Batch  31800/33746 Inputs (000)    4070 - Loss:  0.065  - Validation loss:  0.058
-Epoch   1/2 Batch  31900/33746 Inputs (000)    4083 - Loss:  0.081  - Validation loss:  0.055
-Epoch   1/2 Batch  32000/33746 Inputs (000)    4096 - Loss:  0.057  - Validation loss:  0.052
-Epoch   1/2 Batch  32100/33746 Inputs (000)    4108 - Loss:  0.072  - Validation loss:  0.056
-Epoch   1/2 Batch  32200/33746 Inputs (000)    4121 - Loss:  0.061  - Validation loss:  0.055
-Epoch   1/2 Batch  32300/33746 Inputs (000)    4134 - Loss:  0.063  - Validation loss:  0.059
-Epoch   1/2 Batch  32400/33746 Inputs (000)    4147 - Loss:  0.066  - Validation loss:  0.054
-Epoch   1/2 Batch  32500/33746 Inputs (000)    4160 - Loss:  0.063  - Validation loss:  0.056
-Epoch   1/2 Batch  32600/33746 Inputs (000)    4172 - Loss:  0.076  - Validation loss:  0.052
-Epoch   1/2 Batch  32700/33746 Inputs (000)    4185 - Loss:  0.072  - Validation loss:  0.052
-Epoch   1/2 Batch  32800/33746 Inputs (000)    4198 - Loss:  0.067  - Validation loss:  0.054
-Epoch   1/2 Batch  32900/33746 Inputs (000)    4211 - Loss:  0.070  - Validation loss:  0.055
-Epoch   1/2 Batch  33000/33746 Inputs (000)    4224 - Loss:  0.062  - Validation loss:  0.053
-Epoch   1/2 Batch  33100/33746 Inputs (000)    4236 - Loss:  0.069  - Validation loss:  0.054
-Epoch   1/2 Batch  33200/33746 Inputs (000)    4249 - Loss:  0.068  - Validation loss:  0.056
-Epoch   1/2 Batch  33300/33746 Inputs (000)    4262 - Loss:  0.074  - Validation loss:  0.054
-Epoch   1/2 Batch  33400/33746 Inputs (000)    4275 - Loss:  0.076  - Validation loss:  0.057
-Epoch   1/2 Batch  33500/33746 Inputs (000)    4288 - Loss:  0.072  - Validation loss:  0.051
-Epoch   1/2 Batch  33600/33746 Inputs (000)    4300 - Loss:  0.063  - Validation loss:  0.054
-Epoch   1/2 Batch  33700/33746 Inputs (000)    4313 - Loss:  0.078  - Validation loss:  0.052
-Epoch   2/2 Batch    100/33746 Inputs (000)    4332 - Loss:  0.072  - Validation loss:  0.053
-Epoch   2/2 Batch    200/33746 Inputs (000)    4345 - Loss:  0.052  - Validation loss:  0.053
-Epoch   2/2 Batch    300/33746 Inputs (000)    4357 - Loss:  0.067  - Validation loss:  0.049
-Epoch   2/2 Batch    400/33746 Inputs (000)    4370 - Loss:  0.072  - Validation loss:  0.051
-Epoch   2/2 Batch    500/33746 Inputs (000)    4383 - Loss:  0.081  - Validation loss:  0.050
-Epoch   2/2 Batch    600/33746 Inputs (000)    4396 - Loss:  0.062  - Validation loss:  0.052
-Epoch   2/2 Batch    700/33746 Inputs (000)    4409 - Loss:  0.084  - Validation loss:  0.051
-Epoch   2/2 Batch    800/33746 Inputs (000)    4421 - Loss:  0.057  - Validation loss:  0.052
-Epoch   2/2 Batch    900/33746 Inputs (000)    4434 - Loss:  0.064  - Validation loss:  0.052
-Epoch   2/2 Batch   1000/33746 Inputs (000)    4447 - Loss:  0.066  - Validation loss:  0.052
-Epoch   2/2 Batch   1100/33746 Inputs (000)    4460 - Loss:  0.081  - Validation loss:  0.052
-Epoch   2/2 Batch   1200/33746 Inputs (000)    4473 - Loss:  0.052  - Validation loss:  0.056
-Epoch   2/2 Batch   1300/33746 Inputs (000)    4485 - Loss:  0.059  - Validation loss:  0.053
-Epoch   2/2 Batch   1400/33746 Inputs (000)    4498 - Loss:  0.063  - Validation loss:  0.053
-Epoch   2/2 Batch   1500/33746 Inputs (000)    4511 - Loss:  0.057  - Validation loss:  0.051
-Epoch   2/2 Batch   1600/33746 Inputs (000)    4524 - Loss:  0.067  - Validation loss:  0.051
-Epoch   2/2 Batch   1700/33746 Inputs (000)    4537 - Loss:  0.052  - Validation loss:  0.050
-Epoch   2/2 Batch   1800/33746 Inputs (000)    4549 - Loss:  0.075  - Validation loss:  0.052
-Epoch   2/2 Batch   1900/33746 Inputs (000)    4562 - Loss:  0.068  - Validation loss:  0.048
-Epoch   2/2 Batch   2000/33746 Inputs (000)    4575 - Loss:  0.061  - Validation loss:  0.050
-Epoch   2/2 Batch   2100/33746 Inputs (000)    4588 - Loss:  0.056  - Validation loss:  0.052
-Epoch   2/2 Batch   2200/33746 Inputs (000)    4601 - Loss:  0.073  - Validation loss:  0.051
-Epoch   2/2 Batch   2300/33746 Inputs (000)    4613 - Loss:  0.074  - Validation loss:  0.055
-Epoch   2/2 Batch   2400/33746 Inputs (000)    4626 - Loss:  0.081  - Validation loss:  0.055
-Epoch   2/2 Batch   2500/33746 Inputs (000)    4639 - Loss:  0.062  - Validation loss:  0.049
-Epoch   2/2 Batch   2600/33746 Inputs (000)    4652 - Loss:  0.055  - Validation loss:  0.051
-Epoch   2/2 Batch   2700/33746 Inputs (000)    4665 - Loss:  0.056  - Validation loss:  0.050
-Epoch   2/2 Batch   2800/33746 Inputs (000)    4677 - Loss:  0.058  - Validation loss:  0.051
-Epoch   2/2 Batch   2900/33746 Inputs (000)    4690 - Loss:  0.060  - Validation loss:  0.050
-Epoch   2/2 Batch   3000/33746 Inputs (000)    4703 - Loss:  0.076  - Validation loss:  0.052
-Epoch   2/2 Batch   3100/33746 Inputs (000)    4716 - Loss:  0.072  - Validation loss:  0.050
-Epoch   2/2 Batch   3200/33746 Inputs (000)    4729 - Loss:  0.063  - Validation loss:  0.052
-Epoch   2/2 Batch   3300/33746 Inputs (000)    4741 - Loss:  0.068  - Validation loss:  0.050
-Epoch   2/2 Batch   3400/33746 Inputs (000)    4754 - Loss:  0.058  - Validation loss:  0.051
-Epoch   2/2 Batch   3500/33746 Inputs (000)    4767 - Loss:  0.064  - Validation loss:  0.052
-Epoch   2/2 Batch   3600/33746 Inputs (000)    4780 - Loss:  0.066  - Validation loss:  0.050
-Epoch   2/2 Batch   3700/33746 Inputs (000)    4793 - Loss:  0.077  - Validation loss:  0.052
-Epoch   2/2 Batch   3800/33746 Inputs (000)    4805 - Loss:  0.071  - Validation loss:  0.051
-Epoch   2/2 Batch   3900/33746 Inputs (000)    4818 - Loss:  0.054  - Validation loss:  0.050
-Epoch   2/2 Batch   4000/33746 Inputs (000)    4831 - Loss:  0.073  - Validation loss:  0.049
-Epoch   2/2 Batch   4100/33746 Inputs (000)    4844 - Loss:  0.063  - Validation loss:  0.051
-Epoch   2/2 Batch   4200/33746 Inputs (000)    4857 - Loss:  0.066  - Validation loss:  0.051
-Epoch   2/2 Batch   4300/33746 Inputs (000)    4869 - Loss:  0.065  - Validation loss:  0.047
-Epoch   2/2 Batch   4400/33746 Inputs (000)    4882 - Loss:  0.072  - Validation loss:  0.051
-Epoch   2/2 Batch   4500/33746 Inputs (000)    4895 - Loss:  0.064  - Validation loss:  0.049
-Epoch   2/2 Batch   4600/33746 Inputs (000)    4908 - Loss:  0.068  - Validation loss:  0.051
-Epoch   2/2 Batch   4700/33746 Inputs (000)    4921 - Loss:  0.054  - Validation loss:  0.048
-Epoch   2/2 Batch   4800/33746 Inputs (000)    4933 - Loss:  0.080  - Validation loss:  0.047
-Epoch   2/2 Batch   4900/33746 Inputs (000)    4946 - Loss:  0.071  - Validation loss:  0.049
-Epoch   2/2 Batch   5000/33746 Inputs (000)    4959 - Loss:  0.073  - Validation loss:  0.048
-Epoch   2/2 Batch   5100/33746 Inputs (000)    4972 - Loss:  0.063  - Validation loss:  0.046
-Epoch   2/2 Batch   5200/33746 Inputs (000)    4985 - Loss:  0.049  - Validation loss:  0.052
-Epoch   2/2 Batch   5300/33746 Inputs (000)    4997 - Loss:  0.085  - Validation loss:  0.053
-Epoch   2/2 Batch   5400/33746 Inputs (000)    5010 - Loss:  0.065  - Validation loss:  0.050
-Epoch   2/2 Batch   5500/33746 Inputs (000)    5023 - Loss:  0.069  - Validation loss:  0.048
-Epoch   2/2 Batch   5600/33746 Inputs (000)    5036 - Loss:  0.061  - Validation loss:  0.049
-Epoch   2/2 Batch   5700/33746 Inputs (000)    5049 - Loss:  0.055  - Validation loss:  0.049
-Epoch   2/2 Batch   5800/33746 Inputs (000)    5061 - Loss:  0.066  - Validation loss:  0.050
-Epoch   2/2 Batch   5900/33746 Inputs (000)    5074 - Loss:  0.048  - Validation loss:  0.049
-Epoch   2/2 Batch   6000/33746 Inputs (000)    5087 - Loss:  0.066  - Validation loss:  0.049
-Epoch   2/2 Batch   6100/33746 Inputs (000)    5100 - Loss:  0.077  - Validation loss:  0.049
-Epoch   2/2 Batch   6200/33746 Inputs (000)    5113 - Loss:  0.065  - Validation loss:  0.052
-Epoch   2/2 Batch   6300/33746 Inputs (000)    5125 - Loss:  0.061  - Validation loss:  0.046
-Epoch   2/2 Batch   6400/33746 Inputs (000)    5138 - Loss:  0.062  - Validation loss:  0.050
-Epoch   2/2 Batch   6500/33746 Inputs (000)    5151 - Loss:  0.064  - Validation loss:  0.046
-Epoch   2/2 Batch   6600/33746 Inputs (000)    5164 - Loss:  0.056  - Validation loss:  0.051
-Epoch   2/2 Batch   6700/33746 Inputs (000)    5177 - Loss:  0.055  - Validation loss:  0.046
-Epoch   2/2 Batch   6800/33746 Inputs (000)    5189 - Loss:  0.053  - Validation loss:  0.045
-Epoch   2/2 Batch   6900/33746 Inputs (000)    5202 - Loss:  0.055  - Validation loss:  0.049
-Epoch   2/2 Batch   7000/33746 Inputs (000)    5215 - Loss:  0.065  - Validation loss:  0.047
-Epoch   2/2 Batch   7100/33746 Inputs (000)    5228 - Loss:  0.072  - Validation loss:  0.049
-Epoch   2/2 Batch   7200/33746 Inputs (000)    5241 - Loss:  0.060  - Validation loss:  0.047
-Epoch   2/2 Batch   7300/33746 Inputs (000)    5253 - Loss:  0.073  - Validation loss:  0.049
-Epoch   2/2 Batch   7400/33746 Inputs (000)    5266 - Loss:  0.054  - Validation loss:  0.044
-Epoch   2/2 Batch   7500/33746 Inputs (000)    5279 - Loss:  0.074  - Validation loss:  0.046
-Epoch   2/2 Batch   7600/33746 Inputs (000)    5292 - Loss:  0.067  - Validation loss:  0.046
-Epoch   2/2 Batch   7700/33746 Inputs (000)    5305 - Loss:  0.066  - Validation loss:  0.049
-Epoch   2/2 Batch   7800/33746 Inputs (000)    5317 - Loss:  0.065  - Validation loss:  0.047
-Epoch   2/2 Batch   7900/33746 Inputs (000)    5330 - Loss:  0.062  - Validation loss:  0.047
-Epoch   2/2 Batch   8000/33746 Inputs (000)    5343 - Loss:  0.073  - Validation loss:  0.045
-Epoch   2/2 Batch   8100/33746 Inputs (000)    5356 - Loss:  0.056  - Validation loss:  0.047
-Epoch   2/2 Batch   8200/33746 Inputs (000)    5369 - Loss:  0.070  - Validation loss:  0.045
-Epoch   2/2 Batch   8300/33746 Inputs (000)    5381 - Loss:  0.067  - Validation loss:  0.048
-Epoch   2/2 Batch   8400/33746 Inputs (000)    5394 - Loss:  0.065  - Validation loss:  0.051
-Epoch   2/2 Batch   8500/33746 Inputs (000)    5407 - Loss:  0.061  - Validation loss:  0.046
-Epoch   2/2 Batch   8600/33746 Inputs (000)    5420 - Loss:  0.071  - Validation loss:  0.045
-Epoch   2/2 Batch   8700/33746 Inputs (000)    5433 - Loss:  0.049  - Validation loss:  0.044
-Epoch   2/2 Batch   8800/33746 Inputs (000)    5445 - Loss:  0.051  - Validation loss:  0.049
-Epoch   2/2 Batch   8900/33746 Inputs (000)    5458 - Loss:  0.052  - Validation loss:  0.046
-Epoch   2/2 Batch   9000/33746 Inputs (000)    5471 - Loss:  0.059  - Validation loss:  0.044
-Epoch   2/2 Batch   9100/33746 Inputs (000)    5484 - Loss:  0.051  - Validation loss:  0.044
-Epoch   2/2 Batch   9200/33746 Inputs (000)    5497 - Loss:  0.055  - Validation loss:  0.047
-Epoch   2/2 Batch   9300/33746 Inputs (000)    5509 - Loss:  0.057  - Validation loss:  0.043
-Epoch   2/2 Batch   9400/33746 Inputs (000)    5522 - Loss:  0.049  - Validation loss:  0.047
-Epoch   2/2 Batch   9500/33746 Inputs (000)    5535 - Loss:  0.069  - Validation loss:  0.047
-Epoch   2/2 Batch   9600/33746 Inputs (000)    5548 - Loss:  0.065  - Validation loss:  0.048
-Epoch   2/2 Batch   9700/33746 Inputs (000)    5561 - Loss:  0.049  - Validation loss:  0.046
-Epoch   2/2 Batch   9800/33746 Inputs (000)    5573 - Loss:  0.057  - Validation loss:  0.045
-Epoch   2/2 Batch   9900/33746 Inputs (000)    5586 - Loss:  0.055  - Validation loss:  0.046
-Epoch   2/2 Batch  10000/33746 Inputs (000)    5599 - Loss:  0.058  - Validation loss:  0.046
-Epoch   2/2 Batch  10100/33746 Inputs (000)    5612 - Loss:  0.050  - Validation loss:  0.045
-Epoch   2/2 Batch  10200/33746 Inputs (000)    5625 - Loss:  0.051  - Validation loss:  0.045
-Epoch   2/2 Batch  10300/33746 Inputs (000)    5637 - Loss:  0.061  - Validation loss:  0.046
-Epoch   2/2 Batch  10400/33746 Inputs (000)    5650 - Loss:  0.056  - Validation loss:  0.047
-Epoch   2/2 Batch  10500/33746 Inputs (000)    5663 - Loss:  0.077  - Validation loss:  0.047
-Epoch   2/2 Batch  10600/33746 Inputs (000)    5676 - Loss:  0.049  - Validation loss:  0.049
-Epoch   2/2 Batch  10700/33746 Inputs (000)    5689 - Loss:  0.070  - Validation loss:  0.051
-Epoch   2/2 Batch  10800/33746 Inputs (000)    5701 - Loss:  0.062  - Validation loss:  0.045
-Epoch   2/2 Batch  10900/33746 Inputs (000)    5714 - Loss:  0.053  - Validation loss:  0.046
-Epoch   2/2 Batch  11000/33746 Inputs (000)    5727 - Loss:  0.056  - Validation loss:  0.049
-Epoch   2/2 Batch  11100/33746 Inputs (000)    5740 - Loss:  0.055  - Validation loss:  0.049
-Epoch   2/2 Batch  11200/33746 Inputs (000)    5753 - Loss:  0.056  - Validation loss:  0.045
-Epoch   2/2 Batch  11300/33746 Inputs (000)    5765 - Loss:  0.070  - Validation loss:  0.046
-Epoch   2/2 Batch  11400/33746 Inputs (000)    5778 - Loss:  0.064  - Validation loss:  0.046
-Epoch   2/2 Batch  11500/33746 Inputs (000)    5791 - Loss:  0.063  - Validation loss:  0.045
-Epoch   2/2 Batch  11600/33746 Inputs (000)    5804 - Loss:  0.059  - Validation loss:  0.044
-Epoch   2/2 Batch  11700/33746 Inputs (000)    5817 - Loss:  0.060  - Validation loss:  0.048
-Epoch   2/2 Batch  11800/33746 Inputs (000)    5829 - Loss:  0.064  - Validation loss:  0.046
-Epoch   2/2 Batch  11900/33746 Inputs (000)    5842 - Loss:  0.068  - Validation loss:  0.048
-Epoch   2/2 Batch  12000/33746 Inputs (000)    5855 - Loss:  0.076  - Validation loss:  0.043
-Epoch   2/2 Batch  12100/33746 Inputs (000)    5868 - Loss:  0.071  - Validation loss:  0.047
-Epoch   2/2 Batch  12200/33746 Inputs (000)    5881 - Loss:  0.062  - Validation loss:  0.045
-Epoch   2/2 Batch  12300/33746 Inputs (000)    5893 - Loss:  0.067  - Validation loss:  0.044
-Epoch   2/2 Batch  12400/33746 Inputs (000)    5906 - Loss:  0.056  - Validation loss:  0.045
-Epoch   2/2 Batch  12500/33746 Inputs (000)    5919 - Loss:  0.055  - Validation loss:  0.044
-Epoch   2/2 Batch  12600/33746 Inputs (000)    5932 - Loss:  0.053  - Validation loss:  0.046
-Epoch   2/2 Batch  12700/33746 Inputs (000)    5945 - Loss:  0.050  - Validation loss:  0.046
-Epoch   2/2 Batch  12800/33746 Inputs (000)    5957 - Loss:  0.069  - Validation loss:  0.046
-Epoch   2/2 Batch  12900/33746 Inputs (000)    5970 - Loss:  0.064  - Validation loss:  0.044
-Epoch   2/2 Batch  13000/33746 Inputs (000)    5983 - Loss:  0.066  - Validation loss:  0.043
-Epoch   2/2 Batch  13100/33746 Inputs (000)    5996 - Loss:  0.059  - Validation loss:  0.044
-Epoch   2/2 Batch  13200/33746 Inputs (000)    6009 - Loss:  0.059  - Validation loss:  0.043
-Epoch   2/2 Batch  13300/33746 Inputs (000)    6021 - Loss:  0.039  - Validation loss:  0.045
-Epoch   2/2 Batch  13400/33746 Inputs (000)    6034 - Loss:  0.049  - Validation loss:  0.046
-Epoch   2/2 Batch  13500/33746 Inputs (000)    6047 - Loss:  0.044  - Validation loss:  0.045
-Epoch   2/2 Batch  13600/33746 Inputs (000)    6060 - Loss:  0.062  - Validation loss:  0.043
-Epoch   2/2 Batch  13700/33746 Inputs (000)    6073 - Loss:  0.059  - Validation loss:  0.046
-Epoch   2/2 Batch  13800/33746 Inputs (000)    6085 - Loss:  0.050  - Validation loss:  0.044
-Epoch   2/2 Batch  13900/33746 Inputs (000)    6098 - Loss:  0.056  - Validation loss:  0.045
-Epoch   2/2 Batch  14000/33746 Inputs (000)    6111 - Loss:  0.059  - Validation loss:  0.046
-Epoch   2/2 Batch  14100/33746 Inputs (000)    6124 - Loss:  0.063  - Validation loss:  0.043
-Epoch   2/2 Batch  14200/33746 Inputs (000)    6137 - Loss:  0.059  - Validation loss:  0.045
-Epoch   2/2 Batch  14300/33746 Inputs (000)    6149 - Loss:  0.056  - Validation loss:  0.046
-Epoch   2/2 Batch  14400/33746 Inputs (000)    6162 - Loss:  0.063  - Validation loss:  0.046
-Epoch   2/2 Batch  14500/33746 Inputs (000)    6175 - Loss:  0.062  - Validation loss:  0.044
-Epoch   2/2 Batch  14600/33746 Inputs (000)    6188 - Loss:  0.069  - Validation loss:  0.044
-Epoch   2/2 Batch  14700/33746 Inputs (000)    6201 - Loss:  0.056  - Validation loss:  0.041
-Epoch   2/2 Batch  14800/33746 Inputs (000)    6213 - Loss:  0.056  - Validation loss:  0.043
-Epoch   2/2 Batch  14900/33746 Inputs (000)    6226 - Loss:  0.039  - Validation loss:  0.042
-Epoch   2/2 Batch  15000/33746 Inputs (000)    6239 - Loss:  0.046  - Validation loss:  0.044
-Epoch   2/2 Batch  15100/33746 Inputs (000)    6252 - Loss:  0.060  - Validation loss:  0.047
-Epoch   2/2 Batch  15200/33746 Inputs (000)    6265 - Loss:  0.082  - Validation loss:  0.046
-Epoch   2/2 Batch  15300/33746 Inputs (000)    6277 - Loss:  0.048  - Validation loss:  0.044
-Epoch   2/2 Batch  15400/33746 Inputs (000)    6290 - Loss:  0.053  - Validation loss:  0.047
-Epoch   2/2 Batch  15500/33746 Inputs (000)    6303 - Loss:  0.058  - Validation loss:  0.045
-Epoch   2/2 Batch  15600/33746 Inputs (000)    6316 - Loss:  0.060  - Validation loss:  0.043
-Epoch   2/2 Batch  15700/33746 Inputs (000)    6329 - Loss:  0.052  - Validation loss:  0.043
-Epoch   2/2 Batch  15800/33746 Inputs (000)    6341 - Loss:  0.074  - Validation loss:  0.045
-Epoch   2/2 Batch  15900/33746 Inputs (000)    6354 - Loss:  0.079  - Validation loss:  0.045
-Epoch   2/2 Batch  16000/33746 Inputs (000)    6367 - Loss:  0.049  - Validation loss:  0.044
-Epoch   2/2 Batch  16100/33746 Inputs (000)    6380 - Loss:  0.057  - Validation loss:  0.043
-Epoch   2/2 Batch  16200/33746 Inputs (000)    6393 - Loss:  0.062  - Validation loss:  0.042
-Epoch   2/2 Batch  16300/33746 Inputs (000)    6405 - Loss:  0.062  - Validation loss:  0.042
-Epoch   2/2 Batch  16400/33746 Inputs (000)    6418 - Loss:  0.042  - Validation loss:  0.043
-Epoch   2/2 Batch  16500/33746 Inputs (000)    6431 - Loss:  0.060  - Validation loss:  0.044
-Epoch   2/2 Batch  16600/33746 Inputs (000)    6444 - Loss:  0.058  - Validation loss:  0.042
-Epoch   2/2 Batch  16700/33746 Inputs (000)    6457 - Loss:  0.049  - Validation loss:  0.044
-Epoch   2/2 Batch  16800/33746 Inputs (000)    6469 - Loss:  0.059  - Validation loss:  0.043
-Epoch   2/2 Batch  16900/33746 Inputs (000)    6482 - Loss:  0.059  - Validation loss:  0.041
-Epoch   2/2 Batch  17000/33746 Inputs (000)    6495 - Loss:  0.063  - Validation loss:  0.042
-Epoch   2/2 Batch  17100/33746 Inputs (000)    6508 - Loss:  0.042  - Validation loss:  0.044
-Epoch   2/2 Batch  17200/33746 Inputs (000)    6521 - Loss:  0.041  - Validation loss:  0.044
-Epoch   2/2 Batch  17300/33746 Inputs (000)    6533 - Loss:  0.050  - Validation loss:  0.045
-Epoch   2/2 Batch  17400/33746 Inputs (000)    6546 - Loss:  0.066  - Validation loss:  0.042
-Epoch   2/2 Batch  17500/33746 Inputs (000)    6559 - Loss:  0.063  - Validation loss:  0.043
-Epoch   2/2 Batch  17600/33746 Inputs (000)    6572 - Loss:  0.067  - Validation loss:  0.045
-Epoch   2/2 Batch  17700/33746 Inputs (000)    6585 - Loss:  0.050  - Validation loss:  0.042
-Epoch   2/2 Batch  17800/33746 Inputs (000)    6597 - Loss:  0.050  - Validation loss:  0.044
-Epoch   2/2 Batch  17900/33746 Inputs (000)    6610 - Loss:  0.058  - Validation loss:  0.046
-Epoch   2/2 Batch  18000/33746 Inputs (000)    6623 - Loss:  0.066  - Validation loss:  0.045
-Epoch   2/2 Batch  18100/33746 Inputs (000)    6636 - Loss:  0.062  - Validation loss:  0.043
-Epoch   2/2 Batch  18200/33746 Inputs (000)    6649 - Loss:  0.058  - Validation loss:  0.041
-Epoch   2/2 Batch  18300/33746 Inputs (000)    6661 - Loss:  0.053  - Validation loss:  0.042
-Epoch   2/2 Batch  18400/33746 Inputs (000)    6674 - Loss:  0.063  - Validation loss:  0.042
-Epoch   2/2 Batch  18500/33746 Inputs (000)    6687 - Loss:  0.064  - Validation loss:  0.040
-Epoch   2/2 Batch  18600/33746 Inputs (000)    6700 - Loss:  0.049  - Validation loss:  0.042
-Epoch   2/2 Batch  18700/33746 Inputs (000)    6713 - Loss:  0.038  - Validation loss:  0.041
-Epoch   2/2 Batch  18800/33746 Inputs (000)    6725 - Loss:  0.061  - Validation loss:  0.042
-Epoch   2/2 Batch  18900/33746 Inputs (000)    6738 - Loss:  0.069  - Validation loss:  0.044
-Epoch   2/2 Batch  19000/33746 Inputs (000)    6751 - Loss:  0.055  - Validation loss:  0.045
-Epoch   2/2 Batch  19100/33746 Inputs (000)    6764 - Loss:  0.055  - Validation loss:  0.042
-Epoch   2/2 Batch  19200/33746 Inputs (000)    6777 - Loss:  0.071  - Validation loss:  0.042
-Epoch   2/2 Batch  19300/33746 Inputs (000)    6789 - Loss:  0.064  - Validation loss:  0.043
-Epoch   2/2 Batch  19400/33746 Inputs (000)    6802 - Loss:  0.053  - Validation loss:  0.042
-Epoch   2/2 Batch  19500/33746 Inputs (000)    6815 - Loss:  0.056  - Validation loss:  0.043
-Epoch   2/2 Batch  19600/33746 Inputs (000)    6828 - Loss:  0.050  - Validation loss:  0.041
-Epoch   2/2 Batch  19700/33746 Inputs (000)    6841 - Loss:  0.060  - Validation loss:  0.042
-Epoch   2/2 Batch  19800/33746 Inputs (000)    6853 - Loss:  0.039  - Validation loss:  0.044
-Epoch   2/2 Batch  19900/33746 Inputs (000)    6866 - Loss:  0.047  - Validation loss:  0.042
-Epoch   2/2 Batch  20000/33746 Inputs (000)    6879 - Loss:  0.047  - Validation loss:  0.044
-Epoch   2/2 Batch  20100/33746 Inputs (000)    6892 - Loss:  0.055  - Validation loss:  0.044
-Epoch   2/2 Batch  20200/33746 Inputs (000)    6905 - Loss:  0.038  - Validation loss:  0.045
-Epoch   2/2 Batch  20300/33746 Inputs (000)    6917 - Loss:  0.041  - Validation loss:  0.044
-Epoch   2/2 Batch  20400/33746 Inputs (000)    6930 - Loss:  0.059  - Validation loss:  0.044
-Epoch   2/2 Batch  20500/33746 Inputs (000)    6943 - Loss:  0.066  - Validation loss:  0.042
-Epoch   2/2 Batch  20600/33746 Inputs (000)    6956 - Loss:  0.049  - Validation loss:  0.042
-Epoch   2/2 Batch  20700/33746 Inputs (000)    6969 - Loss:  0.057  - Validation loss:  0.039
-Epoch   2/2 Batch  20800/33746 Inputs (000)    6981 - Loss:  0.058  - Validation loss:  0.042
-Epoch   2/2 Batch  20900/33746 Inputs (000)    6994 - Loss:  0.060  - Validation loss:  0.041
-Epoch   2/2 Batch  21000/33746 Inputs (000)    7007 - Loss:  0.059  - Validation loss:  0.039
-Epoch   2/2 Batch  21100/33746 Inputs (000)    7020 - Loss:  0.054  - Validation loss:  0.044
-Epoch   2/2 Batch  21200/33746 Inputs (000)    7033 - Loss:  0.072  - Validation loss:  0.042
-Epoch   2/2 Batch  21300/33746 Inputs (000)    7045 - Loss:  0.050  - Validation loss:  0.043
-Epoch   2/2 Batch  21400/33746 Inputs (000)    7058 - Loss:  0.054  - Validation loss:  0.042
-Epoch   2/2 Batch  21500/33746 Inputs (000)    7071 - Loss:  0.066  - Validation loss:  0.043
-Epoch   2/2 Batch  21600/33746 Inputs (000)    7084 - Loss:  0.053  - Validation loss:  0.041
-Epoch   2/2 Batch  21700/33746 Inputs (000)    7097 - Loss:  0.056  - Validation loss:  0.044
-Epoch   2/2 Batch  21800/33746 Inputs (000)    7109 - Loss:  0.056  - Validation loss:  0.041
-Epoch   2/2 Batch  21900/33746 Inputs (000)    7122 - Loss:  0.053  - Validation loss:  0.047
-Epoch   2/2 Batch  22000/33746 Inputs (000)    7135 - Loss:  0.042  - Validation loss:  0.045
-Epoch   2/2 Batch  22100/33746 Inputs (000)    7148 - Loss:  0.053  - Validation loss:  0.043
-Epoch   2/2 Batch  22200/33746 Inputs (000)    7161 - Loss:  0.051  - Validation loss:  0.044
-Epoch   2/2 Batch  22300/33746 Inputs (000)    7173 - Loss:  0.058  - Validation loss:  0.043
-Epoch   2/2 Batch  22400/33746 Inputs (000)    7186 - Loss:  0.049  - Validation loss:  0.043
-Epoch   2/2 Batch  22500/33746 Inputs (000)    7199 - Loss:  0.053  - Validation loss:  0.042
-Epoch   2/2 Batch  22600/33746 Inputs (000)    7212 - Loss:  0.058  - Validation loss:  0.042
-Epoch   2/2 Batch  22700/33746 Inputs (000)    7225 - Loss:  0.048  - Validation loss:  0.040
-Epoch   2/2 Batch  22800/33746 Inputs (000)    7237 - Loss:  0.061  - Validation loss:  0.040
-Epoch   2/2 Batch  22900/33746 Inputs (000)    7250 - Loss:  0.050  - Validation loss:  0.039
-Epoch   2/2 Batch  23000/33746 Inputs (000)    7263 - Loss:  0.043  - Validation loss:  0.044
-Epoch   2/2 Batch  23100/33746 Inputs (000)    7276 - Loss:  0.042  - Validation loss:  0.043
-Epoch   2/2 Batch  23200/33746 Inputs (000)    7289 - Loss:  0.060  - Validation loss:  0.045
-Epoch   2/2 Batch  23300/33746 Inputs (000)    7301 - Loss:  0.075  - Validation loss:  0.043
-Epoch   2/2 Batch  23400/33746 Inputs (000)    7314 - Loss:  0.045  - Validation loss:  0.043
-Epoch   2/2 Batch  23500/33746 Inputs (000)    7327 - Loss:  0.060  - Validation loss:  0.044
-Epoch   2/2 Batch  23600/33746 Inputs (000)    7340 - Loss:  0.056  - Validation loss:  0.040
-Epoch   2/2 Batch  23700/33746 Inputs (000)    7353 - Loss:  0.044  - Validation loss:  0.044
-Epoch   2/2 Batch  23800/33746 Inputs (000)    7365 - Loss:  0.056  - Validation loss:  0.043
-Epoch   2/2 Batch  23900/33746 Inputs (000)    7378 - Loss:  0.049  - Validation loss:  0.042
-Epoch   2/2 Batch  24000/33746 Inputs (000)    7391 - Loss:  0.063  - Validation loss:  0.041
-Epoch   2/2 Batch  24100/33746 Inputs (000)    7404 - Loss:  0.048  - Validation loss:  0.043
-Epoch   2/2 Batch  24200/33746 Inputs (000)    7417 - Loss:  0.059  - Validation loss:  0.042
-Epoch   2/2 Batch  24300/33746 Inputs (000)    7429 - Loss:  0.048  - Validation loss:  0.045
-Epoch   2/2 Batch  24400/33746 Inputs (000)    7442 - Loss:  0.052  - Validation loss:  0.043
-Epoch   2/2 Batch  24500/33746 Inputs (000)    7455 - Loss:  0.052  - Validation loss:  0.044
-Epoch   2/2 Batch  24600/33746 Inputs (000)    7468 - Loss:  0.049  - Validation loss:  0.042
-Epoch   2/2 Batch  24700/33746 Inputs (000)    7481 - Loss:  0.056  - Validation loss:  0.042
-Epoch   2/2 Batch  24800/33746 Inputs (000)    7493 - Loss:  0.047  - Validation loss:  0.043
-Epoch   2/2 Batch  24900/33746 Inputs (000)    7506 - Loss:  0.042  - Validation loss:  0.044
-Epoch   2/2 Batch  25000/33746 Inputs (000)    7519 - Loss:  0.055  - Validation loss:  0.040
-Epoch   2/2 Batch  25100/33746 Inputs (000)    7532 - Loss:  0.039  - Validation loss:  0.041
-Epoch   2/2 Batch  25200/33746 Inputs (000)    7545 - Loss:  0.046  - Validation loss:  0.040
-Epoch   2/2 Batch  25300/33746 Inputs (000)    7557 - Loss:  0.050  - Validation loss:  0.039
-Epoch   2/2 Batch  25400/33746 Inputs (000)    7570 - Loss:  0.044  - Validation loss:  0.044
-Epoch   2/2 Batch  25500/33746 Inputs (000)    7583 - Loss:  0.055  - Validation loss:  0.044
-Epoch   2/2 Batch  25600/33746 Inputs (000)    7596 - Loss:  0.053  - Validation loss:  0.043
-Epoch   2/2 Batch  25700/33746 Inputs (000)    7609 - Loss:  0.064  - Validation loss:  0.044
-Epoch   2/2 Batch  25800/33746 Inputs (000)    7621 - Loss:  0.053  - Validation loss:  0.042
-Epoch   2/2 Batch  25900/33746 Inputs (000)    7634 - Loss:  0.047  - Validation loss:  0.043
-Epoch   2/2 Batch  26000/33746 Inputs (000)    7647 - Loss:  0.046  - Validation loss:  0.041
-Epoch   2/2 Batch  26100/33746 Inputs (000)    7660 - Loss:  0.051  - Validation loss:  0.042
-Epoch   2/2 Batch  26200/33746 Inputs (000)    7673 - Loss:  0.044  - Validation loss:  0.041
-Epoch   2/2 Batch  26300/33746 Inputs (000)    7685 - Loss:  0.044  - Validation loss:  0.043
-Epoch   2/2 Batch  26400/33746 Inputs (000)    7698 - Loss:  0.063  - Validation loss:  0.041
-Epoch   2/2 Batch  26500/33746 Inputs (000)    7711 - Loss:  0.047  - Validation loss:  0.040
-Epoch   2/2 Batch  26600/33746 Inputs (000)    7724 - Loss:  0.042  - Validation loss:  0.041
-Epoch   2/2 Batch  26700/33746 Inputs (000)    7737 - Loss:  0.050  - Validation loss:  0.042
-Epoch   2/2 Batch  26800/33746 Inputs (000)    7749 - Loss:  0.075  - Validation loss:  0.040
-Epoch   2/2 Batch  26900/33746 Inputs (000)    7762 - Loss:  0.049  - Validation loss:  0.040
-Epoch   2/2 Batch  27000/33746 Inputs (000)    7775 - Loss:  0.057  - Validation loss:  0.041
-Epoch   2/2 Batch  27100/33746 Inputs (000)    7788 - Loss:  0.047  - Validation loss:  0.039
-Epoch   2/2 Batch  27200/33746 Inputs (000)    7801 - Loss:  0.069  - Validation loss:  0.039
-Epoch   2/2 Batch  27300/33746 Inputs (000)    7813 - Loss:  0.055  - Validation loss:  0.039
-Epoch   2/2 Batch  27400/33746 Inputs (000)    7826 - Loss:  0.054  - Validation loss:  0.038
-Epoch   2/2 Batch  27500/33746 Inputs (000)    7839 - Loss:  0.053  - Validation loss:  0.039
-Epoch   2/2 Batch  27600/33746 Inputs (000)    7852 - Loss:  0.055  - Validation loss:  0.041
-Epoch   2/2 Batch  27700/33746 Inputs (000)    7865 - Loss:  0.051  - Validation loss:  0.039
-Epoch   2/2 Batch  27800/33746 Inputs (000)    7877 - Loss:  0.054  - Validation loss:  0.040
-Epoch   2/2 Batch  27900/33746 Inputs (000)    7890 - Loss:  0.052  - Validation loss:  0.045
-Epoch   2/2 Batch  28000/33746 Inputs (000)    7903 - Loss:  0.055  - Validation loss:  0.043
-Epoch   2/2 Batch  28100/33746 Inputs (000)    7916 - Loss:  0.043  - Validation loss:  0.042
-Epoch   2/2 Batch  28200/33746 Inputs (000)    7929 - Loss:  0.061  - Validation loss:  0.038
-Epoch   2/2 Batch  28300/33746 Inputs (000)    7941 - Loss:  0.058  - Validation loss:  0.039
-Epoch   2/2 Batch  28400/33746 Inputs (000)    7954 - Loss:  0.043  - Validation loss:  0.039
-Epoch   2/2 Batch  28500/33746 Inputs (000)    7967 - Loss:  0.047  - Validation loss:  0.040
-Epoch   2/2 Batch  28600/33746 Inputs (000)    7980 - Loss:  0.052  - Validation loss:  0.041
-Epoch   2/2 Batch  28700/33746 Inputs (000)    7993 - Loss:  0.055  - Validation loss:  0.042
-Epoch   2/2 Batch  28800/33746 Inputs (000)    8005 - Loss:  0.062  - Validation loss:  0.043
-Epoch   2/2 Batch  28900/33746 Inputs (000)    8018 - Loss:  0.065  - Validation loss:  0.039
-Epoch   2/2 Batch  29000/33746 Inputs (000)    8031 - Loss:  0.046  - Validation loss:  0.040
-Epoch   2/2 Batch  29100/33746 Inputs (000)    8044 - Loss:  0.046  - Validation loss:  0.040
-Epoch   2/2 Batch  29200/33746 Inputs (000)    8057 - Loss:  0.057  - Validation loss:  0.040
-Epoch   2/2 Batch  29300/33746 Inputs (000)    8069 - Loss:  0.050  - Validation loss:  0.040
-Epoch   2/2 Batch  29400/33746 Inputs (000)    8082 - Loss:  0.069  - Validation loss:  0.039
-Epoch   2/2 Batch  29500/33746 Inputs (000)    8095 - Loss:  0.051  - Validation loss:  0.042
-Epoch   2/2 Batch  29600/33746 Inputs (000)    8108 - Loss:  0.058  - Validation loss:  0.042
-Epoch   2/2 Batch  29700/33746 Inputs (000)    8121 - Loss:  0.043  - Validation loss:  0.042
-Epoch   2/2 Batch  29800/33746 Inputs (000)    8133 - Loss:  0.050  - Validation loss:  0.041
-Epoch   2/2 Batch  29900/33746 Inputs (000)    8146 - Loss:  0.055  - Validation loss:  0.041
-Epoch   2/2 Batch  30000/33746 Inputs (000)    8159 - Loss:  0.056  - Validation loss:  0.042
-Epoch   2/2 Batch  30100/33746 Inputs (000)    8172 - Loss:  0.051  - Validation loss:  0.043
-Epoch   2/2 Batch  30200/33746 Inputs (000)    8185 - Loss:  0.039  - Validation loss:  0.040
-Epoch   2/2 Batch  30300/33746 Inputs (000)    8197 - Loss:  0.051  - Validation loss:  0.040
-Epoch   2/2 Batch  30400/33746 Inputs (000)    8210 - Loss:  0.050  - Validation loss:  0.041
-Epoch   2/2 Batch  30500/33746 Inputs (000)    8223 - Loss:  0.042  - Validation loss:  0.042
-Epoch   2/2 Batch  30600/33746 Inputs (000)    8236 - Loss:  0.048  - Validation loss:  0.040
-Epoch   2/2 Batch  30700/33746 Inputs (000)    8249 - Loss:  0.060  - Validation loss:  0.042
-Epoch   2/2 Batch  30800/33746 Inputs (000)    8261 - Loss:  0.051  - Validation loss:  0.039
-Epoch   2/2 Batch  30900/33746 Inputs (000)    8274 - Loss:  0.039  - Validation loss:  0.040
-Epoch   2/2 Batch  31000/33746 Inputs (000)    8287 - Loss:  0.048  - Validation loss:  0.042
-Epoch   2/2 Batch  31100/33746 Inputs (000)    8300 - Loss:  0.053  - Validation loss:  0.041
-Epoch   2/2 Batch  31200/33746 Inputs (000)    8313 - Loss:  0.045  - Validation loss:  0.040
-Epoch   2/2 Batch  31300/33746 Inputs (000)    8325 - Loss:  0.059  - Validation loss:  0.039
-Epoch   2/2 Batch  31400/33746 Inputs (000)    8338 - Loss:  0.066  - Validation loss:  0.036
-Epoch   2/2 Batch  31500/33746 Inputs (000)    8351 - Loss:  0.049  - Validation loss:  0.040
-Epoch   2/2 Batch  31600/33746 Inputs (000)    8364 - Loss:  0.045  - Validation loss:  0.040
-Epoch   2/2 Batch  31700/33746 Inputs (000)    8377 - Loss:  0.058  - Validation loss:  0.039
-Epoch   2/2 Batch  31800/33746 Inputs (000)    8389 - Loss:  0.048  - Validation loss:  0.039
-Epoch   2/2 Batch  31900/33746 Inputs (000)    8402 - Loss:  0.069  - Validation loss:  0.041
-Epoch   2/2 Batch  32000/33746 Inputs (000)    8415 - Loss:  0.035  - Validation loss:  0.038
-Epoch   2/2 Batch  32100/33746 Inputs (000)    8428 - Loss:  0.049  - Validation loss:  0.043
-Epoch   2/2 Batch  32200/33746 Inputs (000)    8441 - Loss:  0.046  - Validation loss:  0.038
-Epoch   2/2 Batch  32300/33746 Inputs (000)    8453 - Loss:  0.046  - Validation loss:  0.039
-Epoch   2/2 Batch  32400/33746 Inputs (000)    8466 - Loss:  0.043  - Validation loss:  0.037
-Epoch   2/2 Batch  32500/33746 Inputs (000)    8479 - Loss:  0.041  - Validation loss:  0.040
-Epoch   2/2 Batch  32600/33746 Inputs (000)    8492 - Loss:  0.050  - Validation loss:  0.037
-Epoch   2/2 Batch  32700/33746 Inputs (000)    8505 - Loss:  0.050  - Validation loss:  0.041
-Epoch   2/2 Batch  32800/33746 Inputs (000)    8517 - Loss:  0.043  - Validation loss:  0.042
-Epoch   2/2 Batch  32900/33746 Inputs (000)    8530 - Loss:  0.050  - Validation loss:  0.042
-Epoch   2/2 Batch  33000/33746 Inputs (000)    8543 - Loss:  0.037  - Validation loss:  0.038
-Epoch   2/2 Batch  33100/33746 Inputs (000)    8556 - Loss:  0.052  - Validation loss:  0.039
-Epoch   2/2 Batch  33200/33746 Inputs (000)    8569 - Loss:  0.051  - Validation loss:  0.040
-Epoch   2/2 Batch  33300/33746 Inputs (000)    8581 - Loss:  0.051  - Validation loss:  0.040
-Epoch   2/2 Batch  33400/33746 Inputs (000)    8594 - Loss:  0.050  - Validation loss:  0.039
-Epoch   2/2 Batch  33500/33746 Inputs (000)    8607 - Loss:  0.047  - Validation loss:  0.042
-Epoch   2/2 Batch  33600/33746 Inputs (000)    8620 - Loss:  0.047  - Validation loss:  0.040
-Epoch   2/2 Batch  33700/33746 Inputs (000)    8633 - Loss:  0.052  - Validation loss:  0.040
-Model Trained in 12h:7m:38s and Saved
+Reloading existing graph to continue training.
+2017-09-26 18:57:00.317380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+2017-09-26 18:57:03.399516: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 5762 get requests, put_count=4220 evicted_count=1000 eviction_rate=0.236967 and unsatisfied allocation rate=0.458521
+2017-09-26 18:57:03.399573: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+2017-09-26 18:57:06.233586: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 6967 get requests, put_count=7470 evicted_count=3000 eviction_rate=0.401606 and unsatisfied allocation rate=0.36027
+2017-09-26 18:57:06.233649: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 146 to 160
+2017-09-26 18:57:09.114309: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1588 get requests, put_count=2608 evicted_count=1000 eviction_rate=0.383436 and unsatisfied allocation rate=0.000629723
+2017-09-26 18:57:12.002941: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 822 get requests, put_count=1852 evicted_count=1000 eviction_rate=0.539957 and unsatisfied allocation rate=0
+2017-09-26 18:57:15.414807: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 6373 get requests, put_count=6270 evicted_count=2000 eviction_rate=0.318979 and unsatisfied allocation rate=0.33689
+2017-09-26 18:57:15.414864: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 493 to 542
+2017-09-26 18:57:19.025504: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 6760 get requests, put_count=6986 evicted_count=2000 eviction_rate=0.286287 and unsatisfied allocation rate=0.273077
+2017-09-26 18:57:19.025563: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 792 to 871
+2017-09-26 18:57:24.100607: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 6538 get requests, put_count=6749 evicted_count=1000 eviction_rate=0.14817 and unsatisfied allocation rate=0.144234
+2017-09-26 18:57:24.100676: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 1694 to 1863
+Epoch   1/1 Batch    100/33746 Inputs (000)      12 - Loss:  0.034  - Validation loss:  0.030
+Epoch   1/1 Batch    200/33746 Inputs (000)      25 - Loss:  0.041  - Validation loss:  0.028
+Epoch   1/1 Batch    300/33746 Inputs (000)      38 - Loss:  0.036  - Validation loss:  0.028
+Epoch   1/1 Batch    400/33746 Inputs (000)      51 - Loss:  0.031  - Validation loss:  0.028
+Epoch   1/1 Batch    500/33746 Inputs (000)      64 - Loss:  0.034  - Validation loss:  0.026
+Epoch   1/1 Batch    600/33746 Inputs (000)      76 - Loss:  0.047  - Validation loss:  0.025
+Epoch   1/1 Batch    700/33746 Inputs (000)      89 - Loss:  0.029  - Validation loss:  0.026
+Epoch   1/1 Batch    800/33746 Inputs (000)     102 - Loss:  0.034  - Validation loss:  0.027
+Epoch   1/1 Batch    900/33746 Inputs (000)     115 - Loss:  0.040  - Validation loss:  0.028
+Epoch   1/1 Batch   1000/33746 Inputs (000)     128 - Loss:  0.039  - Validation loss:  0.025
+Epoch   1/1 Batch   1100/33746 Inputs (000)     140 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch   1200/33746 Inputs (000)     153 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch   1300/33746 Inputs (000)     166 - Loss:  0.054  - Validation loss:  0.026
+Epoch   1/1 Batch   1400/33746 Inputs (000)     179 - Loss:  0.046  - Validation loss:  0.027
+Epoch   1/1 Batch   1500/33746 Inputs (000)     192 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch   1600/33746 Inputs (000)     204 - Loss:  0.042  - Validation loss:  0.028
+Epoch   1/1 Batch   1700/33746 Inputs (000)     217 - Loss:  0.042  - Validation loss:  0.027
+Epoch   1/1 Batch   1800/33746 Inputs (000)     230 - Loss:  0.042  - Validation loss:  0.029
+Epoch   1/1 Batch   1900/33746 Inputs (000)     243 - Loss:  0.045  - Validation loss:  0.026
+Epoch   1/1 Batch   2000/33746 Inputs (000)     256 - Loss:  0.038  - Validation loss:  0.024
+Epoch   1/1 Batch   2100/33746 Inputs (000)     268 - Loss:  0.023  - Validation loss:  0.026
+Epoch   1/1 Batch   2200/33746 Inputs (000)     281 - Loss:  0.032  - Validation loss:  0.028
+Epoch   1/1 Batch   2300/33746 Inputs (000)     294 - Loss:  0.041  - Validation loss:  0.027
+Epoch   1/1 Batch   2400/33746 Inputs (000)     307 - Loss:  0.050  - Validation loss:  0.027
+Epoch   1/1 Batch   2500/33746 Inputs (000)     320 - Loss:  0.043  - Validation loss:  0.027
+Epoch   1/1 Batch   2600/33746 Inputs (000)     332 - Loss:  0.039  - Validation loss:  0.027
+Epoch   1/1 Batch   2700/33746 Inputs (000)     345 - Loss:  0.040  - Validation loss:  0.028
+Epoch   1/1 Batch   2800/33746 Inputs (000)     358 - Loss:  0.037  - Validation loss:  0.026
+Epoch   1/1 Batch   2900/33746 Inputs (000)     371 - Loss:  0.046  - Validation loss:  0.027
+Epoch   1/1 Batch   3000/33746 Inputs (000)     384 - Loss:  0.039  - Validation loss:  0.025
+Epoch   1/1 Batch   3100/33746 Inputs (000)     396 - Loss:  0.028  - Validation loss:  0.028
+Epoch   1/1 Batch   3200/33746 Inputs (000)     409 - Loss:  0.035  - Validation loss:  0.026
+Epoch   1/1 Batch   3300/33746 Inputs (000)     422 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch   3400/33746 Inputs (000)     435 - Loss:  0.028  - Validation loss:  0.026
+Epoch   1/1 Batch   3500/33746 Inputs (000)     448 - Loss:  0.048  - Validation loss:  0.028
+Epoch   1/1 Batch   3600/33746 Inputs (000)     460 - Loss:  0.047  - Validation loss:  0.025
+Epoch   1/1 Batch   3700/33746 Inputs (000)     473 - Loss:  0.036  - Validation loss:  0.027
+Epoch   1/1 Batch   3800/33746 Inputs (000)     486 - Loss:  0.039  - Validation loss:  0.025
+Epoch   1/1 Batch   3900/33746 Inputs (000)     499 - Loss:  0.045  - Validation loss:  0.024
+Epoch   1/1 Batch   4000/33746 Inputs (000)     512 - Loss:  0.034  - Validation loss:  0.027
+Epoch   1/1 Batch   4100/33746 Inputs (000)     524 - Loss:  0.041  - Validation loss:  0.028
+Epoch   1/1 Batch   4200/33746 Inputs (000)     537 - Loss:  0.044  - Validation loss:  0.027
+Epoch   1/1 Batch   4300/33746 Inputs (000)     550 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch   4400/33746 Inputs (000)     563 - Loss:  0.040  - Validation loss:  0.026
+Epoch   1/1 Batch   4500/33746 Inputs (000)     576 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch   4600/33746 Inputs (000)     588 - Loss:  0.041  - Validation loss:  0.028
+Epoch   1/1 Batch   4700/33746 Inputs (000)     601 - Loss:  0.037  - Validation loss:  0.026
+Epoch   1/1 Batch   4800/33746 Inputs (000)     614 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch   4900/33746 Inputs (000)     627 - Loss:  0.035  - Validation loss:  0.028
+Epoch   1/1 Batch   5000/33746 Inputs (000)     640 - Loss:  0.035  - Validation loss:  0.026
+Epoch   1/1 Batch   5100/33746 Inputs (000)     652 - Loss:  0.036  - Validation loss:  0.028
+Epoch   1/1 Batch   5200/33746 Inputs (000)     665 - Loss:  0.042  - Validation loss:  0.029
+Epoch   1/1 Batch   5300/33746 Inputs (000)     678 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch   5400/33746 Inputs (000)     691 - Loss:  0.049  - Validation loss:  0.027
+Epoch   1/1 Batch   5500/33746 Inputs (000)     704 - Loss:  0.035  - Validation loss:  0.026
+Epoch   1/1 Batch   5600/33746 Inputs (000)     716 - Loss:  0.040  - Validation loss:  0.028
+Epoch   1/1 Batch   5700/33746 Inputs (000)     729 - Loss:  0.034  - Validation loss:  0.027
+Epoch   1/1 Batch   5800/33746 Inputs (000)     742 - Loss:  0.032  - Validation loss:  0.026
+Epoch   1/1 Batch   5900/33746 Inputs (000)     755 - Loss:  0.054  - Validation loss:  0.027
+Epoch   1/1 Batch   6000/33746 Inputs (000)     768 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch   6100/33746 Inputs (000)     780 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch   6200/33746 Inputs (000)     793 - Loss:  0.048  - Validation loss:  0.026
+Epoch   1/1 Batch   6300/33746 Inputs (000)     806 - Loss:  0.034  - Validation loss:  0.029
+Epoch   1/1 Batch   6400/33746 Inputs (000)     819 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch   6500/33746 Inputs (000)     832 - Loss:  0.035  - Validation loss:  0.028
+Epoch   1/1 Batch   6600/33746 Inputs (000)     844 - Loss:  0.032  - Validation loss:  0.026
+Epoch   1/1 Batch   6700/33746 Inputs (000)     857 - Loss:  0.047  - Validation loss:  0.027
+Epoch   1/1 Batch   6800/33746 Inputs (000)     870 - Loss:  0.021  - Validation loss:  0.026
+Epoch   1/1 Batch   6900/33746 Inputs (000)     883 - Loss:  0.045  - Validation loss:  0.025
+Epoch   1/1 Batch   7000/33746 Inputs (000)     896 - Loss:  0.037  - Validation loss:  0.027
+Epoch   1/1 Batch   7100/33746 Inputs (000)     908 - Loss:  0.031  - Validation loss:  0.026
+Epoch   1/1 Batch   7200/33746 Inputs (000)     921 - Loss:  0.053  - Validation loss:  0.024
+Epoch   1/1 Batch   7300/33746 Inputs (000)     934 - Loss:  0.044  - Validation loss:  0.025
+Epoch   1/1 Batch   7400/33746 Inputs (000)     947 - Loss:  0.046  - Validation loss:  0.026
+Epoch   1/1 Batch   7500/33746 Inputs (000)     960 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch   7600/33746 Inputs (000)     972 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch   7700/33746 Inputs (000)     985 - Loss:  0.046  - Validation loss:  0.024
+Epoch   1/1 Batch   7800/33746 Inputs (000)     998 - Loss:  0.045  - Validation loss:  0.028
+Epoch   1/1 Batch   7900/33746 Inputs (000)    1011 - Loss:  0.043  - Validation loss:  0.025
+Epoch   1/1 Batch   8000/33746 Inputs (000)    1024 - Loss:  0.033  - Validation loss:  0.025
+Epoch   1/1 Batch   8100/33746 Inputs (000)    1036 - Loss:  0.042  - Validation loss:  0.024
+Epoch   1/1 Batch   8200/33746 Inputs (000)    1049 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch   8300/33746 Inputs (000)    1062 - Loss:  0.045  - Validation loss:  0.024
+Epoch   1/1 Batch   8400/33746 Inputs (000)    1075 - Loss:  0.035  - Validation loss:  0.026
+Epoch   1/1 Batch   8500/33746 Inputs (000)    1088 - Loss:  0.052  - Validation loss:  0.026
+Epoch   1/1 Batch   8600/33746 Inputs (000)    1100 - Loss:  0.035  - Validation loss:  0.028
+Epoch   1/1 Batch   8700/33746 Inputs (000)    1113 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch   8800/33746 Inputs (000)    1126 - Loss:  0.037  - Validation loss:  0.028
+Epoch   1/1 Batch   8900/33746 Inputs (000)    1139 - Loss:  0.034  - Validation loss:  0.026
+Epoch   1/1 Batch   9000/33746 Inputs (000)    1152 - Loss:  0.028  - Validation loss:  0.026
+Epoch   1/1 Batch   9100/33746 Inputs (000)    1164 - Loss:  0.043  - Validation loss:  0.027
+Epoch   1/1 Batch   9200/33746 Inputs (000)    1177 - Loss:  0.032  - Validation loss:  0.026
+Epoch   1/1 Batch   9300/33746 Inputs (000)    1190 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch   9400/33746 Inputs (000)    1203 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch   9500/33746 Inputs (000)    1216 - Loss:  0.035  - Validation loss:  0.027
+Epoch   1/1 Batch   9600/33746 Inputs (000)    1228 - Loss:  0.044  - Validation loss:  0.027
+Epoch   1/1 Batch   9700/33746 Inputs (000)    1241 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch   9800/33746 Inputs (000)    1254 - Loss:  0.022  - Validation loss:  0.027
+Epoch   1/1 Batch   9900/33746 Inputs (000)    1267 - Loss:  0.046  - Validation loss:  0.027
+Epoch   1/1 Batch  10000/33746 Inputs (000)    1280 - Loss:  0.036  - Validation loss:  0.027
+Epoch   1/1 Batch  10100/33746 Inputs (000)    1292 - Loss:  0.041  - Validation loss:  0.028
+Epoch   1/1 Batch  10200/33746 Inputs (000)    1305 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  10300/33746 Inputs (000)    1318 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch  10400/33746 Inputs (000)    1331 - Loss:  0.037  - Validation loss:  0.027
+Epoch   1/1 Batch  10500/33746 Inputs (000)    1344 - Loss:  0.043  - Validation loss:  0.029
+Epoch   1/1 Batch  10600/33746 Inputs (000)    1356 - Loss:  0.034  - Validation loss:  0.028
+Epoch   1/1 Batch  10700/33746 Inputs (000)    1369 - Loss:  0.039  - Validation loss:  0.027
+Epoch   1/1 Batch  10800/33746 Inputs (000)    1382 - Loss:  0.048  - Validation loss:  0.027
+Epoch   1/1 Batch  10900/33746 Inputs (000)    1395 - Loss:  0.050  - Validation loss:  0.028
+Epoch   1/1 Batch  11000/33746 Inputs (000)    1408 - Loss:  0.035  - Validation loss:  0.027
+Epoch   1/1 Batch  11100/33746 Inputs (000)    1420 - Loss:  0.036  - Validation loss:  0.029
+Epoch   1/1 Batch  11200/33746 Inputs (000)    1433 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch  11300/33746 Inputs (000)    1446 - Loss:  0.040  - Validation loss:  0.028
+Epoch   1/1 Batch  11400/33746 Inputs (000)    1459 - Loss:  0.038  - Validation loss:  0.030
+Epoch   1/1 Batch  11500/33746 Inputs (000)    1472 - Loss:  0.032  - Validation loss:  0.029
+Epoch   1/1 Batch  11600/33746 Inputs (000)    1484 - Loss:  0.040  - Validation loss:  0.030
+Epoch   1/1 Batch  11700/33746 Inputs (000)    1497 - Loss:  0.033  - Validation loss:  0.029
+Epoch   1/1 Batch  11800/33746 Inputs (000)    1510 - Loss:  0.047  - Validation loss:  0.026
+Epoch   1/1 Batch  11900/33746 Inputs (000)    1523 - Loss:  0.050  - Validation loss:  0.028
+Epoch   1/1 Batch  12000/33746 Inputs (000)    1536 - Loss:  0.037  - Validation loss:  0.029
+Epoch   1/1 Batch  12100/33746 Inputs (000)    1548 - Loss:  0.037  - Validation loss:  0.027
+Epoch   1/1 Batch  12200/33746 Inputs (000)    1561 - Loss:  0.034  - Validation loss:  0.026
+Epoch   1/1 Batch  12300/33746 Inputs (000)    1574 - Loss:  0.033  - Validation loss:  0.025
+Epoch   1/1 Batch  12400/33746 Inputs (000)    1587 - Loss:  0.047  - Validation loss:  0.028
+Epoch   1/1 Batch  12500/33746 Inputs (000)    1600 - Loss:  0.040  - Validation loss:  0.029
+Epoch   1/1 Batch  12600/33746 Inputs (000)    1612 - Loss:  0.038  - Validation loss:  0.028
+Epoch   1/1 Batch  12700/33746 Inputs (000)    1625 - Loss:  0.039  - Validation loss:  0.027
+Epoch   1/1 Batch  12800/33746 Inputs (000)    1638 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch  12900/33746 Inputs (000)    1651 - Loss:  0.037  - Validation loss:  0.027
+Epoch   1/1 Batch  13000/33746 Inputs (000)    1664 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch  13100/33746 Inputs (000)    1676 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  13200/33746 Inputs (000)    1689 - Loss:  0.056  - Validation loss:  0.028
+Epoch   1/1 Batch  13300/33746 Inputs (000)    1702 - Loss:  0.047  - Validation loss:  0.026
+Epoch   1/1 Batch  13400/33746 Inputs (000)    1715 - Loss:  0.033  - Validation loss:  0.025
+Epoch   1/1 Batch  13500/33746 Inputs (000)    1728 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  13600/33746 Inputs (000)    1740 - Loss:  0.046  - Validation loss:  0.025
+Epoch   1/1 Batch  13700/33746 Inputs (000)    1753 - Loss:  0.050  - Validation loss:  0.027
+Epoch   1/1 Batch  13800/33746 Inputs (000)    1766 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  13900/33746 Inputs (000)    1779 - Loss:  0.043  - Validation loss:  0.028
+Epoch   1/1 Batch  14000/33746 Inputs (000)    1792 - Loss:  0.037  - Validation loss:  0.027
+Epoch   1/1 Batch  14100/33746 Inputs (000)    1804 - Loss:  0.045  - Validation loss:  0.026
+Epoch   1/1 Batch  14200/33746 Inputs (000)    1817 - Loss:  0.045  - Validation loss:  0.027
+Epoch   1/1 Batch  14300/33746 Inputs (000)    1830 - Loss:  0.051  - Validation loss:  0.026
+Epoch   1/1 Batch  14400/33746 Inputs (000)    1843 - Loss:  0.052  - Validation loss:  0.025
+Epoch   1/1 Batch  14500/33746 Inputs (000)    1856 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch  14600/33746 Inputs (000)    1868 - Loss:  0.047  - Validation loss:  0.026
+Epoch   1/1 Batch  14700/33746 Inputs (000)    1881 - Loss:  0.050  - Validation loss:  0.027
+Epoch   1/1 Batch  14800/33746 Inputs (000)    1894 - Loss:  0.040  - Validation loss:  0.026
+Epoch   1/1 Batch  14900/33746 Inputs (000)    1907 - Loss:  0.043  - Validation loss:  0.028
+Epoch   1/1 Batch  15000/33746 Inputs (000)    1920 - Loss:  0.035  - Validation loss:  0.027
+Epoch   1/1 Batch  15100/33746 Inputs (000)    1932 - Loss:  0.031  - Validation loss:  0.028
+Epoch   1/1 Batch  15200/33746 Inputs (000)    1945 - Loss:  0.040  - Validation loss:  0.029
+Epoch   1/1 Batch  15300/33746 Inputs (000)    1958 - Loss:  0.044  - Validation loss:  0.028
+Epoch   1/1 Batch  15400/33746 Inputs (000)    1971 - Loss:  0.040  - Validation loss:  0.027
+Epoch   1/1 Batch  15500/33746 Inputs (000)    1984 - Loss:  0.036  - Validation loss:  0.027
+Epoch   1/1 Batch  15600/33746 Inputs (000)    1996 - Loss:  0.045  - Validation loss:  0.027
+Epoch   1/1 Batch  15700/33746 Inputs (000)    2009 - Loss:  0.034  - Validation loss:  0.027
+Epoch   1/1 Batch  15800/33746 Inputs (000)    2022 - Loss:  0.032  - Validation loss:  0.027
+Epoch   1/1 Batch  15900/33746 Inputs (000)    2035 - Loss:  0.045  - Validation loss:  0.029
+Epoch   1/1 Batch  16000/33746 Inputs (000)    2048 - Loss:  0.038  - Validation loss:  0.027
+Epoch   1/1 Batch  16100/33746 Inputs (000)    2060 - Loss:  0.036  - Validation loss:  0.027
+Epoch   1/1 Batch  16200/33746 Inputs (000)    2073 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  16300/33746 Inputs (000)    2086 - Loss:  0.034  - Validation loss:  0.029
+Epoch   1/1 Batch  16400/33746 Inputs (000)    2099 - Loss:  0.038  - Validation loss:  0.027
+Epoch   1/1 Batch  16500/33746 Inputs (000)    2112 - Loss:  0.027  - Validation loss:  0.027
+Epoch   1/1 Batch  16600/33746 Inputs (000)    2124 - Loss:  0.035  - Validation loss:  0.026
+Epoch   1/1 Batch  16700/33746 Inputs (000)    2137 - Loss:  0.047  - Validation loss:  0.027
+Epoch   1/1 Batch  16800/33746 Inputs (000)    2150 - Loss:  0.049  - Validation loss:  0.026
+Epoch   1/1 Batch  16900/33746 Inputs (000)    2163 - Loss:  0.038  - Validation loss:  0.024
+Epoch   1/1 Batch  17000/33746 Inputs (000)    2176 - Loss:  0.037  - Validation loss:  0.026
+Epoch   1/1 Batch  17100/33746 Inputs (000)    2188 - Loss:  0.045  - Validation loss:  0.026
+Epoch   1/1 Batch  17200/33746 Inputs (000)    2201 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  17300/33746 Inputs (000)    2214 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  17400/33746 Inputs (000)    2227 - Loss:  0.049  - Validation loss:  0.024
+Epoch   1/1 Batch  17500/33746 Inputs (000)    2240 - Loss:  0.049  - Validation loss:  0.025
+Epoch   1/1 Batch  17600/33746 Inputs (000)    2252 - Loss:  0.033  - Validation loss:  0.024
+Epoch   1/1 Batch  17700/33746 Inputs (000)    2265 - Loss:  0.034  - Validation loss:  0.024
+Epoch   1/1 Batch  17800/33746 Inputs (000)    2278 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  17900/33746 Inputs (000)    2291 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch  18000/33746 Inputs (000)    2304 - Loss:  0.041  - Validation loss:  0.027
+Epoch   1/1 Batch  18100/33746 Inputs (000)    2316 - Loss:  0.039  - Validation loss:  0.026
+Epoch   1/1 Batch  18200/33746 Inputs (000)    2329 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch  18300/33746 Inputs (000)    2342 - Loss:  0.030  - Validation loss:  0.025
+Epoch   1/1 Batch  18400/33746 Inputs (000)    2355 - Loss:  0.039  - Validation loss:  0.025
+Epoch   1/1 Batch  18500/33746 Inputs (000)    2368 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  18600/33746 Inputs (000)    2380 - Loss:  0.030  - Validation loss:  0.026
+Epoch   1/1 Batch  18700/33746 Inputs (000)    2393 - Loss:  0.031  - Validation loss:  0.026
+Epoch   1/1 Batch  18800/33746 Inputs (000)    2406 - Loss:  0.031  - Validation loss:  0.024
+Epoch   1/1 Batch  18900/33746 Inputs (000)    2419 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch  19000/33746 Inputs (000)    2432 - Loss:  0.052  - Validation loss:  0.024
+Epoch   1/1 Batch  19100/33746 Inputs (000)    2444 - Loss:  0.041  - Validation loss:  0.023
+Epoch   1/1 Batch  19200/33746 Inputs (000)    2457 - Loss:  0.031  - Validation loss:  0.025
+Epoch   1/1 Batch  19300/33746 Inputs (000)    2470 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch  19400/33746 Inputs (000)    2483 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  19500/33746 Inputs (000)    2496 - Loss:  0.033  - Validation loss:  0.025
+Epoch   1/1 Batch  19600/33746 Inputs (000)    2508 - Loss:  0.042  - Validation loss:  0.024
+Epoch   1/1 Batch  19700/33746 Inputs (000)    2521 - Loss:  0.036  - Validation loss:  0.024
+Epoch   1/1 Batch  19800/33746 Inputs (000)    2534 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  19900/33746 Inputs (000)    2547 - Loss:  0.037  - Validation loss:  0.025
+Epoch   1/1 Batch  20000/33746 Inputs (000)    2560 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  20100/33746 Inputs (000)    2572 - Loss:  0.038  - Validation loss:  0.024
+Epoch   1/1 Batch  20200/33746 Inputs (000)    2585 - Loss:  0.038  - Validation loss:  0.022
+Epoch   1/1 Batch  20300/33746 Inputs (000)    2598 - Loss:  0.032  - Validation loss:  0.024
+Epoch   1/1 Batch  20400/33746 Inputs (000)    2611 - Loss:  0.029  - Validation loss:  0.025
+Epoch   1/1 Batch  20500/33746 Inputs (000)    2624 - Loss:  0.027  - Validation loss:  0.024
+Epoch   1/1 Batch  20600/33746 Inputs (000)    2636 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  20700/33746 Inputs (000)    2649 - Loss:  0.042  - Validation loss:  0.025
+Epoch   1/1 Batch  20800/33746 Inputs (000)    2662 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  20900/33746 Inputs (000)    2675 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  21000/33746 Inputs (000)    2688 - Loss:  0.024  - Validation loss:  0.026
+Epoch   1/1 Batch  21100/33746 Inputs (000)    2700 - Loss:  0.038  - Validation loss:  0.026
+Epoch   1/1 Batch  21200/33746 Inputs (000)    2713 - Loss:  0.048  - Validation loss:  0.026
+Epoch   1/1 Batch  21300/33746 Inputs (000)    2726 - Loss:  0.034  - Validation loss:  0.026
+Epoch   1/1 Batch  21400/33746 Inputs (000)    2739 - Loss:  0.037  - Validation loss:  0.025
+Epoch   1/1 Batch  21500/33746 Inputs (000)    2752 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  21600/33746 Inputs (000)    2764 - Loss:  0.033  - Validation loss:  0.024
+Epoch   1/1 Batch  21700/33746 Inputs (000)    2777 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  21800/33746 Inputs (000)    2790 - Loss:  0.041  - Validation loss:  0.024
+Epoch   1/1 Batch  21900/33746 Inputs (000)    2803 - Loss:  0.030  - Validation loss:  0.023
+Epoch   1/1 Batch  22000/33746 Inputs (000)    2816 - Loss:  0.043  - Validation loss:  0.023
+Epoch   1/1 Batch  22100/33746 Inputs (000)    2828 - Loss:  0.046  - Validation loss:  0.025
+Epoch   1/1 Batch  22200/33746 Inputs (000)    2841 - Loss:  0.033  - Validation loss:  0.028
+Epoch   1/1 Batch  22300/33746 Inputs (000)    2854 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  22400/33746 Inputs (000)    2867 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  22500/33746 Inputs (000)    2880 - Loss:  0.034  - Validation loss:  0.025
+Epoch   1/1 Batch  22600/33746 Inputs (000)    2892 - Loss:  0.046  - Validation loss:  0.025
+Epoch   1/1 Batch  22700/33746 Inputs (000)    2905 - Loss:  0.030  - Validation loss:  0.024
+Epoch   1/1 Batch  22800/33746 Inputs (000)    2918 - Loss:  0.036  - Validation loss:  0.025
+Epoch   1/1 Batch  22900/33746 Inputs (000)    2931 - Loss:  0.041  - Validation loss:  0.025
+Epoch   1/1 Batch  23000/33746 Inputs (000)    2944 - Loss:  0.033  - Validation loss:  0.025
+Epoch   1/1 Batch  23100/33746 Inputs (000)    2956 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch  23200/33746 Inputs (000)    2969 - Loss:  0.044  - Validation loss:  0.025
+Epoch   1/1 Batch  23300/33746 Inputs (000)    2982 - Loss:  0.035  - Validation loss:  0.024
+Epoch   1/1 Batch  23400/33746 Inputs (000)    2995 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  23500/33746 Inputs (000)    3008 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  23600/33746 Inputs (000)    3020 - Loss:  0.044  - Validation loss:  0.025
+Epoch   1/1 Batch  23700/33746 Inputs (000)    3033 - Loss:  0.037  - Validation loss:  0.025
+Epoch   1/1 Batch  23800/33746 Inputs (000)    3046 - Loss:  0.039  - Validation loss:  0.025
+Epoch   1/1 Batch  23900/33746 Inputs (000)    3059 - Loss:  0.036  - Validation loss:  0.025
+Epoch   1/1 Batch  24000/33746 Inputs (000)    3072 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  24100/33746 Inputs (000)    3084 - Loss:  0.036  - Validation loss:  0.026
+Epoch   1/1 Batch  24200/33746 Inputs (000)    3097 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  24300/33746 Inputs (000)    3110 - Loss:  0.025  - Validation loss:  0.025
+Epoch   1/1 Batch  24400/33746 Inputs (000)    3123 - Loss:  0.051  - Validation loss:  0.026
+Epoch   1/1 Batch  24500/33746 Inputs (000)    3136 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  24600/33746 Inputs (000)    3148 - Loss:  0.034  - Validation loss:  0.023
+Epoch   1/1 Batch  24700/33746 Inputs (000)    3161 - Loss:  0.028  - Validation loss:  0.023
+Epoch   1/1 Batch  24800/33746 Inputs (000)    3174 - Loss:  0.041  - Validation loss:  0.026
+Epoch   1/1 Batch  24900/33746 Inputs (000)    3187 - Loss:  0.037  - Validation loss:  0.026
+Epoch   1/1 Batch  25000/33746 Inputs (000)    3200 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  25100/33746 Inputs (000)    3212 - Loss:  0.034  - Validation loss:  0.024
+Epoch   1/1 Batch  25200/33746 Inputs (000)    3225 - Loss:  0.035  - Validation loss:  0.025
+Epoch   1/1 Batch  25300/33746 Inputs (000)    3238 - Loss:  0.030  - Validation loss:  0.025
+Epoch   1/1 Batch  25400/33746 Inputs (000)    3251 - Loss:  0.038  - Validation loss:  0.025
+Epoch   1/1 Batch  25500/33746 Inputs (000)    3264 - Loss:  0.038  - Validation loss:  0.025
+Epoch   1/1 Batch  25600/33746 Inputs (000)    3276 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  25700/33746 Inputs (000)    3289 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  25800/33746 Inputs (000)    3302 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  25900/33746 Inputs (000)    3315 - Loss:  0.042  - Validation loss:  0.024
+Epoch   1/1 Batch  26000/33746 Inputs (000)    3328 - Loss:  0.045  - Validation loss:  0.022
+Epoch   1/1 Batch  26100/33746 Inputs (000)    3340 - Loss:  0.043  - Validation loss:  0.024
+Epoch   1/1 Batch  26200/33746 Inputs (000)    3353 - Loss:  0.034  - Validation loss:  0.022
+Epoch   1/1 Batch  26300/33746 Inputs (000)    3366 - Loss:  0.044  - Validation loss:  0.023
+Epoch   1/1 Batch  26400/33746 Inputs (000)    3379 - Loss:  0.035  - Validation loss:  0.023
+Epoch   1/1 Batch  26500/33746 Inputs (000)    3392 - Loss:  0.035  - Validation loss:  0.023
+Epoch   1/1 Batch  26600/33746 Inputs (000)    3404 - Loss:  0.043  - Validation loss:  0.022
+Epoch   1/1 Batch  26700/33746 Inputs (000)    3417 - Loss:  0.043  - Validation loss:  0.024
+Epoch   1/1 Batch  26800/33746 Inputs (000)    3430 - Loss:  0.040  - Validation loss:  0.026
+Epoch   1/1 Batch  26900/33746 Inputs (000)    3443 - Loss:  0.048  - Validation loss:  0.023
+Epoch   1/1 Batch  27000/33746 Inputs (000)    3456 - Loss:  0.033  - Validation loss:  0.024
+Epoch   1/1 Batch  27100/33746 Inputs (000)    3468 - Loss:  0.042  - Validation loss:  0.026
+Epoch   1/1 Batch  27200/33746 Inputs (000)    3481 - Loss:  0.036  - Validation loss:  0.027
+Epoch   1/1 Batch  27300/33746 Inputs (000)    3494 - Loss:  0.045  - Validation loss:  0.026
+Epoch   1/1 Batch  27400/33746 Inputs (000)    3507 - Loss:  0.032  - Validation loss:  0.027
+Epoch   1/1 Batch  27500/33746 Inputs (000)    3520 - Loss:  0.032  - Validation loss:  0.026
+Epoch   1/1 Batch  27600/33746 Inputs (000)    3532 - Loss:  0.022  - Validation loss:  0.028
+Epoch   1/1 Batch  27700/33746 Inputs (000)    3545 - Loss:  0.047  - Validation loss:  0.025
+Epoch   1/1 Batch  27800/33746 Inputs (000)    3558 - Loss:  0.042  - Validation loss:  0.025
+Epoch   1/1 Batch  27900/33746 Inputs (000)    3571 - Loss:  0.043  - Validation loss:  0.026
+Epoch   1/1 Batch  28000/33746 Inputs (000)    3584 - Loss:  0.034  - Validation loss:  0.025
+Epoch   1/1 Batch  28100/33746 Inputs (000)    3596 - Loss:  0.037  - Validation loss:  0.023
+Epoch   1/1 Batch  28200/33746 Inputs (000)    3609 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  28300/33746 Inputs (000)    3622 - Loss:  0.042  - Validation loss:  0.024
+Epoch   1/1 Batch  28400/33746 Inputs (000)    3635 - Loss:  0.030  - Validation loss:  0.023
+Epoch   1/1 Batch  28500/33746 Inputs (000)    3648 - Loss:  0.041  - Validation loss:  0.023
+Epoch   1/1 Batch  28600/33746 Inputs (000)    3660 - Loss:  0.028  - Validation loss:  0.025
+Epoch   1/1 Batch  28700/33746 Inputs (000)    3673 - Loss:  0.036  - Validation loss:  0.025
+Epoch   1/1 Batch  28800/33746 Inputs (000)    3686 - Loss:  0.027  - Validation loss:  0.024
+Epoch   1/1 Batch  28900/33746 Inputs (000)    3699 - Loss:  0.044  - Validation loss:  0.024
+Epoch   1/1 Batch  29000/33746 Inputs (000)    3712 - Loss:  0.036  - Validation loss:  0.024
+Epoch   1/1 Batch  29100/33746 Inputs (000)    3724 - Loss:  0.041  - Validation loss:  0.025
+Epoch   1/1 Batch  29200/33746 Inputs (000)    3737 - Loss:  0.048  - Validation loss:  0.023
+Epoch   1/1 Batch  29300/33746 Inputs (000)    3750 - Loss:  0.036  - Validation loss:  0.024
+Epoch   1/1 Batch  29400/33746 Inputs (000)    3763 - Loss:  0.027  - Validation loss:  0.024
+Epoch   1/1 Batch  29500/33746 Inputs (000)    3776 - Loss:  0.034  - Validation loss:  0.024
+Epoch   1/1 Batch  29600/33746 Inputs (000)    3788 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  29700/33746 Inputs (000)    3801 - Loss:  0.042  - Validation loss:  0.023
+Epoch   1/1 Batch  29800/33746 Inputs (000)    3814 - Loss:  0.040  - Validation loss:  0.024
+Epoch   1/1 Batch  29900/33746 Inputs (000)    3827 - Loss:  0.037  - Validation loss:  0.025
+Epoch   1/1 Batch  30000/33746 Inputs (000)    3840 - Loss:  0.034  - Validation loss:  0.022
+Epoch   1/1 Batch  30100/33746 Inputs (000)    3852 - Loss:  0.040  - Validation loss:  0.025
+Epoch   1/1 Batch  30200/33746 Inputs (000)    3865 - Loss:  0.032  - Validation loss:  0.023
+Epoch   1/1 Batch  30300/33746 Inputs (000)    3878 - Loss:  0.034  - Validation loss:  0.025
+Epoch   1/1 Batch  30400/33746 Inputs (000)    3891 - Loss:  0.050  - Validation loss:  0.023
+Epoch   1/1 Batch  30500/33746 Inputs (000)    3904 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  30600/33746 Inputs (000)    3916 - Loss:  0.032  - Validation loss:  0.025
+Epoch   1/1 Batch  30700/33746 Inputs (000)    3929 - Loss:  0.029  - Validation loss:  0.024
+Epoch   1/1 Batch  30800/33746 Inputs (000)    3942 - Loss:  0.030  - Validation loss:  0.026
+Epoch   1/1 Batch  30900/33746 Inputs (000)    3955 - Loss:  0.032  - Validation loss:  0.024
+Epoch   1/1 Batch  31000/33746 Inputs (000)    3968 - Loss:  0.033  - Validation loss:  0.023
+Epoch   1/1 Batch  31100/33746 Inputs (000)    3980 - Loss:  0.030  - Validation loss:  0.021
+Epoch   1/1 Batch  31200/33746 Inputs (000)    3993 - Loss:  0.037  - Validation loss:  0.023
+Epoch   1/1 Batch  31300/33746 Inputs (000)    4006 - Loss:  0.047  - Validation loss:  0.024
+Epoch   1/1 Batch  31400/33746 Inputs (000)    4019 - Loss:  0.040  - Validation loss:  0.022
+Epoch   1/1 Batch  31500/33746 Inputs (000)    4032 - Loss:  0.037  - Validation loss:  0.024
+Epoch   1/1 Batch  31600/33746 Inputs (000)    4044 - Loss:  0.030  - Validation loss:  0.027
+Epoch   1/1 Batch  31700/33746 Inputs (000)    4057 - Loss:  0.037  - Validation loss:  0.025
+Epoch   1/1 Batch  31800/33746 Inputs (000)    4070 - Loss:  0.047  - Validation loss:  0.026
+Epoch   1/1 Batch  31900/33746 Inputs (000)    4083 - Loss:  0.037  - Validation loss:  0.026
+Epoch   1/1 Batch  32000/33746 Inputs (000)    4096 - Loss:  0.038  - Validation loss:  0.023
+Epoch   1/1 Batch  32100/33746 Inputs (000)    4108 - Loss:  0.029  - Validation loss:  0.024
+Epoch   1/1 Batch  32200/33746 Inputs (000)    4121 - Loss:  0.036  - Validation loss:  0.023
+Epoch   1/1 Batch  32300/33746 Inputs (000)    4134 - Loss:  0.027  - Validation loss:  0.025
+Epoch   1/1 Batch  32400/33746 Inputs (000)    4147 - Loss:  0.036  - Validation loss:  0.023
+Epoch   1/1 Batch  32500/33746 Inputs (000)    4160 - Loss:  0.039  - Validation loss:  0.023
+Epoch   1/1 Batch  32600/33746 Inputs (000)    4172 - Loss:  0.026  - Validation loss:  0.023
+Epoch   1/1 Batch  32700/33746 Inputs (000)    4185 - Loss:  0.048  - Validation loss:  0.024
+Epoch   1/1 Batch  32800/33746 Inputs (000)    4198 - Loss:  0.047  - Validation loss:  0.026
+Epoch   1/1 Batch  32900/33746 Inputs (000)    4211 - Loss:  0.031  - Validation loss:  0.024
+Epoch   1/1 Batch  33000/33746 Inputs (000)    4224 - Loss:  0.029  - Validation loss:  0.023
+Epoch   1/1 Batch  33100/33746 Inputs (000)    4236 - Loss:  0.038  - Validation loss:  0.025
+Epoch   1/1 Batch  33200/33746 Inputs (000)    4249 - Loss:  0.028  - Validation loss:  0.024
+Epoch   1/1 Batch  33300/33746 Inputs (000)    4262 - Loss:  0.039  - Validation loss:  0.024
+Epoch   1/1 Batch  33400/33746 Inputs (000)    4275 - Loss:  0.041  - Validation loss:  0.020
+Epoch   1/1 Batch  33500/33746 Inputs (000)    4288 - Loss:  0.045  - Validation loss:  0.024
+Epoch   1/1 Batch  33600/33746 Inputs (000)    4300 - Loss:  0.038  - Validation loss:  0.023
+Epoch   1/1 Batch  33700/33746 Inputs (000)    4313 - Loss:  0.038  - Validation loss:  0.024
+Model Trained in 6h:39m:40s and Saved
 Loaded batch_size = 128
-Original Text: hello
+There are 479,965 validation sentences and 3,749 batches.
 
-Source
-  Word Ids:    [97, 20, 101, 101, 84, 0, 0]
-  Input Words: h e l l o <PAD> <PAD>
+First 10 sentence:
 
-Target
-  Word Ids:       [97, 20, 26, 101, 70, 13, 83]
-  Response Words: h e a l s "  
+Source --> Would that change depending on your age?
+Target --> Would that change depending on your age?
+
+Source --> 2 x u400ml cans of chopped tomatoes or bottle of passata
+Target --> 2 x 400ml cans of chopped tomatoes or bottle of passata
+
+Source --> Still, he also felt vindicated.
+Target --> Still, he also felt vindicated.
+
+Source --> No official charges have been filed.
+Target --> No official charges have been filed.
+
+Source --> And that' swhat I'm focusing on.
+Target --> And that's what I'm focusing on.
+
+Source --> Chinese tourists told to improve behaviour
+Target --> Chinese tourists told to improve behaviour
+
+Source --> Majority want sport to phase out booze ads
+Target --> Majority want sport to phase out booze ads
+
+Source --> Complex synthesis
+Target --> Complex synthesis
+
+Source --> And they can be great workers.
+Target --> And they can be great workers.
+
+Source --> Australia deserved the win.
+Target --> Australia deserved the win.
+
+Read large_graph/sourceinttoletter.json data to file.
+Read large_graph/targetinttoletter.json data to file.
+Read large_graph/sourcelettertoint.json data to file.
+Read large_graph/targetlettertoint.json data to file.
+
+Example source sequences
+[[55, 84, 75, 101, 14, 83, 19, 97, 26, 19, 83, 76, 97, 26, 10, 46, 20, 83, 14, 20, 4, 20, 10, 14, 29, 10, 46, 83, 84, 10, 83, 17, 84, 75, 28, 83, 26, 46, 20, 7], [35, 83, 41, 83, 75, 94, 79, 79, 34, 101, 83, 76, 26, 10, 70, 83, 84, 59, 83, 76, 97, 84, 4, 4, 20, 14, 83, 19, 84, 34, 26, 19, 84, 20, 70, 83, 84, 28, 83, 67, 84, 19, 19, 101, 20, 83, 84, 59, 83, 4, 26, 70, 70, 26, 19, 26], [18, 19, 29, 101, 101, 65, 83, 97, 20, 83, 26, 101, 70, 84, 83, 59, 20, 101, 19, 83, 39, 29, 10, 14, 29, 76, 26, 19, 20, 14, 73]]
+
+Example target sequences
+[[55, 84, 75, 101, 14, 83, 19, 97, 26, 19, 83, 76, 97, 26, 10, 46, 20, 83, 14, 20, 4, 20, 10, 14, 29, 10, 46, 83, 84, 10, 83, 17, 84, 75, 28, 83, 26, 46, 20, 7, 3], [35, 83, 41, 83, 94, 79, 79, 34, 101, 83, 76, 26, 10, 70, 83, 84, 59, 83, 76, 97, 84, 4, 4, 20, 14, 83, 19, 84, 34, 26, 19, 84, 20, 70, 83, 84, 28, 83, 67, 84, 19, 19, 101, 20, 83, 84, 59, 83, 4, 26, 70, 70, 26, 19, 26, 3], [18, 19, 29, 101, 101, 65, 83, 97, 20, 83, 26, 101, 70, 84, 83, 59, 20, 101, 19, 83, 39, 29, 10, 14, 29, 76, 26, 19, 20, 14, 73, 3]]
+2017-09-27 01:36:59.312633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+Batch     10/3749 - Accuracy: 74.1%
+Batch     20/3749 - Accuracy: 74.9%
+Batch     30/3749 - Accuracy: 75.0%
+Batch     40/3749 - Accuracy: 75.4%
+Batch     50/3749 - Accuracy: 75.5%
+Batch     60/3749 - Accuracy: 75.3%
+Batch     70/3749 - Accuracy: 74.8%
+Batch     80/3749 - Accuracy: 74.9%
+Batch     90/3749 - Accuracy: 74.8%
+Batch    100/3749 - Accuracy: 75.0%
+Batch    110/3749 - Accuracy: 75.1%
+Batch    120/3749 - Accuracy: 75.1%
+Batch    130/3749 - Accuracy: 75.0%
+Batch    140/3749 - Accuracy: 74.9%
+Batch    150/3749 - Accuracy: 75.0%
+Batch    160/3749 - Accuracy: 74.9%
+Batch    170/3749 - Accuracy: 74.8%
+Batch    180/3749 - Accuracy: 74.9%
+Batch    190/3749 - Accuracy: 74.9%
+Batch    200/3749 - Accuracy: 74.8%
+Batch    210/3749 - Accuracy: 74.9%
+Batch    220/3749 - Accuracy: 74.9%
+Batch    230/3749 - Accuracy: 74.9%
+Batch    240/3749 - Accuracy: 74.9%
+Batch    250/3749 - Accuracy: 74.9%
+Batch    260/3749 - Accuracy: 74.9%
+Batch    270/3749 - Accuracy: 74.9%
+Batch    280/3749 - Accuracy: 74.8%
+Batch    290/3749 - Accuracy: 74.8%
+Batch    300/3749 - Accuracy: 74.8%
+Batch    310/3749 - Accuracy: 74.8%
+Batch    320/3749 - Accuracy: 74.9%
+Batch    330/3749 - Accuracy: 74.9%
+Batch    340/3749 - Accuracy: 75.0%
+Batch    350/3749 - Accuracy: 75.0%
+Batch    360/3749 - Accuracy: 75.0%
+Batch    370/3749 - Accuracy: 75.0%
+Batch    380/3749 - Accuracy: 75.0%
+Batch    390/3749 - Accuracy: 75.0%
+Batch    400/3749 - Accuracy: 75.1%
+Batch    410/3749 - Accuracy: 75.1%
+Batch    420/3749 - Accuracy: 75.1%
+Batch    430/3749 - Accuracy: 75.1%
+Batch    440/3749 - Accuracy: 75.1%
+Batch    450/3749 - Accuracy: 75.1%
+Batch    460/3749 - Accuracy: 75.1%
+Batch    470/3749 - Accuracy: 75.2%
+Batch    480/3749 - Accuracy: 75.1%
+Batch    490/3749 - Accuracy: 75.1%
+Batch    500/3749 - Accuracy: 75.2%
+Batch    510/3749 - Accuracy: 75.2%
+Batch    520/3749 - Accuracy: 75.2%
+Batch    530/3749 - Accuracy: 75.2%
+Batch    540/3749 - Accuracy: 75.2%
+Batch    550/3749 - Accuracy: 75.2%
+Batch    560/3749 - Accuracy: 75.2%
+Batch    570/3749 - Accuracy: 75.1%
+Batch    580/3749 - Accuracy: 75.1%
+Batch    590/3749 - Accuracy: 75.1%
+Batch    600/3749 - Accuracy: 75.1%
+Batch    610/3749 - Accuracy: 75.1%
+Batch    620/3749 - Accuracy: 75.1%
+Batch    630/3749 - Accuracy: 75.1%
+Batch    640/3749 - Accuracy: 75.1%
+Batch    650/3749 - Accuracy: 75.1%
+Batch    660/3749 - Accuracy: 75.1%
+Batch    670/3749 - Accuracy: 75.1%
+Batch    680/3749 - Accuracy: 75.1%
+Batch    690/3749 - Accuracy: 75.1%
+Batch    700/3749 - Accuracy: 75.1%
+Batch    710/3749 - Accuracy: 75.1%
+Batch    720/3749 - Accuracy: 75.0%
+Batch    730/3749 - Accuracy: 75.0%
+Batch    740/3749 - Accuracy: 75.1%
+Batch    750/3749 - Accuracy: 75.1%
+Batch    760/3749 - Accuracy: 75.0%
+Batch    770/3749 - Accuracy: 75.0%
+Batch    780/3749 - Accuracy: 75.0%
+Batch    790/3749 - Accuracy: 75.0%
+Batch    800/3749 - Accuracy: 75.0%
+Batch    810/3749 - Accuracy: 75.0%
+Batch    820/3749 - Accuracy: 75.0%
+Batch    830/3749 - Accuracy: 75.0%
+Batch    840/3749 - Accuracy: 75.0%
+Batch    850/3749 - Accuracy: 75.0%
+Batch    860/3749 - Accuracy: 75.0%
+Batch    870/3749 - Accuracy: 75.0%
+Batch    880/3749 - Accuracy: 75.0%
+Batch    890/3749 - Accuracy: 75.0%
+Batch    900/3749 - Accuracy: 75.0%
+Batch    910/3749 - Accuracy: 75.0%
+Batch    920/3749 - Accuracy: 75.0%
+Batch    930/3749 - Accuracy: 75.0%
+Batch    940/3749 - Accuracy: 75.0%
+Batch    950/3749 - Accuracy: 75.0%
+Batch    960/3749 - Accuracy: 75.0%
+Batch    970/3749 - Accuracy: 75.0%
+Batch    980/3749 - Accuracy: 75.0%
+Batch    990/3749 - Accuracy: 75.0%
+Batch   1000/3749 - Accuracy: 75.0%
+Batch   1010/3749 - Accuracy: 75.0%
+Batch   1020/3749 - Accuracy: 75.0%
+Batch   1030/3749 - Accuracy: 75.1%
+Batch   1040/3749 - Accuracy: 75.1%
+Batch   1050/3749 - Accuracy: 75.1%
+Batch   1060/3749 - Accuracy: 75.1%
+Batch   1070/3749 - Accuracy: 75.1%
+Batch   1080/3749 - Accuracy: 75.1%
+Batch   1090/3749 - Accuracy: 75.1%
+Batch   1100/3749 - Accuracy: 75.1%
+Batch   1110/3749 - Accuracy: 75.1%
+Batch   1120/3749 - Accuracy: 75.1%
+Batch   1130/3749 - Accuracy: 75.1%
+Batch   1140/3749 - Accuracy: 75.1%
+Batch   1150/3749 - Accuracy: 75.1%
+Batch   1160/3749 - Accuracy: 75.1%
+Batch   1170/3749 - Accuracy: 75.1%
+Batch   1180/3749 - Accuracy: 75.1%
+Batch   1190/3749 - Accuracy: 75.1%
+Batch   1200/3749 - Accuracy: 75.0%
+Batch   1210/3749 - Accuracy: 75.0%
+Batch   1220/3749 - Accuracy: 75.0%
+Batch   1230/3749 - Accuracy: 75.0%
+Batch   1240/3749 - Accuracy: 75.0%
+Batch   1250/3749 - Accuracy: 75.0%
+Batch   1260/3749 - Accuracy: 75.0%
+Batch   1270/3749 - Accuracy: 75.0%
+Batch   1280/3749 - Accuracy: 75.0%
+Batch   1290/3749 - Accuracy: 75.0%
+Batch   1300/3749 - Accuracy: 75.0%
+Batch   1310/3749 - Accuracy: 75.0%
+Batch   1320/3749 - Accuracy: 75.0%
+Batch   1330/3749 - Accuracy: 75.0%
+Batch   1340/3749 - Accuracy: 75.0%
+Batch   1350/3749 - Accuracy: 75.0%
+Batch   1360/3749 - Accuracy: 75.0%
+Batch   1370/3749 - Accuracy: 75.0%
+Batch   1380/3749 - Accuracy: 75.0%
+Batch   1390/3749 - Accuracy: 75.0%
+Batch   1400/3749 - Accuracy: 75.0%
+Batch   1410/3749 - Accuracy: 75.0%
+Batch   1420/3749 - Accuracy: 75.0%
+Batch   1430/3749 - Accuracy: 75.0%
+Batch   1440/3749 - Accuracy: 75.0%
+Batch   1450/3749 - Accuracy: 75.0%
+Batch   1460/3749 - Accuracy: 75.0%
+Batch   1470/3749 - Accuracy: 75.0%
+Batch   1480/3749 - Accuracy: 75.0%
+Batch   1490/3749 - Accuracy: 75.0%
+Batch   1500/3749 - Accuracy: 75.0%
+Batch   1510/3749 - Accuracy: 75.0%
+Batch   1520/3749 - Accuracy: 75.0%
+Batch   1530/3749 - Accuracy: 75.0%
+Batch   1540/3749 - Accuracy: 75.0%
+Batch   1550/3749 - Accuracy: 75.0%
+Batch   1560/3749 - Accuracy: 75.0%
+Batch   1570/3749 - Accuracy: 75.0%
+Batch   1580/3749 - Accuracy: 75.0%
+Batch   1590/3749 - Accuracy: 75.0%
+Batch   1600/3749 - Accuracy: 75.0%
+Batch   1610/3749 - Accuracy: 75.0%
+Batch   1620/3749 - Accuracy: 75.0%
+Batch   1630/3749 - Accuracy: 75.0%
+Batch   1640/3749 - Accuracy: 75.0%
+Batch   1650/3749 - Accuracy: 75.0%
+Batch   1660/3749 - Accuracy: 75.0%
+Batch   1670/3749 - Accuracy: 75.0%
+Batch   1680/3749 - Accuracy: 75.0%
+Batch   1690/3749 - Accuracy: 75.0%
+Batch   1700/3749 - Accuracy: 75.0%
+Batch   1710/3749 - Accuracy: 75.0%
+Batch   1720/3749 - Accuracy: 75.0%
+Batch   1730/3749 - Accuracy: 75.0%
+Batch   1740/3749 - Accuracy: 75.0%
+Batch   1750/3749 - Accuracy: 75.0%
+Batch   1760/3749 - Accuracy: 75.0%
+Batch   1770/3749 - Accuracy: 75.1%
+Batch   1780/3749 - Accuracy: 75.1%
+Batch   1790/3749 - Accuracy: 75.1%
+Batch   1800/3749 - Accuracy: 75.1%
+Batch   1810/3749 - Accuracy: 75.1%
+Batch   1820/3749 - Accuracy: 75.1%
+Batch   1830/3749 - Accuracy: 75.1%
+Batch   1840/3749 - Accuracy: 75.1%
+Batch   1850/3749 - Accuracy: 75.1%
+Batch   1860/3749 - Accuracy: 75.1%
+Batch   1870/3749 - Accuracy: 75.1%
+Batch   1880/3749 - Accuracy: 75.1%
+Batch   1890/3749 - Accuracy: 75.1%
+Batch   1900/3749 - Accuracy: 75.1%
+Batch   1910/3749 - Accuracy: 75.1%
+Batch   1920/3749 - Accuracy: 75.1%
+Batch   1930/3749 - Accuracy: 75.1%
+Batch   1940/3749 - Accuracy: 75.1%
+Batch   1950/3749 - Accuracy: 75.1%
+Batch   1960/3749 - Accuracy: 75.1%
+Batch   1970/3749 - Accuracy: 75.1%
+Batch   1980/3749 - Accuracy: 75.1%
+Batch   1990/3749 - Accuracy: 75.1%
+Batch   2000/3749 - Accuracy: 75.1%
+Batch   2010/3749 - Accuracy: 75.1%
+Batch   2020/3749 - Accuracy: 75.1%
+Batch   2030/3749 - Accuracy: 75.1%
+Batch   2040/3749 - Accuracy: 75.1%
+Batch   2050/3749 - Accuracy: 75.1%
+Batch   2060/3749 - Accuracy: 75.0%
+Batch   2070/3749 - Accuracy: 75.0%
+Batch   2080/3749 - Accuracy: 75.0%
+Batch   2090/3749 - Accuracy: 75.0%
+Batch   2100/3749 - Accuracy: 75.0%
+Batch   2110/3749 - Accuracy: 75.0%
+Batch   2120/3749 - Accuracy: 75.0%
+Batch   2130/3749 - Accuracy: 75.0%
+Batch   2140/3749 - Accuracy: 75.0%
+Batch   2150/3749 - Accuracy: 75.0%
+Batch   2160/3749 - Accuracy: 75.1%
+Batch   2170/3749 - Accuracy: 75.0%
+Batch   2180/3749 - Accuracy: 75.0%
+Batch   2190/3749 - Accuracy: 75.0%
+Batch   2200/3749 - Accuracy: 75.0%
+Batch   2210/3749 - Accuracy: 75.0%
+Batch   2220/3749 - Accuracy: 75.0%
+Batch   2230/3749 - Accuracy: 75.0%
+Batch   2240/3749 - Accuracy: 75.0%
+Batch   2250/3749 - Accuracy: 75.0%
+Batch   2260/3749 - Accuracy: 75.0%
+Batch   2270/3749 - Accuracy: 75.0%
+Batch   2280/3749 - Accuracy: 75.0%
+Batch   2290/3749 - Accuracy: 75.0%
+Batch   2300/3749 - Accuracy: 75.0%
+Batch   2310/3749 - Accuracy: 75.0%
+Batch   2320/3749 - Accuracy: 75.0%
+Batch   2330/3749 - Accuracy: 75.0%
+Batch   2340/3749 - Accuracy: 75.0%
+Batch   2350/3749 - Accuracy: 75.0%
+Batch   2360/3749 - Accuracy: 75.0%
+Batch   2370/3749 - Accuracy: 75.0%
+Batch   2380/3749 - Accuracy: 75.0%
+Batch   2390/3749 - Accuracy: 75.0%
+Batch   2400/3749 - Accuracy: 75.1%
+Batch   2410/3749 - Accuracy: 75.0%
+Batch   2420/3749 - Accuracy: 75.0%
+Batch   2430/3749 - Accuracy: 75.0%
+Batch   2440/3749 - Accuracy: 75.0%
+Batch   2450/3749 - Accuracy: 75.0%
+Batch   2460/3749 - Accuracy: 75.0%
+Batch   2470/3749 - Accuracy: 75.0%
+Batch   2480/3749 - Accuracy: 75.0%
+Batch   2490/3749 - Accuracy: 75.0%
+Batch   2500/3749 - Accuracy: 75.0%
+Batch   2510/3749 - Accuracy: 75.0%
+Batch   2520/3749 - Accuracy: 75.0%
+Batch   2530/3749 - Accuracy: 75.0%
+Batch   2540/3749 - Accuracy: 75.0%
+Batch   2550/3749 - Accuracy: 75.1%
+Batch   2560/3749 - Accuracy: 75.1%
+Batch   2570/3749 - Accuracy: 75.1%
+Batch   2580/3749 - Accuracy: 75.1%
+Batch   2590/3749 - Accuracy: 75.1%
+Batch   2600/3749 - Accuracy: 75.1%
+Batch   2610/3749 - Accuracy: 75.1%
+Batch   2620/3749 - Accuracy: 75.1%
+Batch   2630/3749 - Accuracy: 75.1%
+Batch   2640/3749 - Accuracy: 75.1%
+Batch   2650/3749 - Accuracy: 75.1%
+Batch   2660/3749 - Accuracy: 75.1%
+Batch   2670/3749 - Accuracy: 75.1%
+Batch   2680/3749 - Accuracy: 75.1%
+Batch   2690/3749 - Accuracy: 75.1%
+Batch   2700/3749 - Accuracy: 75.1%
+Batch   2710/3749 - Accuracy: 75.1%
+Batch   2720/3749 - Accuracy: 75.1%
+Batch   2730/3749 - Accuracy: 75.1%
+Batch   2740/3749 - Accuracy: 75.1%
+Batch   2750/3749 - Accuracy: 75.1%
+Batch   2760/3749 - Accuracy: 75.1%
+Batch   2770/3749 - Accuracy: 75.1%
+Batch   2780/3749 - Accuracy: 75.1%
+Batch   2790/3749 - Accuracy: 75.1%
+Batch   2800/3749 - Accuracy: 75.1%
+Batch   2810/3749 - Accuracy: 75.1%
+Batch   2820/3749 - Accuracy: 75.1%
+Batch   2830/3749 - Accuracy: 75.1%
+Batch   2840/3749 - Accuracy: 75.1%
+Batch   2850/3749 - Accuracy: 75.1%
+Batch   2860/3749 - Accuracy: 75.1%
+Batch   2870/3749 - Accuracy: 75.1%
+Batch   2880/3749 - Accuracy: 75.1%
+Batch   2890/3749 - Accuracy: 75.1%
+Batch   2900/3749 - Accuracy: 75.1%
+Batch   2910/3749 - Accuracy: 75.1%
+Batch   2920/3749 - Accuracy: 75.1%
+Batch   2930/3749 - Accuracy: 75.1%
+Batch   2940/3749 - Accuracy: 75.1%
+Batch   2950/3749 - Accuracy: 75.1%
+Batch   2960/3749 - Accuracy: 75.1%
+Batch   2970/3749 - Accuracy: 75.1%
+Batch   2980/3749 - Accuracy: 75.1%
+Batch   2990/3749 - Accuracy: 75.1%
+Batch   3000/3749 - Accuracy: 75.1%
+Batch   3010/3749 - Accuracy: 75.1%
+Batch   3020/3749 - Accuracy: 75.1%
+Batch   3030/3749 - Accuracy: 75.1%
+Batch   3040/3749 - Accuracy: 75.1%
+Batch   3050/3749 - Accuracy: 75.1%
+Batch   3060/3749 - Accuracy: 75.1%
+Batch   3070/3749 - Accuracy: 75.1%
+Batch   3080/3749 - Accuracy: 75.1%
+Batch   3090/3749 - Accuracy: 75.1%
+Batch   3100/3749 - Accuracy: 75.1%
+Batch   3110/3749 - Accuracy: 75.1%
+Batch   3120/3749 - Accuracy: 75.1%
+Batch   3130/3749 - Accuracy: 75.1%
+Batch   3140/3749 - Accuracy: 75.1%
+Batch   3150/3749 - Accuracy: 75.1%
+Batch   3160/3749 - Accuracy: 75.1%
+Batch   3170/3749 - Accuracy: 75.1%
+Batch   3180/3749 - Accuracy: 75.1%
+Batch   3190/3749 - Accuracy: 75.1%
+Batch   3200/3749 - Accuracy: 75.1%
+Batch   3210/3749 - Accuracy: 75.1%
+Batch   3220/3749 - Accuracy: 75.1%
+Batch   3230/3749 - Accuracy: 75.1%
+Batch   3240/3749 - Accuracy: 75.1%
+Batch   3250/3749 - Accuracy: 75.1%
+Batch   3260/3749 - Accuracy: 75.1%
+Batch   3270/3749 - Accuracy: 75.1%
+Batch   3280/3749 - Accuracy: 75.1%
+Batch   3290/3749 - Accuracy: 75.1%
+Batch   3300/3749 - Accuracy: 75.1%
+Batch   3310/3749 - Accuracy: 75.1%
+Batch   3320/3749 - Accuracy: 75.1%
+Batch   3330/3749 - Accuracy: 75.1%
+Batch   3340/3749 - Accuracy: 75.1%
+Batch   3350/3749 - Accuracy: 75.1%
+Batch   3360/3749 - Accuracy: 75.1%
+Batch   3370/3749 - Accuracy: 75.1%
+Batch   3380/3749 - Accuracy: 75.1%
+Batch   3390/3749 - Accuracy: 75.1%
+Batch   3400/3749 - Accuracy: 75.1%
+Batch   3410/3749 - Accuracy: 75.1%
+Batch   3420/3749 - Accuracy: 75.1%
+Batch   3430/3749 - Accuracy: 75.1%
+Batch   3440/3749 - Accuracy: 75.1%
+Batch   3450/3749 - Accuracy: 75.1%
+Batch   3460/3749 - Accuracy: 75.1%
+Batch   3470/3749 - Accuracy: 75.1%
+Batch   3480/3749 - Accuracy: 75.1%
+Batch   3490/3749 - Accuracy: 75.1%
+Batch   3500/3749 - Accuracy: 75.1%
+Batch   3510/3749 - Accuracy: 75.1%
+Batch   3520/3749 - Accuracy: 75.1%
+Batch   3530/3749 - Accuracy: 75.1%
+Batch   3540/3749 - Accuracy: 75.1%
+Batch   3550/3749 - Accuracy: 75.1%
+Batch   3560/3749 - Accuracy: 75.1%
+Batch   3570/3749 - Accuracy: 75.1%
+Batch   3580/3749 - Accuracy: 75.1%
+Batch   3590/3749 - Accuracy: 75.1%
+Batch   3600/3749 - Accuracy: 75.1%
+Batch   3610/3749 - Accuracy: 75.1%
+Batch   3620/3749 - Accuracy: 75.1%
+Batch   3630/3749 - Accuracy: 75.1%
+Batch   3640/3749 - Accuracy: 75.1%
+Batch   3650/3749 - Accuracy: 75.1%
+Batch   3660/3749 - Accuracy: 75.1%
+Batch   3670/3749 - Accuracy: 75.1%
+Batch   3680/3749 - Accuracy: 75.1%
+Batch   3690/3749 - Accuracy: 75.1%
+Batch   3700/3749 - Accuracy: 75.1%
+Batch   3710/3749 - Accuracy: 75.1%
+Batch   3720/3749 - Accuracy: 75.1%
+Batch   3730/3749 - Accuracy: 75.1%
+Batch   3740/3749 - Accuracy: 75.1%
+
+Final accuracy = 75.1%

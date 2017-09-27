@@ -1,0 +1,149 @@
+2017-09-26 18:44:19.268682: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:44:19.268730: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:44:19.268740: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-26 18:44:19.546483: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-09-26 18:44:19.546766: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: GRID K520
+major: 3 minor: 0 memoryClockRate (GHz) 0.797
+pciBusID 0000:00:03.0
+Total memory: 3.94GiB
+Free memory: 3.91GiB
+2017-09-26 18:44:19.546791: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-09-26 18:44:19.546802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-09-26 18:44:19.546819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+2017-09-26 18:44:19.570634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+2017-09-26 18:44:22.107096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+2017-09-26 18:44:24.548549: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 2873 get requests, put_count=2625 evicted_count=1000 eviction_rate=0.380952 and unsatisfied allocation rate=0.469196
+2017-09-26 18:44:24.548606: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+2017-09-26 18:44:25.944883: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3877 get requests, put_count=3834 evicted_count=1000 eviction_rate=0.260824 and unsatisfied allocation rate=0.274955
+2017-09-26 18:44:25.944936: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
+2017-09-26 18:44:42.108064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+Command line args are: ['deep_speeling.py', 'small']
+Using the small data.
+Load up the small data.
+Source: ['bsaqq', 'npy', 'lbwuj', 'bqv', 'kial', 'tddam', 'edxpjpg', 'nspv', 'huloz', 'kmclq']
+Target: ['abqqs', 'npy', 'bjluw', 'bqv', 'aikl', 'addmt', 'degjppx', 'npsv', 'hlouz', 'cklmq']
+
+The source is comprised of 10,000 sentences.
+
+Read small_graph/sourceinttoletter.json data to file.
+Read small_graph/targetinttoletter.json data to file.
+Read small_graph/sourcelettertoint.json data to file.
+Read small_graph/targetlettertoint.json data to file.
+
+Example source sequences
+[[16, 21, 29, 15, 15], [4, 13, 26], [27, 16, 22, 8, 17]]
+
+Example target sequences
+[[29, 16, 15, 15, 21, 3], [4, 13, 26, 3], [16, 17, 27, 8, 22, 3]]
+
+First 10 sentence:
+
+Source --> [16, 21, 29, 15, 15]
+Target --> [29, 16, 15, 15, 21, 3]
+
+Source --> [4, 13, 26]
+Target --> [4, 13, 26, 3]
+
+Source --> [27, 16, 22, 8, 17]
+Target --> [16, 17, 27, 8, 22, 3]
+
+Source --> [16, 15, 6]
+Target --> [16, 15, 6, 3]
+
+Source --> [12, 24, 29, 27]
+Target --> [29, 24, 12, 27, 3]
+
+Source --> [18, 14, 14, 29, 5]
+Target --> [29, 14, 14, 5, 18, 3]
+
+Source --> [9, 14, 10, 13, 17, 13, 7]
+Target --> [14, 9, 7, 17, 13, 13, 10, 3]
+
+Source --> [4, 21, 13, 6]
+Target --> [4, 13, 21, 6, 3]
+
+Source --> [19, 8, 27, 25, 11]
+Target --> [19, 27, 25, 8, 11, 3]
+
+Source --> [12, 5, 28, 27, 15]
+Target --> [28, 12, 27, 5, 15, 3]
+TensorFlow Version: 1.1.0
+Default GPU Device: /gpu:0
+Using hyperparameters for the small data with 10,000 source sentences.
+Reloading existing graph to continue training.
+Epoch   1/5 Batch     20/77 Inputs (000)       2 - Loss:  0.045  - Validation loss:  0.018
+Epoch   1/5 Batch     40/77 Inputs (000)       5 - Loss:  0.076  - Validation loss:  0.019
+Epoch   1/5 Batch     60/77 Inputs (000)       7 - Loss:  0.060  - Validation loss:  0.025
+Epoch   2/5 Batch     20/77 Inputs (000)      12 - Loss:  0.047  - Validation loss:  0.024
+Epoch   2/5 Batch     40/77 Inputs (000)      14 - Loss:  0.066  - Validation loss:  0.017
+Epoch   2/5 Batch     60/77 Inputs (000)      17 - Loss:  0.063  - Validation loss:  0.017
+Epoch   3/5 Batch     20/77 Inputs (000)      22 - Loss:  0.044  - Validation loss:  0.017
+Epoch   3/5 Batch     40/77 Inputs (000)      24 - Loss:  0.074  - Validation loss:  0.017
+Epoch   3/5 Batch     60/77 Inputs (000)      27 - Loss:  0.061  - Validation loss:  0.016
+Epoch   4/5 Batch     20/77 Inputs (000)      32 - Loss:  0.054  - Validation loss:  0.021
+Epoch   4/5 Batch     40/77 Inputs (000)      34 - Loss:  0.058  - Validation loss:  0.017
+Epoch   4/5 Batch     60/77 Inputs (000)      37 - Loss:  0.067  - Validation loss:  0.016
+Epoch   5/5 Batch     20/77 Inputs (000)      42 - Loss:  0.046  - Validation loss:  0.015
+Epoch   5/5 Batch     40/77 Inputs (000)      44 - Loss:  0.057  - Validation loss:  0.014
+Epoch   5/5 Batch     60/77 Inputs (000)      47 - Loss:  0.062  - Validation loss:  0.017
+Model Trained in 0h:0m:19s and Saved
+Loaded batch_size = 128
+Load up the small data.
+Source: ['bsaqq', 'npy', 'lbwuj', 'bqv', 'kial', 'tddam', 'edxpjpg', 'nspv', 'huloz', 'kmclq']
+Target: ['abqqs', 'npy', 'bjluw', 'bqv', 'aikl', 'addmt', 'degjppx', 'npsv', 'hlouz', 'cklmq']
+
+The source is comprised of 10,000 sentences.
+There are 10,000 validation sentences and 78 batches.
+
+First 10 sentence:
+
+Source --> bsaqq
+Target --> abqqs
+
+Source --> npy
+Target --> npy
+
+Source --> lbwuj
+Target --> bjluw
+
+Source --> bqv
+Target --> bqv
+
+Source --> kial
+Target --> aikl
+
+Source --> tddam
+Target --> addmt
+
+Source --> edxpjpg
+Target --> degjppx
+
+Source --> nspv
+Target --> npsv
+
+Source --> huloz
+Target --> hlouz
+
+Source --> kmclq
+Target --> cklmq
+
+Read small_graph/sourceinttoletter.json data to file.
+Read small_graph/targetinttoletter.json data to file.
+Read small_graph/sourcelettertoint.json data to file.
+Read small_graph/targetlettertoint.json data to file.
+
+Example source sequences
+[[16, 21, 29, 15, 15], [4, 13, 26], [27, 16, 22, 8, 17]]
+
+Example target sequences
+[[29, 16, 15, 15, 21, 3], [4, 13, 26, 3], [16, 17, 27, 8, 22, 3]]
+Batch     10/78 - Accuracy: 98.9%
+Batch     20/78 - Accuracy: 99.0%
+Batch     30/78 - Accuracy: 98.9%
+Batch     40/78 - Accuracy: 98.7%
+Batch     50/78 - Accuracy: 98.7%
+Batch     60/78 - Accuracy: 98.7%
+Batch     70/78 - Accuracy: 98.7%
+
+Final accuracy = 98.7%
