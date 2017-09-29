@@ -99,4 +99,7 @@ ENV/
 .mypy_cache/
 
 # Ignore all the big data files
-news.2013.*
+news.2013.en.shuffled.gz
+news.2013.en.shuffled
+news.2013.en.clean
+news.2013.en.filtered
