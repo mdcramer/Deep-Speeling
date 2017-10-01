@@ -1,0 +1,1086 @@
+Starting with new graph.
+Epoch   1/60 Batch     20/77 Inputs (000)       2 - Loss:  2.412 - Validation loss:  2.341
+Epoch   1/60 Batch     40/77 Inputs (000)       4 - Loss:  2.187 - Validation loss:  1.963
+Epoch   1/60 Batch     60/77 Inputs (000)       7 - Loss:  1.947 - Validation loss:  1.734
+Epoch   1/60 Batch     77/77 Inputs (000)       9 - Loss:  1.837 - Validation loss:  1.610
+Saving graph...
+Model Trained in 0h:0m:5s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 0.0%
+Batch     20/78 - Accuracy: 0.0%
+Batch     30/78 - Accuracy: 0.0%
+Batch     40/78 - Accuracy: 0.0%
+Batch     50/78 - Accuracy: 0.0%
+Batch     60/78 - Accuracy: 0.0%
+Batch     70/78 - Accuracy: 0.0%
+Final accuracy = 0.0%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   2/60 Batch     20/77 Inputs (000)      12 - Loss:  1.572 - Validation loss:  1.480
+Epoch   2/60 Batch     40/77 Inputs (000)      14 - Loss:  1.577 - Validation loss:  1.360
+Epoch   2/60 Batch     60/77 Inputs (000)      17 - Loss:  1.488 - Validation loss:  1.252
+Epoch   2/60 Batch     77/77 Inputs (000)      19 - Loss:  1.365 - Validation loss:  1.173
+Saving graph...
+Model Trained in 0h:0m:20s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 4.8%
+Batch     20/78 - Accuracy: 4.7%
+Batch     30/78 - Accuracy: 4.9%
+Batch     40/78 - Accuracy: 4.7%
+Batch     50/78 - Accuracy: 4.7%
+Batch     60/78 - Accuracy: 4.7%
+Batch     70/78 - Accuracy: 4.9%
+Final accuracy = 4.9%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   3/60 Batch     20/77 Inputs (000)      22 - Loss:  1.207 - Validation loss:  1.088
+Epoch   3/60 Batch     40/77 Inputs (000)      24 - Loss:  1.245 - Validation loss:  1.025
+Epoch   3/60 Batch     60/77 Inputs (000)      27 - Loss:  1.203 - Validation loss:  0.967
+Epoch   3/60 Batch     77/77 Inputs (000)      29 - Loss:  1.130 - Validation loss:  0.910
+Saving graph...
+Model Trained in 0h:0m:34s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 22.4%
+Batch     20/78 - Accuracy: 21.2%
+Batch     30/78 - Accuracy: 21.6%
+Batch     40/78 - Accuracy: 21.7%
+Batch     50/78 - Accuracy: 21.8%
+Batch     60/78 - Accuracy: 21.5%
+Batch     70/78 - Accuracy: 21.6%
+Final accuracy = 21.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   4/60 Batch     20/77 Inputs (000)      32 - Loss:  0.977 - Validation loss:  0.860
+Epoch   4/60 Batch     40/77 Inputs (000)      34 - Loss:  1.059 - Validation loss:  0.820
+Epoch   4/60 Batch     60/77 Inputs (000)      37 - Loss:  1.020 - Validation loss:  0.782
+Epoch   4/60 Batch     77/77 Inputs (000)      39 - Loss:  0.962 - Validation loss:  0.752
+Saving graph...
+Model Trained in 0h:0m:49s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 29.2%
+Batch     20/78 - Accuracy: 28.3%
+Batch     30/78 - Accuracy: 28.6%
+Batch     40/78 - Accuracy: 28.4%
+Batch     50/78 - Accuracy: 28.2%
+Batch     60/78 - Accuracy: 27.6%
+Batch     70/78 - Accuracy: 27.9%
+Final accuracy = 27.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   5/60 Batch     20/77 Inputs (000)      41 - Loss:  0.841 - Validation loss:  0.722
+Epoch   5/60 Batch     40/77 Inputs (000)      44 - Loss:  0.924 - Validation loss:  0.694
+Epoch   5/60 Batch     60/77 Inputs (000)      47 - Loss:  0.883 - Validation loss:  0.664
+Epoch   5/60 Batch     77/77 Inputs (000)      49 - Loss:  0.832 - Validation loss:  0.641
+Saving graph...
+Model Trained in 0h:1m:3s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 34.7%
+Batch     20/78 - Accuracy: 34.5%
+Batch     30/78 - Accuracy: 34.9%
+Batch     40/78 - Accuracy: 34.9%
+Batch     50/78 - Accuracy: 34.3%
+Batch     60/78 - Accuracy: 33.6%
+Batch     70/78 - Accuracy: 34.0%
+Final accuracy = 33.9%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   6/60 Batch     20/77 Inputs (000)      51 - Loss:  0.729 - Validation loss:  0.615
+Epoch   6/60 Batch     40/77 Inputs (000)      54 - Loss:  0.807 - Validation loss:  0.596
+Epoch   6/60 Batch     60/77 Inputs (000)      56 - Loss:  0.818 - Validation loss:  0.571
+Epoch   6/60 Batch     77/77 Inputs (000)      59 - Loss:  0.741 - Validation loss:  0.555
+Saving graph...
+Model Trained in 0h:1m:18s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 39.8%
+Batch     20/78 - Accuracy: 39.1%
+Batch     30/78 - Accuracy: 39.1%
+Batch     40/78 - Accuracy: 39.1%
+Batch     50/78 - Accuracy: 38.7%
+Batch     60/78 - Accuracy: 38.0%
+Batch     70/78 - Accuracy: 38.2%
+Final accuracy = 38.0%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   7/60 Batch     20/77 Inputs (000)      61 - Loss:  0.666 - Validation loss:  0.534
+Epoch   7/60 Batch     40/77 Inputs (000)      64 - Loss:  0.711 - Validation loss:  0.520
+Epoch   7/60 Batch     60/77 Inputs (000)      66 - Loss:  0.691 - Validation loss:  0.500
+Epoch   7/60 Batch     77/77 Inputs (000)      68 - Loss:  0.676 - Validation loss:  0.484
+Saving graph...
+Model Trained in 0h:1m:33s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 43.4%
+Batch     20/78 - Accuracy: 42.6%
+Batch     30/78 - Accuracy: 42.9%
+Batch     40/78 - Accuracy: 42.9%
+Batch     50/78 - Accuracy: 42.4%
+Batch     60/78 - Accuracy: 41.8%
+Batch     70/78 - Accuracy: 42.1%
+Final accuracy = 41.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   8/60 Batch     20/77 Inputs (000)      71 - Loss:  0.589 - Validation loss:  0.464
+Epoch   8/60 Batch     40/77 Inputs (000)      74 - Loss:  0.636 - Validation loss:  0.450
+Epoch   8/60 Batch     60/77 Inputs (000)      76 - Loss:  0.651 - Validation loss:  0.435
+Epoch   8/60 Batch     77/77 Inputs (000)      78 - Loss:  0.612 - Validation loss:  0.421
+Saving graph...
+Model Trained in 0h:1m:47s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 48.7%
+Batch     20/78 - Accuracy: 47.9%
+Batch     30/78 - Accuracy: 47.9%
+Batch     40/78 - Accuracy: 47.9%
+Batch     50/78 - Accuracy: 47.3%
+Batch     60/78 - Accuracy: 46.6%
+Batch     70/78 - Accuracy: 46.9%
+Final accuracy = 46.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch   9/60 Batch     20/77 Inputs (000)      81 - Loss:  0.512 - Validation loss:  0.411
+Epoch   9/60 Batch     40/77 Inputs (000)      83 - Loss:  0.560 - Validation loss:  0.397
+Epoch   9/60 Batch     60/77 Inputs (000)      86 - Loss:  0.588 - Validation loss:  0.387
+Epoch   9/60 Batch     77/77 Inputs (000)      88 - Loss:  0.559 - Validation loss:  0.374
+Saving graph...
+Model Trained in 0h:2m:2s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 51.3%
+Batch     20/78 - Accuracy: 51.2%
+Batch     30/78 - Accuracy: 51.3%
+Batch     40/78 - Accuracy: 51.0%
+Batch     50/78 - Accuracy: 50.7%
+Batch     60/78 - Accuracy: 50.0%
+Batch     70/78 - Accuracy: 50.3%
+Final accuracy = 50.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  10/60 Batch     20/77 Inputs (000)      91 - Loss:  0.483 - Validation loss:  0.359
+Epoch  10/60 Batch     40/77 Inputs (000)      93 - Loss:  0.533 - Validation loss:  0.360
+Epoch  10/60 Batch     60/77 Inputs (000)      96 - Loss:  0.534 - Validation loss:  0.345
+Epoch  10/60 Batch     77/77 Inputs (000)      98 - Loss:  0.507 - Validation loss:  0.335
+Saving graph...
+
+Model Trained in 0h:2m:17s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 55.0%
+Batch     20/78 - Accuracy: 55.2%
+Batch     30/78 - Accuracy: 55.5%
+Batch     40/78 - Accuracy: 55.3%
+Batch     50/78 - Accuracy: 55.0%
+Batch     60/78 - Accuracy: 54.2%
+Batch     70/78 - Accuracy: 54.5%
+Final accuracy = 54.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  11/60 Batch     20/77 Inputs (000)     101 - Loss:  0.435 - Validation loss:  0.324
+Epoch  11/60 Batch     40/77 Inputs (000)     103 - Loss:  0.495 - Validation loss:  0.316
+Epoch  11/60 Batch     60/77 Inputs (000)     106 - Loss:  0.516 - Validation loss:  0.309
+Epoch  11/60 Batch     77/77 Inputs (000)     108 - Loss:  0.465 - Validation loss:  0.304
+Saving graph...
+Model Trained in 0h:2m:31s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 58.7%
+Batch     20/78 - Accuracy: 58.8%
+Batch     30/78 - Accuracy: 58.9%
+Batch     40/78 - Accuracy: 58.5%
+Batch     50/78 - Accuracy: 58.3%
+Batch     60/78 - Accuracy: 57.7%
+Batch     70/78 - Accuracy: 58.0%
+Final accuracy = 57.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  12/60 Batch     20/77 Inputs (000)     111 - Loss:  0.397 - Validation loss:  0.292
+Epoch  12/60 Batch     40/77 Inputs (000)     113 - Loss:  0.426 - Validation loss:  0.286
+Epoch  12/60 Batch     60/77 Inputs (000)     116 - Loss:  0.442 - Validation loss:  0.278
+Epoch  12/60 Batch     77/77 Inputs (000)     118 - Loss:  0.418 - Validation loss:  0.267
+Saving graph...
+Model Trained in 0h:2m:46s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 61.6%
+Batch     20/78 - Accuracy: 62.1%
+Batch     30/78 - Accuracy: 62.4%
+Batch     40/78 - Accuracy: 62.1%
+Batch     50/78 - Accuracy: 62.0%
+Batch     60/78 - Accuracy: 61.4%
+Batch     70/78 - Accuracy: 61.8%
+Final accuracy = 61.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  13/60 Batch     20/77 Inputs (000)     120 - Loss:  0.345 - Validation loss:  0.263
+Epoch  13/60 Batch     40/77 Inputs (000)     123 - Loss:  0.397 - Validation loss:  0.256
+Epoch  13/60 Batch     60/77 Inputs (000)     126 - Loss:  0.406 - Validation loss:  0.251
+Epoch  13/60 Batch     77/77 Inputs (000)     128 - Loss:  0.375 - Validation loss:  0.246
+Saving graph...
+Model Trained in 0h:3m:0s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 64.6%
+Batch     20/78 - Accuracy: 65.0%
+Batch     30/78 - Accuracy: 65.1%
+Batch     40/78 - Accuracy: 64.9%
+Batch     50/78 - Accuracy: 64.8%
+Batch     60/78 - Accuracy: 64.2%
+Batch     70/78 - Accuracy: 64.6%
+Final accuracy = 64.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  14/60 Batch     20/77 Inputs (000)     130 - Loss:  0.313 - Validation loss:  0.233
+Epoch  14/60 Batch     40/77 Inputs (000)     133 - Loss:  0.385 - Validation loss:  0.232
+Epoch  14/60 Batch     60/77 Inputs (000)     135 - Loss:  0.382 - Validation loss:  0.233
+Epoch  14/60 Batch     77/77 Inputs (000)     138 - Loss:  0.364 - Validation loss:  0.223
+Saving graph...
+Model Trained in 0h:3m:15s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 67.4%
+Batch     20/78 - Accuracy: 68.4%
+Batch     30/78 - Accuracy: 68.4%
+Batch     40/78 - Accuracy: 68.1%
+Batch     50/78 - Accuracy: 68.0%
+Batch     60/78 - Accuracy: 67.7%
+Batch     70/78 - Accuracy: 68.0%
+Final accuracy = 67.7%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  15/60 Batch     20/77 Inputs (000)     140 - Loss:  0.320 - Validation loss:  0.214
+Epoch  15/60 Batch     40/77 Inputs (000)     143 - Loss:  0.342 - Validation loss:  0.213
+Epoch  15/60 Batch     60/77 Inputs (000)     145 - Loss:  0.345 - Validation loss:  0.205
+Epoch  15/60 Batch     77/77 Inputs (000)     147 - Loss:  0.330 - Validation loss:  0.201
+Saving graph...
+Model Trained in 0h:3m:29s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 71.0%
+Batch     20/78 - Accuracy: 71.8%
+Batch     30/78 - Accuracy: 71.8%
+Batch     40/78 - Accuracy: 71.8%
+Batch     50/78 - Accuracy: 71.8%
+Batch     60/78 - Accuracy: 71.3%
+Batch     70/78 - Accuracy: 71.6%
+Final accuracy = 71.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  16/60 Batch     20/77 Inputs (000)     150 - Loss:  0.280 - Validation loss:  0.199
+Epoch  16/60 Batch     40/77 Inputs (000)     153 - Loss:  0.307 - Validation loss:  0.194
+Epoch  16/60 Batch     60/77 Inputs (000)     155 - Loss:  0.322 - Validation loss:  0.192
+Epoch  16/60 Batch     77/77 Inputs (000)     157 - Loss:  0.329 - Validation loss:  0.181
+Saving graph...
+Model Trained in 0h:3m:44s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 72.9%
+Batch     20/78 - Accuracy: 74.1%
+Batch     30/78 - Accuracy: 74.1%
+Batch     40/78 - Accuracy: 74.0%
+Batch     50/78 - Accuracy: 74.1%
+Batch     60/78 - Accuracy: 73.9%
+Batch     70/78 - Accuracy: 74.0%
+Final accuracy = 73.9%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  17/60 Batch     20/77 Inputs (000)     160 - Loss:  0.247 - Validation loss:  0.176
+Epoch  17/60 Batch     40/77 Inputs (000)     162 - Loss:  0.317 - Validation loss:  0.179
+Epoch  17/60 Batch     60/77 Inputs (000)     165 - Loss:  0.301 - Validation loss:  0.177
+Epoch  17/60 Batch     77/77 Inputs (000)     167 - Loss:  0.287 - Validation loss:  0.163
+Saving graph...
+Model Trained in 0h:3m:59s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 75.0%
+Batch     20/78 - Accuracy: 76.6%
+Batch     30/78 - Accuracy: 76.8%
+Batch     40/78 - Accuracy: 76.8%
+Batch     50/78 - Accuracy: 76.9%
+Batch     60/78 - Accuracy: 76.5%
+Batch     70/78 - Accuracy: 76.7%
+Final accuracy = 76.7%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  18/60 Batch     20/77 Inputs (000)     170 - Loss:  0.244 - Validation loss:  0.162
+Epoch  18/60 Batch     40/77 Inputs (000)     172 - Loss:  0.285 - Validation loss:  0.161
+Epoch  18/60 Batch     60/77 Inputs (000)     175 - Loss:  0.270 - Validation loss:  0.157
+Epoch  18/60 Batch     77/77 Inputs (000)     177 - Loss:  0.268 - Validation loss:  0.152
+Saving graph...
+Model Trained in 0h:4m:13s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 77.5%
+Batch     20/78 - Accuracy: 78.9%
+Batch     30/78 - Accuracy: 79.0%
+Batch     40/78 - Accuracy: 78.9%
+Batch     50/78 - Accuracy: 79.1%
+Batch     60/78 - Accuracy: 78.9%
+Batch     70/78 - Accuracy: 79.0%
+Final accuracy = 79.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  19/60 Batch     20/77 Inputs (000)     180 - Loss:  0.229 - Validation loss:  0.145
+Epoch  19/60 Batch     40/77 Inputs (000)     182 - Loss:  0.265 - Validation loss:  0.151
+Epoch  19/60 Batch     60/77 Inputs (000)     185 - Loss:  0.263 - Validation loss:  0.143
+Epoch  19/60 Batch     77/77 Inputs (000)     187 - Loss:  0.254 - Validation loss:  0.137
+Saving graph...
+Model Trained in 0h:4m:28s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 79.7%
+Batch     20/78 - Accuracy: 80.3%
+Batch     30/78 - Accuracy: 80.3%
+Batch     40/78 - Accuracy: 80.3%
+Batch     50/78 - Accuracy: 80.5%
+Batch     60/78 - Accuracy: 80.3%
+Batch     70/78 - Accuracy: 80.5%
+Final accuracy = 80.6%
+
+Reloading existing graph to continue training.
+
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  20/60 Batch     20/77 Inputs (000)     190 - Loss:  0.205 - Validation loss:  0.130
+Epoch  20/60 Batch     40/77 Inputs (000)     192 - Loss:  0.248 - Validation loss:  0.134
+Epoch  20/60 Batch     60/77 Inputs (000)     195 - Loss:  0.245 - Validation loss:  0.130
+Epoch  20/60 Batch     77/77 Inputs (000)     197 - Loss:  0.236 - Validation loss:  0.124
+Saving graph...
+Model Trained in 0h:4m:42s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 82.2%
+Batch     20/78 - Accuracy: 83.2%
+Batch     30/78 - Accuracy: 82.8%
+Batch     40/78 - Accuracy: 82.8%
+Batch     50/78 - Accuracy: 82.9%
+Batch     60/78 - Accuracy: 82.7%
+Batch     70/78 - Accuracy: 82.7%
+Final accuracy = 82.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  21/60 Batch     20/77 Inputs (000)     199 - Loss:  0.198 - Validation loss:  0.124
+Epoch  21/60 Batch     40/77 Inputs (000)     202 - Loss:  0.237 - Validation loss:  0.124
+Epoch  21/60 Batch     60/77 Inputs (000)     204 - Loss:  0.226 - Validation loss:  0.121
+Epoch  21/60 Batch     77/77 Inputs (000)     207 - Loss:  0.224 - Validation loss:  0.115
+Saving graph...
+Model Trained in 0h:4m:57s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 84.5%
+Batch     20/78 - Accuracy: 85.0%
+Batch     30/78 - Accuracy: 84.6%
+Batch     40/78 - Accuracy: 84.5%
+Batch     50/78 - Accuracy: 84.6%
+Batch     60/78 - Accuracy: 84.4%
+Batch     70/78 - Accuracy: 84.5%
+Final accuracy = 84.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  22/60 Batch     20/77 Inputs (000)     209 - Loss:  0.190 - Validation loss:  0.113
+Epoch  22/60 Batch     40/77 Inputs (000)     212 - Loss:  0.208 - Validation loss:  0.112
+Epoch  22/60 Batch     60/77 Inputs (000)     214 - Loss:  0.220 - Validation loss:  0.117
+Epoch  22/60 Batch     77/77 Inputs (000)     217 - Loss:  0.224 - Validation loss:  0.105
+Saving graph...
+Model Trained in 0h:5m:11s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 84.9%
+Batch     20/78 - Accuracy: 86.0%
+Batch     30/78 - Accuracy: 85.5%
+Batch     40/78 - Accuracy: 85.5%
+Batch     50/78 - Accuracy: 85.5%
+Batch     60/78 - Accuracy: 85.5%
+Batch     70/78 - Accuracy: 85.6%
+Final accuracy = 85.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  23/60 Batch     20/77 Inputs (000)     219 - Loss:  0.178 - Validation loss:  0.106
+Epoch  23/60 Batch     40/77 Inputs (000)     222 - Loss:  0.184 - Validation loss:  0.104
+Epoch  23/60 Batch     60/77 Inputs (000)     224 - Loss:  0.195 - Validation loss:  0.101
+Epoch  23/60 Batch     77/77 Inputs (000)     226 - Loss:  0.200 - Validation loss:  0.096
+Saving graph...
+Model Trained in 0h:5m:25s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 87.4%
+Batch     20/78 - Accuracy: 87.7%
+Batch     30/78 - Accuracy: 87.4%
+Batch     40/78 - Accuracy: 87.5%
+Batch     50/78 - Accuracy: 87.6%
+Batch     60/78 - Accuracy: 87.5%
+Batch     70/78 - Accuracy: 87.5%
+Final accuracy = 87.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  24/60 Batch     20/77 Inputs (000)     229 - Loss:  0.169 - Validation loss:  0.101
+Epoch  24/60 Batch     40/77 Inputs (000)     232 - Loss:  0.186 - Validation loss:  0.099
+Epoch  24/60 Batch     60/77 Inputs (000)     234 - Loss:  0.172 - Validation loss:  0.096
+Epoch  24/60 Batch     77/77 Inputs (000)     236 - Loss:  0.199 - Validation loss:  0.093
+Saving graph...
+Model Trained in 0h:5m:40s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 88.8%
+Batch     20/78 - Accuracy: 89.2%
+Batch     30/78 - Accuracy: 88.5%
+Batch     40/78 - Accuracy: 88.2%
+Batch     50/78 - Accuracy: 88.3%
+Batch     60/78 - Accuracy: 88.4%
+Batch     70/78 - Accuracy: 88.4%
+Final accuracy = 88.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  25/60 Batch     20/77 Inputs (000)     239 - Loss:  0.168 - Validation loss:  0.088
+Epoch  25/60 Batch     40/77 Inputs (000)     241 - Loss:  0.166 - Validation loss:  0.087
+Epoch  25/60 Batch     60/77 Inputs (000)     244 - Loss:  0.170 - Validation loss:  0.084
+Epoch  25/60 Batch     77/77 Inputs (000)     246 - Loss:  0.181 - Validation loss:  0.085
+Saving graph...
+Model Trained in 0h:5m:54s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 88.9%
+Batch     20/78 - Accuracy: 89.7%
+Batch     30/78 - Accuracy: 89.5%
+Batch     40/78 - Accuracy: 89.5%
+Batch     50/78 - Accuracy: 89.3%
+Batch     60/78 - Accuracy: 89.2%
+Batch     70/78 - Accuracy: 89.3%
+Final accuracy = 89.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  26/60 Batch     20/77 Inputs (000)     249 - Loss:  0.151 - Validation loss:  0.080
+Epoch  26/60 Batch     40/77 Inputs (000)     251 - Loss:  0.173 - Validation loss:  0.080
+Epoch  26/60 Batch     60/77 Inputs (000)     254 - Loss:  0.172 - Validation loss:  0.074
+Epoch  26/60 Batch     77/77 Inputs (000)     256 - Loss:  0.169 - Validation loss:  0.076
+Saving graph...
+Model Trained in 0h:6m:9s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 89.9%
+Batch     20/78 - Accuracy: 90.5%
+Batch     30/78 - Accuracy: 90.3%
+Batch     40/78 - Accuracy: 90.3%
+Batch     50/78 - Accuracy: 90.1%
+Batch     60/78 - Accuracy: 90.1%
+Batch     70/78 - Accuracy: 90.2%
+Final accuracy = 90.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  27/60 Batch     20/77 Inputs (000)     259 - Loss:  0.141 - Validation loss:  0.076
+Epoch  27/60 Batch     40/77 Inputs (000)     261 - Loss:  0.175 - Validation loss:  0.074
+Epoch  27/60 Batch     60/77 Inputs (000)     264 - Loss:  0.145 - Validation loss:  0.073
+Epoch  27/60 Batch     77/77 Inputs (000)     266 - Loss:  0.166 - Validation loss:  0.070
+Saving graph...
+Model Trained in 0h:6m:23s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 92.0%
+Batch     20/78 - Accuracy: 92.2%
+Batch     30/78 - Accuracy: 92.0%
+Batch     40/78 - Accuracy: 91.5%
+Batch     50/78 - Accuracy: 91.5%
+Batch     60/78 - Accuracy: 91.6%
+Batch     70/78 - Accuracy: 91.5%
+Final accuracy = 91.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  28/60 Batch     20/77 Inputs (000)     268 - Loss:  0.131 - Validation loss:  0.069
+Epoch  28/60 Batch     40/77 Inputs (000)     271 - Loss:  0.173 - Validation loss:  0.065
+Epoch  28/60 Batch     60/77 Inputs (000)     274 - Loss:  0.155 - Validation loss:  0.063
+Epoch  28/60 Batch     77/77 Inputs (000)     276 - Loss:  0.144 - Validation loss:  0.066
+Saving graph...
+Model Trained in 0h:6m:38s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 92.3%
+Batch     20/78 - Accuracy: 92.8%
+Batch     30/78 - Accuracy: 92.5%
+Batch     40/78 - Accuracy: 92.5%
+Batch     50/78 - Accuracy: 92.5%
+Batch     60/78 - Accuracy: 92.5%
+Batch     70/78 - Accuracy: 92.6%
+Final accuracy = 92.6%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  29/60 Batch     20/77 Inputs (000)     278 - Loss:  0.121 - Validation loss:  0.062
+Epoch  29/60 Batch     40/77 Inputs (000)     281 - Loss:  0.140 - Validation loss:  0.064
+Epoch  29/60 Batch     60/77 Inputs (000)     283 - Loss:  0.144 - Validation loss:  0.059
+Epoch  29/60 Batch     77/77 Inputs (000)     286 - Loss:  0.157 - Validation loss:  0.058
+Saving graph...
+
+Model Trained in 0h:6m:53s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 94.0%
+Batch     20/78 - Accuracy: 94.0%
+Batch     30/78 - Accuracy: 93.8%
+Batch     40/78 - Accuracy: 93.4%
+Batch     50/78 - Accuracy: 93.3%
+Batch     60/78 - Accuracy: 93.2%
+Batch     70/78 - Accuracy: 93.3%
+Final accuracy = 93.4%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  30/60 Batch     20/77 Inputs (000)     288 - Loss:  0.140 - Validation loss:  0.058
+Epoch  30/60 Batch     40/77 Inputs (000)     291 - Loss:  0.129 - Validation loss:  0.058
+Epoch  30/60 Batch     60/77 Inputs (000)     293 - Loss:  0.127 - Validation loss:  0.059
+Epoch  30/60 Batch     77/77 Inputs (000)     296 - Loss:  0.139 - Validation loss:  0.059
+Saving graph...
+Model Trained in 0h:7m:9s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 92.9%
+Batch     20/78 - Accuracy: 93.3%
+Batch     30/78 - Accuracy: 92.7%
+Batch     40/78 - Accuracy: 92.6%
+Batch     50/78 - Accuracy: 92.5%
+Batch     60/78 - Accuracy: 92.5%
+Batch     70/78 - Accuracy: 92.6%
+Final accuracy = 92.7%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  31/60 Batch     20/77 Inputs (000)     298 - Loss:  0.115 - Validation loss:  0.058
+Epoch  31/60 Batch     40/77 Inputs (000)     301 - Loss:  0.130 - Validation loss:  0.055
+Epoch  31/60 Batch     60/77 Inputs (000)     303 - Loss:  0.136 - Validation loss:  0.053
+Epoch  31/60 Batch     77/77 Inputs (000)     305 - Loss:  0.131 - Validation loss:  0.051
+Saving graph...
+Model Trained in 0h:7m:24s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 94.0%
+Batch     20/78 - Accuracy: 94.4%
+Batch     30/78 - Accuracy: 94.1%
+Batch     40/78 - Accuracy: 94.2%
+Batch     50/78 - Accuracy: 94.0%
+Batch     60/78 - Accuracy: 94.0%
+Batch     70/78 - Accuracy: 94.1%
+Final accuracy = 94.2%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  32/60 Batch     20/77 Inputs (000)     308 - Loss:  0.118 - Validation loss:  0.051
+Epoch  32/60 Batch     40/77 Inputs (000)     311 - Loss:  0.135 - Validation loss:  0.048
+Epoch  32/60 Batch     60/77 Inputs (000)     313 - Loss:  0.130 - Validation loss:  0.046
+Epoch  32/60 Batch     77/77 Inputs (000)     315 - Loss:  0.125 - Validation loss:  0.047
+Saving graph...
+Model Trained in 0h:7m:39s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 95.2%
+Batch     20/78 - Accuracy: 95.2%
+Batch     30/78 - Accuracy: 94.9%
+Batch     40/78 - Accuracy: 95.0%
+Batch     50/78 - Accuracy: 94.9%
+Batch     60/78 - Accuracy: 94.9%
+Batch     70/78 - Accuracy: 94.9%
+Final accuracy = 95.0%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  33/60 Batch     20/77 Inputs (000)     318 - Loss:  0.114 - Validation loss:  0.048
+Epoch  33/60 Batch     40/77 Inputs (000)     320 - Loss:  0.138 - Validation loss:  0.048
+Epoch  33/60 Batch     60/77 Inputs (000)     323 - Loss:  0.151 - Validation loss:  0.044
+Epoch  33/60 Batch     77/77 Inputs (000)     325 - Loss:  0.126 - Validation loss:  0.047
+Saving graph...
+Model Trained in 0h:7m:53s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 94.5%
+Batch     20/78 - Accuracy: 94.8%
+Batch     30/78 - Accuracy: 94.8%
+Batch     40/78 - Accuracy: 94.6%
+Batch     50/78 - Accuracy: 94.5%
+Batch     60/78 - Accuracy: 94.6%
+Batch     70/78 - Accuracy: 94.6%
+Final accuracy = 94.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  34/60 Batch     20/77 Inputs (000)     328 - Loss:  0.108 - Validation loss:  0.043
+Epoch  34/60 Batch     40/77 Inputs (000)     330 - Loss:  0.114 - Validation loss:  0.046
+Epoch  34/60 Batch     60/77 Inputs (000)     333 - Loss:  0.122 - Validation loss:  0.043
+Epoch  34/60 Batch     77/77 Inputs (000)     335 - Loss:  0.130 - Validation loss:  0.042
+Saving graph...
+Model Trained in 0h:8m:9s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 96.0%
+Batch     20/78 - Accuracy: 95.8%
+Batch     30/78 - Accuracy: 95.7%
+Batch     40/78 - Accuracy: 95.7%
+Batch     50/78 - Accuracy: 95.6%
+Batch     60/78 - Accuracy: 95.7%
+Batch     70/78 - Accuracy: 95.7%
+Final accuracy = 95.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  35/60 Batch     20/77 Inputs (000)     338 - Loss:  0.091 - Validation loss:  0.041
+Epoch  35/60 Batch     40/77 Inputs (000)     340 - Loss:  0.112 - Validation loss:  0.043
+Epoch  35/60 Batch     60/77 Inputs (000)     343 - Loss:  0.118 - Validation loss:  0.040
+Epoch  35/60 Batch     77/77 Inputs (000)     345 - Loss:  0.111 - Validation loss:  0.039
+Saving graph...
+Model Trained in 0h:8m:23s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 96.0%
+Batch     20/78 - Accuracy: 96.2%
+Batch     30/78 - Accuracy: 96.2%
+Batch     40/78 - Accuracy: 96.1%
+Batch     50/78 - Accuracy: 96.1%
+Batch     60/78 - Accuracy: 96.2%
+Batch     70/78 - Accuracy: 96.2%
+Final accuracy = 96.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  36/60 Batch     20/77 Inputs (000)     347 - Loss:  0.098 - Validation loss:  0.037
+Epoch  36/60 Batch     40/77 Inputs (000)     350 - Loss:  0.119 - Validation loss:  0.040
+Epoch  36/60 Batch     60/77 Inputs (000)     353 - Loss:  0.116 - Validation loss:  0.038
+Epoch  36/60 Batch     77/77 Inputs (000)     355 - Loss:  0.107 - Validation loss:  0.043
+Saving graph...
+Model Trained in 0h:8m:38s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 95.7%
+Batch     20/78 - Accuracy: 96.0%
+Batch     30/78 - Accuracy: 95.9%
+Batch     40/78 - Accuracy: 96.0%
+Batch     50/78 - Accuracy: 96.0%
+Batch     60/78 - Accuracy: 96.0%
+Batch     70/78 - Accuracy: 96.0%
+Final accuracy = 96.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  37/60 Batch     20/77 Inputs (000)     357 - Loss:  0.093 - Validation loss:  0.037
+Epoch  37/60 Batch     40/77 Inputs (000)     360 - Loss:  0.109 - Validation loss:  0.037
+Epoch  37/60 Batch     60/77 Inputs (000)     362 - Loss:  0.090 - Validation loss:  0.035
+Epoch  37/60 Batch     77/77 Inputs (000)     365 - Loss:  0.104 - Validation loss:  0.033
+Saving graph...
+Model Trained in 0h:8m:53s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 96.7%
+Batch     20/78 - Accuracy: 96.8%
+Batch     30/78 - Accuracy: 96.6%
+Batch     40/78 - Accuracy: 96.7%
+Batch     50/78 - Accuracy: 96.7%
+Batch     60/78 - Accuracy: 96.7%
+Batch     70/78 - Accuracy: 96.7%
+Final accuracy = 96.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  38/60 Batch     20/77 Inputs (000)     367 - Loss:  0.086 - Validation loss:  0.037
+Epoch  38/60 Batch     40/77 Inputs (000)     370 - Loss:  0.090 - Validation loss:  0.031
+Epoch  38/60 Batch     60/77 Inputs (000)     372 - Loss:  0.098 - Validation loss:  0.032
+Epoch  38/60 Batch     77/77 Inputs (000)     374 - Loss:  0.099 - Validation loss:  0.033
+Saving graph...
+Model Trained in 0h:9m:7s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 96.9%
+Batch     20/78 - Accuracy: 97.1%
+Batch     30/78 - Accuracy: 97.2%
+Batch     40/78 - Accuracy: 97.1%
+Batch     50/78 - Accuracy: 97.1%
+Batch     60/78 - Accuracy: 97.1%
+Batch     70/78 - Accuracy: 97.1%
+Final accuracy = 97.2%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  39/60 Batch     20/77 Inputs (000)     377 - Loss:  0.078 - Validation loss:  0.030
+Epoch  39/60 Batch     40/77 Inputs (000)     380 - Loss:  0.099 - Validation loss:  0.030
+Epoch  39/60 Batch     60/77 Inputs (000)     382 - Loss:  0.094 - Validation loss:  0.033
+Epoch  39/60 Batch     77/77 Inputs (000)     384 - Loss:  0.088 - Validation loss:  0.032
+Saving graph...
+Model Trained in 0h:9m:22s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 97.5%
+Batch     20/78 - Accuracy: 97.5%
+Batch     30/78 - Accuracy: 97.2%
+Batch     40/78 - Accuracy: 97.1%
+Batch     50/78 - Accuracy: 97.1%
+Batch     60/78 - Accuracy: 97.2%
+Batch     70/78 - Accuracy: 97.3%
+Final accuracy = 97.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  40/60 Batch     20/77 Inputs (000)     387 - Loss:  0.072 - Validation loss:  0.029
+Epoch  40/60 Batch     40/77 Inputs (000)     390 - Loss:  0.090 - Validation loss:  0.028
+Epoch  40/60 Batch     60/77 Inputs (000)     392 - Loss:  0.091 - Validation loss:  0.027
+Epoch  40/60 Batch     77/77 Inputs (000)     394 - Loss:  0.105 - Validation loss:  0.028
+Saving graph...
+Model Trained in 0h:9m:37s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 97.2%
+Batch     20/78 - Accuracy: 97.3%
+Batch     30/78 - Accuracy: 97.3%
+Batch     40/78 - Accuracy: 97.1%
+Batch     50/78 - Accuracy: 97.3%
+Batch     60/78 - Accuracy: 97.3%
+Batch     70/78 - Accuracy: 97.4%
+Final accuracy = 97.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  41/60 Batch     20/77 Inputs (000)     397 - Loss:  0.075 - Validation loss:  0.030
+Epoch  41/60 Batch     40/77 Inputs (000)     399 - Loss:  0.088 - Validation loss:  0.027
+Epoch  41/60 Batch     60/77 Inputs (000)     402 - Loss:  0.077 - Validation loss:  0.027
+Epoch  41/60 Batch     77/77 Inputs (000)     404 - Loss:  0.091 - Validation loss:  0.026
+Saving graph...
+Model Trained in 0h:9m:52s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 97.9%
+Batch     20/78 - Accuracy: 97.8%
+Batch     30/78 - Accuracy: 97.7%
+Batch     40/78 - Accuracy: 97.7%
+Batch     50/78 - Accuracy: 97.7%
+Batch     60/78 - Accuracy: 97.7%
+Batch     70/78 - Accuracy: 97.7%
+Final accuracy = 97.7%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  42/60 Batch     20/77 Inputs (000)     407 - Loss:  0.068 - Validation loss:  0.028
+Epoch  42/60 Batch     40/77 Inputs (000)     409 - Loss:  0.084 - Validation loss:  0.027
+Epoch  42/60 Batch     60/77 Inputs (000)     412 - Loss:  0.086 - Validation loss:  0.024
+Epoch  42/60 Batch     77/77 Inputs (000)     414 - Loss:  0.092 - Validation loss:  0.024
+Saving graph...
+Model Trained in 0h:10m:7s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.0%
+Batch     20/78 - Accuracy: 97.8%
+Batch     30/78 - Accuracy: 97.6%
+Batch     40/78 - Accuracy: 97.6%
+Batch     50/78 - Accuracy: 97.7%
+Batch     60/78 - Accuracy: 97.7%
+Batch     70/78 - Accuracy: 97.8%
+Final accuracy = 97.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  43/60 Batch     20/77 Inputs (000)     417 - Loss:  0.060 - Validation loss:  0.023
+Epoch  43/60 Batch     40/77 Inputs (000)     419 - Loss:  0.086 - Validation loss:  0.024
+Epoch  43/60 Batch     60/77 Inputs (000)     422 - Loss:  0.097 - Validation loss:  0.023
+Epoch  43/60 Batch     77/77 Inputs (000)     424 - Loss:  0.083 - Validation loss:  0.022
+Saving graph...
+Model Trained in 0h:10m:21s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.4%
+Batch     20/78 - Accuracy: 98.3%
+Batch     30/78 - Accuracy: 98.3%
+Batch     40/78 - Accuracy: 98.1%
+Batch     50/78 - Accuracy: 98.2%
+Batch     60/78 - Accuracy: 98.2%
+Batch     70/78 - Accuracy: 98.3%
+Final accuracy = 98.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  44/60 Batch     20/77 Inputs (000)     426 - Loss:  0.073 - Validation loss:  0.023
+Epoch  44/60 Batch     40/77 Inputs (000)     429 - Loss:  0.063 - Validation loss:  0.024
+Epoch  44/60 Batch     60/77 Inputs (000)     432 - Loss:  0.079 - Validation loss:  0.022
+Epoch  44/60 Batch     77/77 Inputs (000)     434 - Loss:  0.089 - Validation loss:  0.025
+Saving graph...
+Model Trained in 0h:10m:36s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 97.9%
+Batch     20/78 - Accuracy: 97.9%
+Batch     30/78 - Accuracy: 97.8%
+Batch     40/78 - Accuracy: 97.8%
+Batch     50/78 - Accuracy: 97.8%
+Batch     60/78 - Accuracy: 97.8%
+Batch     70/78 - Accuracy: 97.8%
+Final accuracy = 97.9%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  45/60 Batch     20/77 Inputs (000)     436 - Loss:  0.070 - Validation loss:  0.022
+Epoch  45/60 Batch     40/77 Inputs (000)     439 - Loss:  0.097 - Validation loss:  0.023
+Epoch  45/60 Batch     60/77 Inputs (000)     441 - Loss:  0.084 - Validation loss:  0.023
+Epoch  45/60 Batch     77/77 Inputs (000)     444 - Loss:  0.076 - Validation loss:  0.021
+Saving graph...
+Model Trained in 0h:10m:50s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.1%
+Batch     20/78 - Accuracy: 98.2%
+Batch     30/78 - Accuracy: 98.3%
+Batch     40/78 - Accuracy: 98.3%
+Batch     50/78 - Accuracy: 98.4%
+Batch     60/78 - Accuracy: 98.4%
+Batch     70/78 - Accuracy: 98.5%
+Final accuracy = 98.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  46/60 Batch     20/77 Inputs (000)     446 - Loss:  0.058 - Validation loss:  0.024
+Epoch  46/60 Batch     40/77 Inputs (000)     449 - Loss:  0.078 - Validation loss:  0.020
+Epoch  46/60 Batch     60/77 Inputs (000)     451 - Loss:  0.076 - Validation loss:  0.018
+Epoch  46/60 Batch     77/77 Inputs (000)     453 - Loss:  0.072 - Validation loss:  0.021
+Saving graph...
+Model Trained in 0h:11m:4s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.4%
+Batch     20/78 - Accuracy: 98.4%
+Batch     30/78 - Accuracy: 98.3%
+Batch     40/78 - Accuracy: 98.3%
+Batch     50/78 - Accuracy: 98.3%
+Batch     60/78 - Accuracy: 98.4%
+Batch     70/78 - Accuracy: 98.4%
+Final accuracy = 98.5%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  47/60 Batch     20/77 Inputs (000)     456 - Loss:  0.058 - Validation loss:  0.020
+Epoch  47/60 Batch     40/77 Inputs (000)     459 - Loss:  0.076 - Validation loss:  0.021
+Epoch  47/60 Batch     60/77 Inputs (000)     461 - Loss:  0.086 - Validation loss:  0.021
+Epoch  47/60 Batch     77/77 Inputs (000)     463 - Loss:  0.075 - Validation loss:  0.019
+Saving graph...
+Model Trained in 0h:11m:19s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.2%
+Batch     20/78 - Accuracy: 98.3%
+Batch     30/78 - Accuracy: 98.2%
+Batch     40/78 - Accuracy: 98.2%
+Batch     50/78 - Accuracy: 98.2%
+Batch     60/78 - Accuracy: 98.2%
+Batch     70/78 - Accuracy: 98.3%
+Final accuracy = 98.4%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  48/60 Batch     20/77 Inputs (000)     466 - Loss:  0.071 - Validation loss:  0.017
+Epoch  48/60 Batch     40/77 Inputs (000)     468 - Loss:  0.069 - Validation loss:  0.020
+Epoch  48/60 Batch     60/77 Inputs (000)     471 - Loss:  0.080 - Validation loss:  0.017
+
+Epoch  48/60 Batch     77/77 Inputs (000)     473 - Loss:  0.078 - Validation loss:  0.016
+Saving graph...
+Model Trained in 0h:11m:33s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.9%
+Batch     20/78 - Accuracy: 98.8%
+Batch     30/78 - Accuracy: 98.7%
+Batch     40/78 - Accuracy: 98.8%
+Batch     50/78 - Accuracy: 98.8%
+Batch     60/78 - Accuracy: 98.8%
+Batch     70/78 - Accuracy: 98.9%
+Final accuracy = 98.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  49/60 Batch     20/77 Inputs (000)     476 - Loss:  0.067 - Validation loss:  0.018
+Epoch  49/60 Batch     40/77 Inputs (000)     478 - Loss:  0.064 - Validation loss:  0.018
+Epoch  49/60 Batch     60/77 Inputs (000)     481 - Loss:  0.062 - Validation loss:  0.019
+Epoch  49/60 Batch     77/77 Inputs (000)     483 - Loss:  0.064 - Validation loss:  0.018
+Saving graph...
+Model Trained in 0h:11m:47s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.7%
+Batch     20/78 - Accuracy: 98.7%
+Batch     30/78 - Accuracy: 98.6%
+Batch     40/78 - Accuracy: 98.6%
+Batch     50/78 - Accuracy: 98.6%
+Batch     60/78 - Accuracy: 98.7%
+Batch     70/78 - Accuracy: 98.7%
+Final accuracy = 98.7%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  50/60 Batch     20/77 Inputs (000)     486 - Loss:  0.071 - Validation loss:  0.019
+Epoch  50/60 Batch     40/77 Inputs (000)     488 - Loss:  0.079 - Validation loss:  0.018
+Epoch  50/60 Batch     60/77 Inputs (000)     491 - Loss:  0.081 - Validation loss:  0.015
+Epoch  50/60 Batch     77/77 Inputs (000)     493 - Loss:  0.062 - Validation loss:  0.015
+Saving graph...
+Model Trained in 0h:12m:2s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.7%
+Batch     20/78 - Accuracy: 98.7%
+Batch     30/78 - Accuracy: 98.7%
+Batch     40/78 - Accuracy: 98.8%
+Batch     50/78 - Accuracy: 98.7%
+Batch     60/78 - Accuracy: 98.8%
+Batch     70/78 - Accuracy: 98.9%
+Final accuracy = 98.9%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  51/60 Batch     20/77 Inputs (000)     496 - Loss:  0.058 - Validation loss:  0.017
+Epoch  51/60 Batch     40/77 Inputs (000)     498 - Loss:  0.053 - Validation loss:  0.016
+Epoch  51/60 Batch     60/77 Inputs (000)     501 - Loss:  0.062 - Validation loss:  0.015
+Epoch  51/60 Batch     77/77 Inputs (000)     503 - Loss:  0.072 - Validation loss:  0.016
+Saving graph...
+Model Trained in 0h:12m:17s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.0%
+Batch     20/78 - Accuracy: 99.0%
+Batch     30/78 - Accuracy: 98.8%
+Batch     40/78 - Accuracy: 98.7%
+Batch     50/78 - Accuracy: 98.7%
+Batch     60/78 - Accuracy: 98.7%
+Batch     70/78 - Accuracy: 98.8%
+Final accuracy = 98.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  52/60 Batch     20/77 Inputs (000)     505 - Loss:  0.060 - Validation loss:  0.017
+Epoch  52/60 Batch     40/77 Inputs (000)     508 - Loss:  0.060 - Validation loss:  0.018
+Epoch  52/60 Batch     60/77 Inputs (000)     511 - Loss:  0.061 - Validation loss:  0.015
+Epoch  52/60 Batch     77/77 Inputs (000)     513 - Loss:  0.055 - Validation loss:  0.014
+Saving graph...
+Model Trained in 0h:12m:31s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.8%
+Batch     20/78 - Accuracy: 99.0%
+Batch     30/78 - Accuracy: 98.9%
+Batch     40/78 - Accuracy: 99.0%
+Batch     50/78 - Accuracy: 99.0%
+Batch     60/78 - Accuracy: 99.1%
+Batch     70/78 - Accuracy: 99.1%
+Final accuracy = 99.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  53/60 Batch     20/77 Inputs (000)     515 - Loss:  0.066 - Validation loss:  0.015
+Epoch  53/60 Batch     40/77 Inputs (000)     518 - Loss:  0.054 - Validation loss:  0.014
+Epoch  53/60 Batch     60/77 Inputs (000)     520 - Loss:  0.067 - Validation loss:  0.012
+Epoch  53/60 Batch     77/77 Inputs (000)     523 - Loss:  0.066 - Validation loss:  0.013
+Saving graph...
+Model Trained in 0h:12m:46s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.3%
+Batch     20/78 - Accuracy: 99.3%
+Batch     30/78 - Accuracy: 99.2%
+Batch     40/78 - Accuracy: 99.1%
+Batch     50/78 - Accuracy: 99.1%
+Batch     60/78 - Accuracy: 99.0%
+Batch     70/78 - Accuracy: 99.1%
+Final accuracy = 99.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  54/60 Batch     20/77 Inputs (000)     525 - Loss:  0.049 - Validation loss:  0.013
+Epoch  54/60 Batch     40/77 Inputs (000)     528 - Loss:  0.054 - Validation loss:  0.014
+Epoch  54/60 Batch     60/77 Inputs (000)     530 - Loss:  0.065 - Validation loss:  0.012
+Epoch  54/60 Batch     77/77 Inputs (000)     532 - Loss:  0.063 - Validation loss:  0.012
+Saving graph...
+Model Trained in 0h:13m:0s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.4%
+Batch     20/78 - Accuracy: 99.4%
+Batch     30/78 - Accuracy: 99.3%
+Batch     40/78 - Accuracy: 99.3%
+Batch     50/78 - Accuracy: 99.3%
+Batch     60/78 - Accuracy: 99.2%
+Batch     70/78 - Accuracy: 99.3%
+Final accuracy = 99.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  55/60 Batch     20/77 Inputs (000)     535 - Loss:  0.054 - Validation loss:  0.014
+Epoch  55/60 Batch     40/77 Inputs (000)     538 - Loss:  0.054 - Validation loss:  0.013
+Epoch  55/60 Batch     60/77 Inputs (000)     540 - Loss:  0.055 - Validation loss:  0.015
+Epoch  55/60 Batch     77/77 Inputs (000)     542 - Loss:  0.073 - Validation loss:  0.025
+Saving graph...
+Model Trained in 0h:13m:14s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.0%
+Batch     20/78 - Accuracy: 98.9%
+Batch     30/78 - Accuracy: 98.8%
+Batch     40/78 - Accuracy: 98.8%
+Batch     50/78 - Accuracy: 98.8%
+Batch     60/78 - Accuracy: 98.7%
+Batch     70/78 - Accuracy: 98.8%
+Final accuracy = 98.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  56/60 Batch     20/77 Inputs (000)     545 - Loss:  0.064 - Validation loss:  0.014
+Epoch  56/60 Batch     40/77 Inputs (000)     547 - Loss:  0.054 - Validation loss:  0.017
+Epoch  56/60 Batch     60/77 Inputs (000)     550 - Loss:  0.060 - Validation loss:  0.012
+Epoch  56/60 Batch     77/77 Inputs (000)     552 - Loss:  0.072 - Validation loss:  0.024
+Saving graph...
+Model Trained in 0h:13m:29s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 98.6%
+Batch     20/78 - Accuracy: 98.5%
+Batch     30/78 - Accuracy: 98.4%
+Batch     40/78 - Accuracy: 98.5%
+Batch     50/78 - Accuracy: 98.6%
+Batch     60/78 - Accuracy: 98.7%
+Batch     70/78 - Accuracy: 98.7%
+Final accuracy = 98.8%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  57/60 Batch     20/77 Inputs (000)     555 - Loss:  0.054 - Validation loss:  0.014
+Epoch  57/60 Batch     40/77 Inputs (000)     557 - Loss:  0.057 - Validation loss:  0.014
+Epoch  57/60 Batch     60/77 Inputs (000)     560 - Loss:  0.066 - Validation loss:  0.013
+Epoch  57/60 Batch     77/77 Inputs (000)     562 - Loss:  0.052 - Validation loss:  0.012
+Saving graph...
+Model Trained in 0h:13m:44s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.3%
+Batch     20/78 - Accuracy: 99.3%
+Batch     30/78 - Accuracy: 99.1%
+Batch     40/78 - Accuracy: 99.1%
+Batch     50/78 - Accuracy: 99.1%
+
+Batch     60/78 - Accuracy: 99.1%
+Batch     70/78 - Accuracy: 99.1%
+Final accuracy = 99.1%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  58/60 Batch     20/77 Inputs (000)     565 - Loss:  0.047 - Validation loss:  0.011
+Epoch  58/60 Batch     40/77 Inputs (000)     567 - Loss:  0.049 - Validation loss:  0.015
+Epoch  58/60 Batch     60/77 Inputs (000)     570 - Loss:  0.053 - Validation loss:  0.011
+Epoch  58/60 Batch     77/77 Inputs (000)     572 - Loss:  0.043 - Validation loss:  0.012
+Saving graph...
+Model Trained in 0h:13m:58s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.3%
+Batch     20/78 - Accuracy: 99.3%
+Batch     30/78 - Accuracy: 99.2%
+Batch     40/78 - Accuracy: 99.2%
+Batch     50/78 - Accuracy: 99.2%
+Batch     60/78 - Accuracy: 99.2%
+Batch     70/78 - Accuracy: 99.3%
+Final accuracy = 99.3%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  59/60 Batch     20/77 Inputs (000)     575 - Loss:  0.049 - Validation loss:  0.010
+Epoch  59/60 Batch     40/77 Inputs (000)     577 - Loss:  0.051 - Validation loss:  0.013
+Epoch  59/60 Batch     60/77 Inputs (000)     580 - Loss:  0.053 - Validation loss:  0.010
+Epoch  59/60 Batch     77/77 Inputs (000)     582 - Loss:  0.051 - Validation loss:  0.009
+Saving graph...
+Model Trained in 0h:14m:13s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.1%
+Batch     20/78 - Accuracy: 99.4%
+Batch     30/78 - Accuracy: 99.4%
+Batch     40/78 - Accuracy: 99.4%
+Batch     50/78 - Accuracy: 99.4%
+Batch     60/78 - Accuracy: 99.3%
+Batch     70/78 - Accuracy: 99.4%
+Final accuracy = 99.4%
+
+Reloading existing graph to continue training.
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Epoch  60/60 Batch     20/77 Inputs (000)     584 - Loss:  0.051 - Validation loss:  0.012
+Epoch  60/60 Batch     40/77 Inputs (000)     587 - Loss:  0.047 - Validation loss:  0.010
+Epoch  60/60 Batch     60/77 Inputs (000)     590 - Loss:  0.052 - Validation loss:  0.024
+Epoch  60/60 Batch     77/77 Inputs (000)     592 - Loss:  0.052 - Validation loss:  0.016
+Saving graph...
+Model Trained in 0h:14m:28s and Saved
+INFO:tensorflow:Restoring parameters from ./small_graph/best_model.ckpt
+Batch     10/78 - Accuracy: 99.5%
+Batch     20/78 - Accuracy: 99.5%
+Batch     30/78 - Accuracy: 99.4%
+Batch     40/78 - Accuracy: 99.4%
+Batch     50/78 - Accuracy: 99.4%
+Batch     60/78 - Accuracy: 99.3%
+Batch     70/78 - Accuracy: 99.4%
+Final accuracy = 99.4%
+
+
+Training completed.

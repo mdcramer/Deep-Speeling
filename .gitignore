@@ -100,3 +100,6 @@ ENV/
 
 # Ignore all the big data files
 news.2013.*
+AWS_SMTP_credentials.csv
+data/news.2013.en.char_frequency.json
+data/news.2013.en.validate
