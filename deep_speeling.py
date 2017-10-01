@@ -11,8 +11,10 @@
 # * open Acaconda terminal
 # * \>activate tensorflow
 # * \>jupyter notebook
+# * Comment out email calls
 # 
 # When running on EC2 with Udactiy AMI:
+# * Fix email addresses
 # * \>source activate dl
 # * \>conda update --all
 # * \>pip install tensorflow-gpu==1.1 # Tensorflow v1.1 is required
@@ -35,7 +37,7 @@
 # 
 # Continue to work with big data. Jump down to work with small data.
 
-# In[1]:
+# In[409]:
 
 
 import os
@@ -89,7 +91,7 @@ except OSError as exception:
 
 # # Function for sending email updates from AWS
 
-# In[2]:
+# In[410]:
 
 
 import smtplib
@@ -124,6 +126,8 @@ def send_email(subject, message):
     s.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
     s.sendmail(me, you, msg.as_string()) # (from, to, message)
     s.quit()
+    
+    print("Email update sent.")
 
 
 # ## Download raw data file from the internet and uncompress it
@@ -134,7 +138,7 @@ def send_email(subject, message):
 # 
 # **Skip to below to work with the small dataset**
 
-# In[3]:
+# In[411]:
 
 
 def download_raw_datafile():
@@ -195,7 +199,7 @@ def download_raw_datafile():
 # ## Clean the data
 # Takes the `news.2013.en.clean` and input and produces `news.2013.en.shuffled`.
 
-# In[4]:
+# In[412]:
 
 
 def clean_data():
@@ -255,7 +259,7 @@ def clean_data():
 # 
 # Takes `news.2013.en.shuffled` as input and produces `news.2013.en.filtered` and `news.2013.en.char_frequency.json`.
 
-# In[5]:
+# In[413]:
 
 
 def analyze_characters():
@@ -304,8 +308,9 @@ def analyze_characters():
 
 # ## Split the data into training and validation sets
 # Takes `news.2013.en.filtered` as input and produces `news.2013.en.train` and `news.2013.en.validate`.
+# 
 
-# In[6]:
+# In[414]:
 
 
 def split_data():
@@ -331,7 +336,7 @@ def split_data():
 
 # ## Load the target data and generate source data by injecting mistakes
 
-# In[7]:
+# In[415]:
 
 
 def add_noise_to_string(a_string, amount_of_noise): # Add artificial spelling mistakes to string    
@@ -360,7 +365,7 @@ def add_noise_to_string(a_string, amount_of_noise): # Add artificial spelling mi
     return a_string
 
 
-# In[8]:
+# In[416]:
 
 
 def load_big_data():
@@ -392,7 +397,7 @@ def load_big_data():
 # ## Run this cell to get the tiny data set
 # **Start here if you are going to run with the small dataset** If you are using the big dataset, make sure to skip this.
 
-# In[9]:
+# In[417]:
 
 
 # Run this cell to grab the small data sets that came with this model. Otherwise skip it.
@@ -425,7 +430,7 @@ def load_small_data():
 # # Load the Data - Big of Small
 # If the command line switch "small" is set then load the small data. Otherwise load the big data.
 
-# In[10]:
+# In[418]:
 
 
 if (small):
@@ -443,7 +448,7 @@ else:
 # ## Preprocess
 # To do anything useful with it, turn the each string into a list of characters. Then convert the characters to their int values as declared in the vocabulary.
 
-# In[11]:
+# In[419]:
 
 
 import json
@@ -463,10 +468,10 @@ def extract_character_vocab(data):
     vocab_to_int = {word: word_i for word_i, word in int_to_vocab.items()}
 
     return int_to_vocab, vocab_to_int
-
-def produce_letter_ids(source, target):
     
-    global source_int_to_letter, target_int_to_letter,source_letter_to_int, target_letter_to_int
+def load_int_letter_translations(source, target):
+    
+    global source_int_to_letter, target_int_to_letter, source_letter_to_int, target_letter_to_int
     
     # Check to see if conversion files have already been created
     if (os.path.isfile(SOURCE_INT_TO_LETTER)):
@@ -476,28 +481,28 @@ def produce_letter_ids(source, target):
         with open(SOURCE_INT_TO_LETTER, 'r') as file:
             try:
                 source_int_to_letter = json.load(file)
-                print("Read {} data to file.".format(SOURCE_INT_TO_LETTER))
+                print("Read {} data from file.".format(SOURCE_INT_TO_LETTER))
             except ValueError: # if the file is empty the ValueError will be thrown
                 data = {}
         source_int_to_letter = {int(k):v for k,v in source_int_to_letter.items()}
         with open(TARGET_INT_TO_LETTER, 'r') as file:
             try:
                 target_int_to_letter = json.load(file)
-                print("Read {} data to file.".format(TARGET_INT_TO_LETTER))
+                print("Read {} data from file.".format(TARGET_INT_TO_LETTER))
             except ValueError: # if the file is empty the ValueError will be thrown
                 data = {}
         target_int_to_letter = {int(k):v for k,v in target_int_to_letter.items()}
         with open(SOURCE_LETTER_TO_INT, 'r') as file:
             try:
                 source_letter_to_int = json.load(file)
-                print("Read {} data to file.".format(SOURCE_LETTER_TO_INT))
+                print("Read {} data from file.".format(SOURCE_LETTER_TO_INT))
             except ValueError: # if the file is empty the ValueError will be thrown
                 data = {}
         source_letter_to_int = {k:int(v) for k,v in source_letter_to_int.items()}
         with open(TARGET_LETTER_TO_INT, 'r') as file:
             try:
                 target_letter_to_int = json.load(file)
-                print("Read {} data to file.".format(TARGET_LETTER_TO_INT))
+                print("Read {} data from file.".format(TARGET_LETTER_TO_INT))
             except ValueError: # if the file is empty the ValueError will be thrown
                 data = {}
         target_letter_to_int = {k:int(v) for k,v in target_letter_to_int.items()}
@@ -524,26 +529,32 @@ def produce_letter_ids(source, target):
             json.dump(target_letter_to_int, output_file)
         print("Wrote {} data to file.".format(TARGET_LETTER_TO_INT))
 
+def produce_letter_ids(source, target):
+    
+    if (not source_int_to_letter):
+        load_int_letter_translations(source, target)
+    
     # Convert characters to ids
     source_ids = [[source_letter_to_int.get(letter, source_letter_to_int['<UNK>']) for letter in line]                          for line in source]
     target_ids = [[target_letter_to_int.get(letter, target_letter_to_int['<UNK>']) for letter in line]                          + [target_letter_to_int['<EOS>']] for line in target]
-
-    print("\nExample source sequences")
-    print(source_ids[:3])
-    print("\nExample target sequences")
-    print(target_ids[:3])
     
     return source_ids, target_ids
 
 
-# In[12]:
+# In[420]:
 
 
 # Convert source and target sentences into IDs
 source_letter_ids, target_letter_ids = produce_letter_ids(source_sentences, target_sentences)
 
+print("\nExample source sequences")
+print(source_letter_ids[:3])
+print("\nExample target sequences")
+print(target_letter_ids[:3])
+print()
 
-# In[13]:
+
+# In[421]:
 
 
 print('\nFirst 10 sentence:')
@@ -557,7 +568,7 @@ for i in range (0, 10):
 # <img src="images/sequence-to-sequence.jpg"/>
 # #### Check the Version of TensorFlow and wether or not there's a GPU
 
-# In[14]:
+# In[422]:
 
 
 import tensorflow as tf
@@ -574,7 +585,7 @@ else:
 
 # ### Hyperparameters
 
-# In[15]:
+# In[423]:
 
 
 if (len(source_sentences) > 10000):
@@ -586,8 +597,8 @@ if (len(source_sentences) > 10000):
 
     rnn_size = 512   # RNN Size
     num_layers = 2   # Number of Layers
-    encoding_embedding_size = 256 # Encoding embedding Size
-    decoding_embedding_size = 256 # Decoding embedding Size
+    encoding_embedding_size = 512 # Encoding embedding Size
+    decoding_embedding_size = 512 # Decoding embedding Size
     keep_probability = 0.7 # keep probability
 
     learning_rate = 0.001 # Learning Rate
@@ -596,7 +607,7 @@ else:
     
     # We are using the small data
     print("Using hyperparameters for the small data with {:,} source sentences.".format(len(source_sentences)))
-    epochs = 3 # Number of Epochs (normally 60 but reduced to test retraining model)
+    epochs = 60 # Number of Epochs (normally 60 but reduced to test retraining model)
     batch_size = 128 # Batch Size
     rnn_size = 50 # RNN Size    
     num_layers = 2 # Number of Layers    
@@ -604,7 +615,17 @@ else:
     decoding_embedding_size = 15 # Embedding Size
     keep_probability = 0.7 # keep probability
     learning_rate = 0.001 # Learning Rate
-    
+
+def get_hyperparameters_message():
+    message  = "Batch size: {}\n".format(batch_size)
+    message += "RNN size  : {}\n".format(rnn_size)
+    message += "Num layers: {}\n".format(num_layers)
+    message += "Enc. size : {}\n".format(encoding_embedding_size)
+    message += "Dec. size : {}\n".format(decoding_embedding_size)
+    message += "Keep prob.: {}\n".format(keep_probability)
+    message += "Learn rate: {}\n\n".format(learning_rate)
+    return message
+
 # Write batch_size to file for loading after graph has been saved
 with open(GRAPH_PARAMETERS, 'w') as file:
   file.write('%d' % batch_size)
@@ -612,7 +633,7 @@ with open(GRAPH_PARAMETERS, 'w') as file:
 
 # ### Input
 
-# In[16]:
+# In[424]:
 
 
 def get_model_inputs():
@@ -657,7 +678,7 @@ def get_model_inputs():
 # - Pass the embedded input into a stack of RNNs.  Save the RNN state and ignore the output.
 # <img src="images/encoder.png" />
 
-# In[17]:
+# In[425]:
 
 
 def encoding_layer(input_data, rnn_size, num_layers, keep_prob, source_sequence_length, source_vocab_size, 
@@ -724,7 +745,7 @@ def encoding_layer(input_data, rnn_size, num_layers, keep_prob, source_sequence_
 # 
 # <img src="images/targets_after_processing_1.png"/>
 
-# In[18]:
+# In[426]:
 
 
 # Process the input we'll feed to the decoder
@@ -777,7 +798,7 @@ def process_decoder_input(target_data, vocab_to_int, batch_size):
 # We'll hand our encoder hidden state to both the training and inference decoders and have it process its output. TensorFlow handles most of the logic for us. We just have to use the appropriate methods from tf.contrib.seq2seq and supply them with the appropriate inputs.
 # 
 
-# In[19]:
+# In[427]:
 
 
 def decoding_layer(target_letter_to_int, decoding_embedding_size, num_layers, rnn_size, keep_prob,
@@ -843,7 +864,7 @@ def decoding_layer(target_letter_to_int, decoding_embedding_size, num_layers, rn
 # ## 2.3 Seq2seq model 
 # Let's now go a step above, and hook up the encoder and decoder using the methods we just declared
 
-# In[20]:
+# In[428]:
 
 
 def seq2seq_model(input_data, targets, lr, target_sequence_length, max_target_sequence_length, source_sequence_length,
@@ -885,7 +906,7 @@ def seq2seq_model(input_data, targets, lr, target_sequence_length, max_target_se
 # 
 # 
 
-# In[21]:
+# In[429]:
 
 
 from tensorflow.python.layers.core import Dense
@@ -950,7 +971,7 @@ with train_graph.as_default():
 # 
 # <img src="images/target_batch.png" />
 
-# In[22]:
+# In[430]:
 
 
 import numpy as np
@@ -981,10 +1002,10 @@ def get_batches(targets, sources, batch_size, source_pad_int, target_pad_int):
         yield pad_targets_batch, pad_sources_batch, pad_targets_lengths, pad_source_lengths
 
 
-# ## Train
+# ## Training function
 # We're now ready to train our model. If you run into OOM (out of memory) issues during training, try to decrease the batch_size.
 
-# In[23]:
+# In[431]:
 
 
 # Split data to training and validation sets
@@ -1075,36 +1096,16 @@ def train(epoch_i):
                 message += line + "\n"
 
         # Save model at the end of each epoch
-        print("Saving graph.")
+        print("Saving graph...")
         saver.save(sess, checkpoint)
-        message += "Graph saved"
-        send_email("Completed training epoch {}".format(epoch_i), message)
-
-
-# # Train graph by looping through epochs
-
-# In[24]:
-
-
-import time
-
-start = time.time()
-
-for epoch_i in range(1, epochs + 1):
-    train(epoch_i)
-
-# Print time spent training the model
-end = time.time()
-seconds = end - start
-m, s = divmod(seconds, 60)
-h, m = divmod(m, 60)
-print('Model Trained in {}h:{}m:{}s and Saved'.format(int(h), int(m), int(s)))
+        
+        return message # return message to be sent in body of email
 
 
 # ## Prediction
 # **Start here to use a saved and pre-trained graph.** Load the saved graph and compute some preditions.
 
-# In[25]:
+# In[432]:
 
 
 # Read batch_size from file
@@ -1119,102 +1120,131 @@ with open(GRAPH_PARAMETERS, 'r') as file:
 if (small):
     # There is no validation data for the small set, so just load up the data
     print("Load up the small data.")
-    source_sentences, target_sentences = load_small_data()
+    validation_source_sentences, validation_target_sentences = load_small_data()
 else:
     
     # Load the validation set and construct the source sentences
     AMOUNT_OF_NOISE = 0.2 / MAX_INPUT_LEN
 
-    target_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
-    source_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
+    validation_target_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
+    validation_source_sentences = open(NEWS_FILE_NAME_VALIDATE, encoding="utf8").read().split("\n")
     # Reduce workload by grabbing first batches only
     # target_sentences = target_sentences[:5*batch_size]
     # source_sentences = source_sentences[:5*batch_size]
     
     # Add the random noise to the source
-    for i in range(len(source_sentences)):
-        source_sentences[i] = add_noise_to_string(source_sentences[i], AMOUNT_OF_NOISE)
+    for i in range(len(validation_source_sentences)):
+        validation_source_sentences[i] = add_noise_to_string(validation_source_sentences[i], AMOUNT_OF_NOISE)
     
-print("There are {:,d} validation sentences and {:,.0f} batches.".format(len(source_sentences), 
-                                                                         len(source_sentences) // batch_size))
+print("There are {:,d} validation sentences and {:,.0f} batches.".format(len(validation_source_sentences), 
+                                                                         len(validation_source_sentences)//batch_size))
     
 print('\nFirst 10 sentence:')
 for i in range (0, 10):
-    print("\nSource --> " + source_sentences[i])
-    print("Target --> " + target_sentences[i])
+    print("\nSource --> " + validation_source_sentences[i])
+    print("Target --> " + validation_target_sentences[i])
+
+
+# In[433]:
+
+
+# def source_to_seq(text, length):
+#     '''Prepare the text for the model'''
+# #     sequence_length = 7 # don't understand why set to 7
+# #     sequence_length = 60
+#     return [source_letter_to_int.get(word, source_letter_to_int['<UNK>']) for word in text] \
+# + [source_letter_to_int['<PAD>']]*(length-len(text))
+
+
+# In[434]:
+
+
+def get_accuracy(source_sentences, target_sentences):
     
-# Convert sentences to IDs
-source_letter_ids, target_letter_ids = produce_letter_ids(source_sentences, target_sentences)
+    # Convert sentences to IDs
+    source_letter_ids, target_letter_ids = produce_letter_ids(source_sentences, target_sentences)
 
+    pad = source_letter_to_int["<PAD>"]
+    eos = source_letter_to_int["<EOS>"]
+    matches = 0
+    total = 0
+    display_step = 10
 
-# In[26]:
+    loaded_graph = tf.Graph()
+    with tf.Session(graph=loaded_graph) as sess:
 
+        # Load saved model
+        loader = tf.train.import_meta_graph(checkpoint + '.meta')
+        loader.restore(sess, checkpoint)
 
-def source_to_seq(text, length):
-    '''Prepare the text for the model'''
-#     sequence_length = 7 # don't understand why set to 7
-#     sequence_length = 60
-    return [source_letter_to_int.get(word, source_letter_to_int['<UNK>']) for word in text] + [source_letter_to_int['<PAD>']]*(length-len(text))
+        # Load graph variables
+        input_data = loaded_graph.get_tensor_by_name('input:0')
+        logits = loaded_graph.get_tensor_by_name('predictions:0')
+        source_sequence_length = loaded_graph.get_tensor_by_name('source_sequence_length:0')
+        target_sequence_length = loaded_graph.get_tensor_by_name('target_sequence_length:0')
+        keep_prob = loaded_graph.get_tensor_by_name('keep_prob:0')
 
+        for batch_i,(targets_batch, sources_batch, targets_lengths, sources_lengths)         in enumerate(get_batches(target_letter_ids, source_letter_ids, batch_size, 
+                                 source_letter_to_int['<PAD>'], target_letter_to_int['<PAD>'])):
 
-# In[27]:
+            # Multiply by batch_size to match the model's input parameters
+            answer_logits = sess.run(logits, {input_data: sources_batch, 
+                                              target_sequence_length: targets_lengths, 
+                                              source_sequence_length: sources_lengths,
+                                              keep_prob: 1.0})
 
+            for n in range(batch_size):
+                answer = "".join([target_int_to_letter[i] for i in answer_logits[n] if (i != pad and i != eos)])
+                target = target_sentences[batch_i * batch_size + n]
+                total += 1
+                if (answer == target):
+                    matches += 1
 
-import tensorflow as tf
+            if batch_i % display_step == 0 and batch_i > 0:
+                print('Batch {:>6}/{} - Accuracy: {:.1%}'.format(batch_i, 
+                                                                 len(source_sentences)//batch_size, 
+                                                                 matches/total))
 
-pad = source_letter_to_int["<PAD>"]
-eos = source_letter_to_int["<EOS>"]
-matches = 0
-total = 0
-display_step = 10
-
-loaded_graph = tf.Graph()
-with tf.Session(graph=loaded_graph) as sess:
-    
-    # Load saved model
-    loader = tf.train.import_meta_graph(checkpoint + '.meta')
-    loader.restore(sess, checkpoint)
-
-    # Load variables
-    input_data = loaded_graph.get_tensor_by_name('input:0')
-    logits = loaded_graph.get_tensor_by_name('predictions:0')
-    source_sequence_length = loaded_graph.get_tensor_by_name('source_sequence_length:0')
-    target_sequence_length = loaded_graph.get_tensor_by_name('target_sequence_length:0')
-    keep_prob = loaded_graph.get_tensor_by_name('keep_prob:0')
-
-    for batch_i,(targets_batch, sources_batch, targets_lengths, sources_lengths)     in enumerate(get_batches(target_letter_ids, source_letter_ids, batch_size, 
-                             source_letter_to_int['<PAD>'], target_letter_to_int['<PAD>'])):
+        print("Final accuracy = {:.1%}\n".format(matches/total))
         
-        # Multiply by batch_size to match the model's input parameters
-        answer_logits = sess.run(logits, {input_data: sources_batch, 
-                                          target_sequence_length: targets_lengths, 
-                                          source_sequence_length: sources_lengths,
-                                          keep_prob: 1.0})
+        return matches/total
 
-        for n in range(batch_size):
-            answer = "".join([target_int_to_letter[i] for i in answer_logits[n] if (i != pad and i != eos)])
-            target = target_sentences[batch_i * batch_size + n]
-#             print("\nSource: {}".format(source_sentences[batch_i * batch_size + n]))
-#             print("Target: {}".format(answer))
-#             print("Answer: {}".format(target))
-            total += 1
-            if (answer == target):
-                matches += 1
 
-        if batch_i % display_step == 0 and batch_i > 0:
-            print('Batch {:>6}/{} - Accuracy: {:.1%}'.format(batch_i, 
-                                                             len(source_sentences) // batch_size, 
-                                                             matches / total))
-            
-    print("\nFinal accuracy = {:.1%}".format(matches/total))
+# # Train graph by looping through epochs
+# Compute accuracy after each epoch and return in email
 
-# print('Original Text:', input_sentence)
+# In[435]:
 
-# print('\nSource')
-# print('  Word Ids:    {}'.format([i for i in text]))
-# print('  Input Words: {}'.format("".join([source_int_to_letter[i] for i in text])))
 
-# print('\nTarget')
-# print('  Word Ids:       {}'.format([i for i in answer_logits if i != pad]))
-# print('  Response Words: {}'.format("".join([target_int_to_letter[i] for i in answer_logits if i != pad])))
+import time
+
+start = time.time()
+
+# Run through all the epoch, computing the accuracy after each and sending the results via email
+for epoch_i in range(1, epochs + 1):
+    
+    message = get_hyperparameters_message()
+    message += train(epoch_i)
+
+    # Print time spent training the model
+    end = time.time()
+    seconds = end - start
+    m, s = divmod(seconds, 60)
+    h, m = divmod(m, 60)
+    print("Model Trained in {}h:{}m:{}s and Saved".format(int(h), int(m), int(s)))
+    message += "\nModel training for {}h:{}m:{}s and saved.".format(int(h), int(m), int(s))
+    
+    # Get current accuracy
+    accuracy = get_accuracy(validation_source_sentences, validation_target_sentences)
+    message += "\nCurrent accuracy = {:.1%}".format(accuracy)
+    
+    # Send email updates if using AWS
+    subject = "Completed training epoch {} - Accuracy = {:.1%}".format(epoch_i, accuracy)
+    if(small):
+        if(epoch_i % 10 == 0): # Only send email every 10 epoch when using small data
+            send_email(subject, message)
+    else: # Send an email after every epoch with large data
+        send_email(subject, message)
+    
+print("\nTraining completed.")
 
